@@ -7737,10 +7737,14 @@
     "notes": "CLR-001"
   },
   "OPT-MT-09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-10": {
     "implementation": [],
@@ -7803,10 +7807,14 @@
     "notes": "CLR-001"
   },
   "OPT-MT-20": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-21": {
     "implementation": [],
@@ -7815,10 +7823,14 @@
     "notes": "CLR-001"
   },
   "OPT-MT-22": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-23": {
     "implementation": [],
@@ -7845,10 +7857,14 @@
     "notes": "CLR-001"
   },
   "OPT-MT-27": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-28": {
     "implementation": [],
@@ -7995,10 +8011,14 @@
     "notes": "CLR-001"
   },
   "OPT-MT-52": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-53": {
     "implementation": [],
@@ -8031,10 +8051,14 @@
     "notes": "CLR-001"
   },
   "OPT-MT-58": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-59": {
     "implementation": [],
@@ -8067,46 +8091,74 @@
     "notes": "CLR-001"
   },
   "OPT-MT-64": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-65": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-66": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-67": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-68": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-69": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-70": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "OPT-MT-71": {
     "implementation": [],
@@ -8115,10 +8167,14 @@
     "notes": "CLR-001"
   },
   "OPT-MT-72": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/option-transforms.ts"
+    ],
+    "tests": [
+      "tests/domain/option-transforms.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Supplied-input transformation verified; unresolved production rows retained, consumer audit pending."
   },
   "ROOT-001": {
     "implementation": [
@@ -8199,34 +8255,59 @@
     "notes": "Source composition, ordering, links and no form-state coupling are verified."
   },
   "ROOT-008": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-003"
+    "implementation": [
+      "src/components/debug.tsx",
+      "src/domain/debug.ts"
+    ],
+    "tests": [
+      "tests/domain/debug-clean.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-003; Local action tests pass; mounted environment verification pending."
   },
   "ROOT-009": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-003"
+    "implementation": [
+      "src/components/debug.tsx",
+      "src/domain/debug.ts"
+    ],
+    "tests": [
+      "tests/domain/debug-clean.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-003; Local action tests pass; mounted environment verification pending."
   },
   "ROOT-010": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-003"
+    "implementation": [
+      "src/components/debug.tsx",
+      "src/domain/debug.ts"
+    ],
+    "tests": [
+      "tests/domain/debug-clean.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-003; Local action tests pass; mounted environment verification pending."
   },
   "ROOT-011": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-003"
+    "implementation": [
+      "src/components/debug.tsx",
+      "src/domain/debug.ts"
+    ],
+    "tests": [
+      "tests/domain/debug-clean.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-003; Local action tests pass; mounted environment verification pending."
   },
   "ROOT-012": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-003"
+    "implementation": [
+      "src/components/debug.tsx",
+      "src/domain/debug.ts"
+    ],
+    "tests": [
+      "tests/domain/debug-clean.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-003; Local action tests pass; mounted environment verification pending."
   },
   "ROOT-013": {
     "implementation": [
