@@ -45,10 +45,11 @@ function MaskedDateField() {
         }
         className={`form-control${props.error ? ' is-invalid' : ''}`}
         onKeyDown={() => props.callback?.()}
-        onAccept={(v) => {
+        onAccept={(v, _mask, event) => {
           const text = String(v);
           setDisplay(text);
-          props.field.onChange(manualDate(text));
+          // CTL-MT-13/14: a mask synchronization is not a manual-entry event.
+          if (event) props.field.onChange(manualDate(text));
         }}
       />
       <button

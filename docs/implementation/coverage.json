@@ -364,7 +364,8 @@
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/components/date-control.test.tsx"
     ],
     "status": "In progress",
     "notes": "Confirmed subset implemented; full owner reconciliation remains pending."
@@ -377,7 +378,8 @@
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/components/date-control.test.tsx"
     ],
     "status": "In progress",
     "notes": "Confirmed subset implemented; full owner reconciliation remains pending."
@@ -3101,7 +3103,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3124,7 +3127,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3147,7 +3151,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3170,7 +3175,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3193,7 +3199,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3216,7 +3223,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3239,7 +3247,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3262,7 +3271,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3285,7 +3295,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3308,7 +3319,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3331,7 +3343,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3354,7 +3367,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3377,7 +3391,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-008; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3400,7 +3415,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3423,7 +3439,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3446,7 +3463,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3469,7 +3487,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3492,7 +3511,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3515,7 +3535,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3538,7 +3559,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3561,7 +3583,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3584,7 +3607,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3607,7 +3631,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3630,7 +3655,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3653,7 +3679,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3676,7 +3703,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3699,7 +3727,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001, CLR-008; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3722,7 +3751,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3745,7 +3775,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3768,7 +3799,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3791,7 +3823,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3814,7 +3847,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3837,7 +3871,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3860,7 +3895,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3883,7 +3919,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3906,7 +3943,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3929,7 +3967,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3952,7 +3991,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3975,7 +4015,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -3998,7 +4039,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4021,7 +4063,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4044,7 +4087,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4067,7 +4111,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4090,7 +4135,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4113,7 +4159,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4136,7 +4183,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4159,7 +4207,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4182,7 +4231,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4205,7 +4255,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4228,7 +4279,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4251,7 +4303,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4274,7 +4327,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4297,7 +4351,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4320,7 +4375,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4343,7 +4399,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4366,7 +4423,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4389,7 +4447,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4412,7 +4471,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4435,7 +4495,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4458,7 +4519,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4481,7 +4543,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -4504,7 +4567,8 @@
       "tests/domain/driver-workflow.test.ts",
       "tests/domain/driver-schema.test.ts",
       "tests/e2e/drivers.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/components/driver-details.test.tsx"
     ],
     "status": "In progress",
     "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5328,7 +5392,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5347,7 +5412,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5366,7 +5432,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5385,7 +5452,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5404,7 +5472,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5423,7 +5492,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5442,7 +5512,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5461,7 +5532,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5480,7 +5552,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5499,7 +5572,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5518,7 +5592,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5537,7 +5612,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5556,7 +5632,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5575,7 +5652,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5594,7 +5672,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5613,7 +5692,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5632,7 +5712,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5651,7 +5732,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5670,7 +5752,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5689,7 +5772,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5708,7 +5792,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5727,7 +5812,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5746,7 +5832,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5765,7 +5852,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5784,7 +5872,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5803,7 +5892,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -5820,7 +5910,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5837,7 +5928,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5854,7 +5946,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5871,7 +5964,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5888,7 +5982,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5905,7 +6000,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5922,7 +6018,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5939,7 +6036,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5956,7 +6054,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5973,7 +6072,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -5990,7 +6090,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -6007,7 +6108,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -6024,7 +6126,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -6041,7 +6144,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -6058,7 +6162,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -6247,7 +6352,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6266,7 +6372,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6285,7 +6392,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6304,7 +6412,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6323,7 +6432,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6342,7 +6452,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6361,7 +6472,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6380,7 +6492,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6399,7 +6512,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6418,7 +6532,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6437,7 +6552,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6456,7 +6572,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6475,7 +6592,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6494,7 +6612,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6513,7 +6632,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6532,7 +6652,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6551,7 +6672,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6570,7 +6692,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6589,7 +6712,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6608,7 +6732,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6627,7 +6752,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6646,7 +6772,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6665,7 +6792,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6684,7 +6812,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6703,7 +6832,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6722,7 +6852,8 @@
     "tests": [
       "tests/domain/vehicles.test.ts",
       "tests/e2e/vehicles.spec.ts",
-      "tests/domain/definitions.test.ts"
+      "tests/domain/definitions.test.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log.; Versioned question definition indexed; standalone literal copy asserted where canonical copy is a single complete literal."
@@ -6739,7 +6870,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -6756,7 +6888,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -6773,7 +6906,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -6790,7 +6924,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
@@ -6807,7 +6942,8 @@
     ],
     "tests": [
       "tests/domain/vehicles.test.ts",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/domain/vehicle-boundaries.test.ts"
     ],
     "status": "In progress",
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."

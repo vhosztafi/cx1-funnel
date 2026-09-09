@@ -389,8 +389,14 @@ export function TextFieldCurrency({
   placeholder,
   blockDecimals,
   hideSeparator,
+  showCurrencySymbol,
   callback,
-}: { blockDecimals?: boolean; hideSeparator?: boolean; callback?: () => void } & ControlProps) {
+}: {
+  blockDecimals?: boolean;
+  hideSeparator?: boolean;
+  showCurrencySymbol?: boolean;
+  callback?: () => void;
+} & ControlProps) {
   const [internal, setInternal] = useState(() => (field.value ? String(field.value) : ''));
   return (
     <div className="mb-4">
@@ -398,17 +404,36 @@ export function TextFieldCurrency({
       <div className="input-group">
         <span className="input-group-text">£</span>
         <IMaskInput
-          mask={Number}
-          scale={blockDecimals ? 0 : 2}
-          thousandsSeparator={hideSeparator ? '' : ','}
-          radix="."
-          mapToRadix={['.']}
+          {...(showCurrencySymbol
+            ? {
+                mask: '£amount',
+                blocks: {
+                  amount: {
+                    mask: Number,
+                    scale: blockDecimals ? 0 : 2,
+                    thousandsSeparator: hideSeparator ? '' : ',',
+                    radix: '.',
+                    mapToRadix: ['.'],
+                  },
+                },
+              }
+            : {
+                mask: Number,
+                scale: blockDecimals ? 0 : 2,
+                thousandsSeparator: hideSeparator ? '' : ',',
+                radix: '.',
+                mapToRadix: ['.'],
+              })}
           value={internal}
           placeholder={placeholder}
           className="form-control"
-          onAccept={(_, mask) => {
+          onAccept={(_, mask, event) => {
+            // CTL-MT-10: deleting a decimal tail or the final numeric character also clears mask residue.
+            if ((event as InputEvent | undefined)?.inputType?.startsWith('delete')) {
+              mask.value = mask.value.replace(/\.$/, '').replace(/^£$/, '');
+            }
             const value = mask.unmaskedValue;
-            emitCurrency(value, internal, field.onChange, callback);
+            if (event) emitCurrency(value, internal, field.onChange, callback);
             setInternal(value);
           }}
         />
@@ -448,9 +473,15 @@ export function TextFieldPercentage({
           value={field.value ? String(field.value) : undefined}
           placeholder={placeholder}
           className="form-control"
-          onAccept={(v, mask) =>
-            emitPercentage(String(v), mask.unmaskedValue, numberFormat, field.onChange, callback)
-          }
+          onAccept={(v, mask, event) => {
+            // CTL-MT-11: preserve acceptance semantics after deletion removes a decimal tail.
+            if ((event as InputEvent | undefined)?.inputType?.startsWith('delete')) {
+              mask.value = mask.value.replace(/\.$/, '');
+              v = mask.value;
+            }
+            if (event)
+              emitPercentage(String(v), mask.unmaskedValue, numberFormat, field.onChange, callback);
+          }}
         />
       </div>
       <FormError message={error} />

@@ -15,6 +15,8 @@ import {
   FormTextBoxNumber,
   FormSelect,
   FormHourBox,
+  TextFieldCurrency,
+  TextFieldPercentage,
   FormError,
   DetailCollapser,
   type Field,
@@ -25,6 +27,68 @@ const field = (value: unknown = undefined): Field => ({
   onChange: vi.fn(),
 });
 describe('mounted shared control contracts', () => {
+  it.each([false, true])(
+    'CTL-MT-10 accepts numbers, removes decimal and symbol residue (mask symbol %s)',
+    async (showCurrencySymbol) => {
+      const calls: unknown[] = [];
+      render(
+        <TextFieldCurrency
+          field={{ ...field(), onChange: (v) => calls.push(v) }}
+          showCurrencySymbol={showCurrencySymbol}
+          callback={() => calls.push('callback')}
+        />,
+      );
+      const user = userEvent.setup(),
+        input = screen.getByRole('textbox');
+      await user.type(input, '12.3');
+      expect(input).toHaveValue(showCurrencySymbol ? '£12.3' : '12.3');
+      expect(calls.slice(-2)).toEqual([12.3, 'callback']);
+      await user.keyboard('{Backspace}');
+      expect(input).toHaveValue(showCurrencySymbol ? '£12' : '12');
+      expect(calls.slice(-2)).toEqual([12, 'callback']);
+      await user.clear(input);
+      expect(input).toHaveValue('');
+      expect(calls.slice(-2)).toEqual([undefined, 'callback']);
+      expect(input).not.toHaveAttribute('id');
+      expect(input).not.toHaveAttribute('name');
+    },
+  );
+  it.each([false, true])(
+    'CTL-MT-11 preserves callback arguments and blank conversion (number format %s)',
+    async (numberFormat) => {
+      const calls: unknown[][] = [];
+      render(
+        <TextFieldPercentage
+          field={{ ...field(), onChange: (...v) => calls.push(v) }}
+          numberFormat={numberFormat}
+          callback={() => calls.push(['callback'])}
+        />,
+      );
+      const user = userEvent.setup(),
+        input = screen.getByRole('textbox');
+      await user.type(input, '12.3');
+      expect(calls.slice(-2)).toEqual([numberFormat ? [12.3] : ['12.3', 12.3], ['callback']]);
+      await user.keyboard('{Backspace}');
+      expect(input).toHaveValue('12');
+      expect(calls.slice(-2)).toEqual([numberFormat ? [12] : ['12', 12], ['callback']]);
+      await user.clear(input);
+      expect(calls.slice(-2)).toEqual([numberFormat ? [0] : ['', undefined], ['callback']]);
+    },
+  );
+  it('CTL-MT-10/11 do not emit or call callbacks while synchronizing initial mask values', () => {
+    const currency = field('1200'),
+      percentage = field('25'),
+      callback = vi.fn();
+    render(
+      <>
+        <TextFieldCurrency field={currency} callback={callback} />
+        <TextFieldPercentage field={percentage} numberFormat callback={callback} />
+      </>,
+    );
+    expect(currency.onChange).not.toHaveBeenCalled();
+    expect(percentage.onChange).not.toHaveBeenCalled();
+    expect(callback).not.toHaveBeenCalled();
+  });
   it('CTL-MT-04 radio callback order and native index differ from emitted value', () => {
     const calls: unknown[] = [];
     const f = { ...field(), onChange: (value: unknown) => calls.push(value) };

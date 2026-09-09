@@ -7,5 +7,10 @@ export default defineConfig({
     include: ['tests/**/*.test.{ts,tsx}'],
     setupFiles: ['./tests/setup.ts'],
     restoreMocks: true,
+    coverage: {
+      provider: 'v8',
+      include: ['src/domain/**/*.ts', 'src/components/**/*.tsx', 'src/surfaces/**/*.tsx'],
+      reporter: ['json', 'text-summary'],
+    },
   },
 });
