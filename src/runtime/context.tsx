@@ -5,6 +5,7 @@ import type {Options,RuntimeLimits} from '@/domain/options';
 import type {PopulationPorts} from '@/domain/entry';
 import type {Step} from '@/domain/types';
 import type {DriverErrorInputs} from '@/domain/driver-rules';
+import type {TerminalBranch,prepareTerminal} from '@/domain/terminal';
 import type {AddressPorts} from '@/components/address-control';
 import type {VehicleRegistrationProps} from '@/components/vehicle-registration';
 export interface HostInputs {
@@ -16,7 +17,7 @@ export interface HostInputs {
   consumeDriverValidation?:(argument:{data:Record<string,unknown>})=>Promise<{data:{valid:unknown;errorMessages:string[]}}> ;
   address?:AddressPorts;postcodePattern?:RegExp;textNumberPattern?:RegExp;now?:()=>Date;
   tradePlateAddLabel?:string;existingTradePlates?:unknown;
-  consumeVehicleLookup?:VehicleRegistrationProps['consume'];vehicleLookupEligibility?:VehicleRegistrationProps['eligibility'];currencyFormat?:(value:unknown,digits:number)=>string;
+  consumeVehicleLookup?:VehicleRegistrationProps['consume'];vehicleLookupEligibility?:VehicleRegistrationProps['eligibility'];terminalBranch?:TerminalBranch;terminalPort?:{prepared?:ReturnType<typeof prepareTerminal>};
 }
 export interface Runtime {
   form:FormSession;options:Options;host:HostInputs;loading:boolean;setLoading:(value:boolean)=>void;

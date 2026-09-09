@@ -7502,78 +7502,191 @@
     "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-R02": {
     "implementation": [
-      "src/domain/converter.ts"
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
     ],
     "tests": [
-      "tests/domain/converter.test.ts"
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
     ],
     "status": "In progress",
-    "notes": "; Local converter/sanitizer tested as driver-list dependency; owning terminal/UI pending"
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-R05": {
     "implementation": [
-      "src/domain/converter.ts"
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
     ],
     "tests": [
-      "tests/domain/converter.test.ts"
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Local converter/sanitizer tested as driver-list dependency; owning terminal/UI pending"
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-R06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-U02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "MTS-14-U03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "OPT-MT-01": {
     "implementation": [],
@@ -8380,52 +8493,140 @@
     "notes": "CLR-007; Confirmed subset implemented; full owner reconciliation remains pending."
   },
   "TERM-001": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "TERM-002": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "TERM-003": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "TERM-004": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "TERM-005": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "TERM-006": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "TERM-007": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "TERM-008": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/summary.ts",
+      "src/domain/terminal.ts",
+      "src/domain/converter.ts",
+      "src/surfaces/summary.tsx",
+      "src/components/summary-collapser.tsx"
+    ],
+    "tests": [
+      "tests/domain/summary-terminal.test.ts",
+      "tests/domain/converter.test.ts",
+      "tests/components/summary-collapser.test.tsx",
+      "tests/e2e/summary.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected Summary and local branch conversion; branch-selection/context input remains explicit. Final per-owner/visual reconciliation pending."
   },
   "EDGE-08Ø": {
     "implementation": [

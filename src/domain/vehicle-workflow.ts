@@ -1,8 +1,8 @@
 import type {RawForm,RawVehicle,RouteState} from './types';
 export const vehicleMessages={capacity:'Number of vehicles cannot be greater than Maximum number of vehicles held.',loan:"If 'Yes' is selected for 'Customer Loan Cover Required' in Cover Required step, at least one vehicle must be designated as a customer loan vehicle"} as const;
 // MTS-08-R11: equality for Add is intentionally different from Continue's greater-than.
-export function vehicleAddBlocked(raw:RawForm){const capacity=raw.businessMaxVehicleCapacity;return capacity===0||(raw.vehicles?.length===capacity&&capacity!==0);}
-export function vehicleContinueGate(raw:RawForm):'loan'|'capacity'|'normalize'|'continue'{if(raw.requireCustomerLoanCover&&!raw.vehicles?.some(row=>row.isCustomerLoan))return 'loan';if(raw.vehicles&&raw.vehicles.length>(raw.businessMaxVehicleCapacity as number))return 'capacity';return raw.vehicles?'continue':'normalize';}
+export function vehicleAddBlocked(raw:RawForm){const capacity=raw.businessNumberOfVehicleCapacity;return capacity===0||(raw.vehicles?.length===capacity&&capacity!==0);}
+export function vehicleContinueGate(raw:RawForm):'loan'|'capacity'|'normalize'|'continue'{if(raw.requireCustomerLoanCover&&!raw.vehicles?.some(row=>row.isCustomerLoan))return 'loan';if(raw.vehicles&&raw.vehicles.length>(raw.businessNumberOfVehicleCapacity as number))return 'capacity';return raw.vehicles?'continue':'normalize';}
 export function vehicleDetailBack(raw:RawForm,navigateList:unknown){return navigateList||!raw.vehicles?.length?{step:7 as const,state:undefined}:{step:8 as const,state:{showVehicles:true}};}
 export function deleteVehicle(raw:RawForm,index:number,pageCount:number,page:number){return {activePage:pageCount===1?page-1:page,vehicles:raw.vehicles?.length===1?[]:raw.vehicles?.toSpliced(index,1),notification:false};}
 export function vehicleSubmitProjection(data:RawVehicle){return Object.fromEntries(Object.entries(data).filter(([key])=>!['customAbiError','customGvwError','customModificationError','chosenVehicleType'].includes(key))) as RawVehicle;}

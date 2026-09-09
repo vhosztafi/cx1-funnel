@@ -1,4 +1,5 @@
 'use client';
+import {currencyFormat} from '@/domain/currency';
 import {useState} from 'react';
 import {useForm,Controller,useFieldArray,useWatch,type Resolver,type Control} from 'react-hook-form';
 import type {AnyObjectSchema} from 'yup';
@@ -21,7 +22,7 @@ type ArrayValues={vehicleModifications:{modificationId?:number}[];modifications:
 export function VehicleDetails({specified=false}:{specified?:boolean}){
   const journey=useJourney();const raw=journey.snapshot.formData;const index=journey.routeState?.editingVehicle??0;const original=specified?raw.specifiedVehicles?.[0]:raw.vehicles?.[index];
   const [manual,setManual]=useState(!!original?.isManualEntry);const [retrieved,setRetrieved]=useState<RawVehicle|null>(original&&!original.isManualEntry?original:null);const [showLookup,setShowLookup]=useState(!original||!!original.isManualEntry);const [addingSpecified,setAddingSpecified]=useState(!!raw.specifiedVehicles?.length);const [now]=useState(()=>journey.host.now?.()??new Date());
-  const fullSchema=vehicleDetailSchema({raw,parameters:vehicleParameters(raw,journey.options,readVehicleValidators()),manualEnter:manual,editingIndex:index,specified,now,currencyFormat:journey.host.currencyFormat});const branch=specified?specifiedResolverBranch(addingSpecified,raw):'full';const schema=branch==='full'?fullSchema:branch==='lean'?specifiedLeanSchema():undefined;
+  const fullSchema=vehicleDetailSchema({raw,parameters:vehicleParameters(raw,journey.options,readVehicleValidators()),manualEnter:manual,editingIndex:index,specified,now,currencyFormat});const branch=specified?specifiedResolverBranch(addingSpecified,raw):'full';const schema=branch==='full'?fullSchema:branch==='lean'?specifiedLeanSchema():undefined;
   const methods=useForm<Values>({defaultValues:specified?specifiedDefaults(raw):{...Object.fromEntries(Object.entries(original||{}).filter(([,value])=>value!==null)),vehicleModifications:original?.vehicleModifications||[]},resolver:schema?yupResolver(schema as AnyObjectSchema) as unknown as Resolver<Values>:undefined});const values=useWatch({control:methods.control});const modsName=specified?'modifications':'vehicleModifications';const modsKey=specified?'modificationID':'modificationId';const {fields,append,remove}=useFieldArray({control:methods.control as unknown as Control<ArrayValues>,name:modsName});
   const enterManual=()=>{setManual(true);setShowLookup(true);methods.setValue('isManualEntry',true);};const clearModification=()=>methods.clearErrors('customModificationError');
   const render=(number:number)=>{const q=definition.questions[number-1];const name=q.path;return <Controller key={name} name={name} control={methods.control} render={({field,fieldState})=>{
