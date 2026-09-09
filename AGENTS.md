@@ -41,3 +41,13 @@ Implement the CX1 Motor Trade front-end sales funnel on Next.js, TypeScript, Tai
 - Inspect existing repository state before selecting versions, package manager, test tools, or a UI-kit vendor. Prefer established repository choices when present.
 - Ask only when a missing engineering decision materially affects the implementation and cannot be made behavior-neutrally. Otherwise proceed autonomously.
 - Keep commits atomic and do not mix canonical-document changes with implementation code.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

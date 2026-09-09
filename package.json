@@ -1,0 +1,53 @@
+{
+  "name": "cx1-motor-trade",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "dev": "node node_modules/next/dist/bin/next dev --webpack --hostname 127.0.0.1",
+    "build": "node node_modules/next/dist/bin/next build --webpack",
+    "start": "node node_modules/next/dist/bin/next start --hostname 127.0.0.1",
+    "lint": "node node_modules/eslint/bin/eslint.js .",
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit",
+    "test": "node node_modules/vitest/vitest.mjs run",
+    "test:e2e": "node node_modules/@playwright/test/cli.js test",
+    "contracts:generate": "node scripts/canonical-inventory.mjs",
+    "contracts:check": "node scripts/canonical-inventory.mjs --check"
+  },
+  "dependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@hookform/resolvers": "5.9.1",
+    "@mui/material": "9.4.0",
+    "@mui/x-date-pickers": "9.13.0",
+    "bootstrap": "5.3.8",
+    "dayjs": "1.11.23",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-bootstrap": "2.10.10",
+    "react-dom": "19.2.8",
+    "react-hook-form": "7.87.0",
+    "react-imask": "7.6.1",
+    "react-router-dom": "7.18.3",
+    "react-select": "5.10.2",
+    "sass": "1.104.0",
+    "yup": "1.4.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/node": "26.5.0",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.4",
+    "jsdom": "30.0.1",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3",
+    "vitest": "5.0.0"
+  }
+}

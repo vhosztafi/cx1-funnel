@@ -1,0 +1,683 @@
+# Implementation traceability
+
+Generated from canonical owners and coverage.json. Pending means no verified implementation claim. Inventory tests prove indexing only; behavioral tests must be linked separately.
+
+| Stable ID | Canonical link | Implementation files | Test files | Status | Notes/CLR |
+|---|---|---|---|---|---|
+| AUD-MT-01 | [source L3448](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-01--mts-06-option-consumer-backlinks) |  |  | Pending | CLR-001 |
+| AUD-MT-02 | [source L3673](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-02--mts-06-completeness-ledger) |  |  | Pending | CLR-001, CLR-007 |
+| AUD-MT-03 | [source L4371](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-03--mts-07mts-08a-option-consumer-backlinks) |  |  | Pending | CLR-001 |
+| AUD-MT-04 | [source L5084](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-04--ordinary-versus-specified-difference-matrix) |  |  | Pending |  |
+| AUD-MT-05 | [source L5107](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-05--option-consumer-backlinks) |  |  | Pending | CLR-001 |
+| AUD-MT-06 | [source L5135](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-06--mts-0709-completeness-ledger) |  |  | Pending | CLR-001 |
+| AUD-MT-07 | [source L5998](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-07--option-consumer-backlinks) |  |  | Pending | CLR-001 |
+| AUD-MT-08 | [source L6592](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-08--option-consumer-backlinks) |  |  | Pending | CLR-001 |
+| AUD-MT-09 | [source L6624](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-09--mts-1011-completeness-ledger) |  |  | Pending | CLR-008, CLR-009, CLR-001 |
+| AUD-MT-10 | [source L7306](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-10--mts-12-completeness-ledger) |  |  | Pending |  |
+| AUD-MT-11 | [source L7491](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-11--mts-12mts-13-bidirectional-completeness-ledger) |  |  | Pending | CLR-009 |
+| CTL-MT-01 | [source L96](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-01--autocomplete) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-02 | [source L105](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-02--logicmultiselect) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-03 | [source L114](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-03--multiselect) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-04 | [source L123](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-04--radiolist) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-05 | [source L132](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-05--checkboxarray) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-06 | [source L141](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-06--checkboxline) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-07 | [source L150](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-07--checboxlinearray--exported-checkboxlinearray) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-08 | [source L159](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-08--formtextbox) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-09 | [source L168](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-09--formtextboxnumber) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-10 | [source L177](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-10--textfieldcurrency) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-11 | [source L186](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-11--textfieldpercentage) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-12 | [source L195](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-12--formselect) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-13 | [source L204](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-13--datepicker) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-14 | [source L213](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-14--datepickerbirthdate) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-15 | [source L222](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-15--formhourbox) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-16 | [source L231](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-16--detailcollapser) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-17 | [source L240](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-17--capitalpostcode) | src/components/address-control.tsx |  | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-18 | [source L249](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-18--premisepostcode) | src/components/address-control.tsx |  | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-19 | [source L258](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-19--driverpostcode) | src/components/address-control.tsx |  | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-20 | [source L267](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-20--vehicleregistration) | src/components/vehicle-registration.tsx |  | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| CTL-MT-21 | [source L276](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#ctl-mt-21--formerror) | src/components/controls.tsx, src/components/date-control.tsx, src/domain/control-values.ts | tests/components/controls.test.tsx, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-01 | [source L81](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-02 | [source L82](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-03 | [source L83](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending | CLR-004 |
+| EDGE-04 | [source L84](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-05 | [source L85](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06A-DETAIL | [source L86](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending | CLR-001 |
+| EDGE-06A-INVALID | [source L88](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending | CLR-001 |
+| EDGE-06A-LIST | [source L87](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending | CLR-001 |
+| EDGE-06A-SKIP | [source L89](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending | CLR-001 |
+| EDGE-06B-BACK-A | [source L93](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06B-BACK-C | [source L94](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06B-INVALID-LOAD | [source L91](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06B-SAVE | [source L90](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06C-ADD | [source L95](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06C-BACK | [source L101](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06C-BLOCK | [source L100](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06C-DELETE | [source L97](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06C-EDIT | [source L96](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06C-NEXT | [source L99](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06C-PAGE | [source L98](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-06L-INVALID | [source L92](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-07-BACK-A | [source L104](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending | CLR-001 |
+| EDGE-07-BACK-C | [source L105](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending | CLR-001 |
+| EDGE-07-INVALID | [source L103](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-07-LIST | [source L102](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08A | [source L118](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | CLR-001; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-08A-BACK-7 | [source L109](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08A-BACK-B | [source L110](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08A-INVALID-LOAD | [source L107](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08A-SAVE | [source L106](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08B | [source L119](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | CLR-001; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-08B-ADD | [source L111](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08B-BACK | [source L116](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08B-BLOCK | [source L115](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08B-DELETE | [source L113](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08B-EDIT | [source L112](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08B-PAGE | [source L114](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08L-INVALID | [source L108](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-08Ø | [source L117](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-09-BACK | [source L121](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-09-NEXT | [source L120](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-10-NEXT | [source L124](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-10A | [source L122](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | CLR-001; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-10B | [source L123](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | CLR-001; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-11-BACK | [source L128](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-11-NEXT | [source L125](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-12-BACK | [source L129](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-12-NEXT | [source L126](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-13-BACK | [source L130](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-13-NEXT | [source L127](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-14-BACK | [source L131](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-DASHBOARD | [source L135](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-ENTRY-CLIENT | [source L73](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/entry.ts, src/runtime/client-application.tsx | tests/domain/entry.test.ts | In progress | CLR-005; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-ENTRY-CLONE | [source L72](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/entry.ts, src/runtime/client-application.tsx | tests/domain/entry.test.ts | In progress | CLR-005; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-ENTRY-GUID-BO | [source L74](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/entry.ts, src/runtime/client-application.tsx | tests/domain/entry.test.ts | In progress | CLR-005; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-ENTRY-GUID-NON-BO | [source L75](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/entry.ts, src/runtime/client-application.tsx | tests/domain/entry.test.ts | In progress | CLR-005; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-ENTRY-NEW | [source L76](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/entry.ts, src/runtime/client-application.tsx | tests/domain/entry.test.ts | In progress | CLR-005; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-GUARD-AUTH | [source L77](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/entry.ts, src/runtime/client-application.tsx | tests/domain/entry.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-GUARD-PERSISTED | [source L80](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-GUARD-STEP1 | [source L78](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-GUARD-STEP1-UNMAPPED | [source L79](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | CLR-006; Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-ROOT | [source L71](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| EDGE-SUM-06 | [source L132](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-SUM-08 | [source L133](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-SUM-OTHER | [source L134](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) | src/domain/navigation.ts, src/runtime/client-application.tsx | tests/domain/navigation.test.ts, tests/e2e/root-and-routes.spec.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| EDGE-TERMINAL | [source L136](../../docs/motor-trade-funnel/02-journey-and-navigation.md#executable-transition-ledger) |  |  | Pending |  |
+| MTS-01 | [source L470](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01--motor-trade-full-quote) |  |  | Pending |  |
+| MTS-01-Q01 | [source L505](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q01--consentto) |  |  | Pending |  |
+| MTS-01-Q02 | [source L524](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q02--marketingconsent) |  |  | Pending |  |
+| MTS-01-Q03 | [source L543](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q03--marketingmethod) |  |  | Pending | CLR-001 |
+| MTS-01-Q04 | [source L571](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q04--proposerpolicystartdate) |  |  | Pending |  |
+| MTS-01-Q05 | [source L590](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q05--isshortterm) |  |  | Pending |  |
+| MTS-01-Q06 | [source L609](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q06--proposercompanytypeid) |  |  | Pending | CLR-001 |
+| MTS-01-Q07 | [source L637](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q07--proposertitleid) |  |  | Pending | CLR-001 |
+| MTS-01-Q08 | [source L656](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q08--proposername) |  |  | Pending |  |
+| MTS-01-Q09 | [source L675](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q09--proposersurname) |  |  | Pending |  |
+| MTS-01-Q10 | [source L694](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q10--proposertradingname) |  |  | Pending |  |
+| MTS-01-Q11 | [source L713](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q11--proposercompanypartnershipname) |  |  | Pending |  |
+| MTS-01-Q12 | [source L732](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q12--proposeremail) |  |  | Pending |  |
+| MTS-01-Q13 | [source L751](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q13--proposertelephonenumber) |  |  | Pending |  |
+| MTS-01-Q14 | [source L770](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q14--proposermobilenumber) |  |  | Pending |  |
+| MTS-01-Q15 | [source L789](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q15--proposerpostcode) |  |  | Pending | CLR-008 |
+| MTS-01-Q16 | [source L808](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q16--proposerhousenumber) |  |  | Pending |  |
+| MTS-01-Q17 | [source L827](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q17--proposerstreet) |  |  | Pending |  |
+| MTS-01-Q18 | [source L846](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q18--proposertown) |  |  | Pending |  |
+| MTS-01-Q19 | [source L865](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q19--proposercity) |  |  | Pending |  |
+| MTS-01-Q20 | [source L884](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-q20--proposercounty) |  |  | Pending |  |
+| MTS-01-R01 | [source L903](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-r01--rtl-only-consent-and-non-rtl-write-projection) |  |  | Pending |  |
+| MTS-01-R02 | [source L914](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-r02--company-type-layout-required-fields-and-sole-trader-clear) |  |  | Pending |  |
+| MTS-01-R03 | [source L925](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-r03--marketing-dependency-and-clear) |  |  | Pending | CLR-001 |
+| MTS-01-R04 | [source L936](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-r04--telephone-or-mobile-validation-and-sibling-revalidation) |  |  | Pending |  |
+| MTS-01-R05 | [source L947](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-r05--policy-date-context-bounds) |  |  | Pending |  |
+| MTS-01-R06 | [source L958](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-r06--capital-postcode-lookup-and-manual-address-state) |  |  | Pending |  |
+| MTS-01-R07 | [source L969](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-r07--successful-persistence-navigation-and-step-1-back-absence) |  |  | Pending |  |
+| MTS-01-U01 | [source L487](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-u01--page-heading) |  |  | Pending |  |
+| MTS-01-U02 | [source L496](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-u02--consent-explanation) |  |  | Pending |  |
+| MTS-01-U03 | [source L562](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-u03--full-quote-instruction) |  |  | Pending |  |
+| MTS-01-U04 | [source L628](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-u04--conditional-proposer-heading-and-three-layouts) |  |  | Pending |  |
+| MTS-01-U05 | [source L980](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-01-u05--navigation) |  |  | Pending |  |
+| MTS-02 | [source L989](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02--premises-details) |  |  | Pending |  |
+| MTS-02-Q01 | [source L1004](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q01--tradingfromid) |  |  | Pending | CLR-001 |
+| MTS-02-Q02 | [source L1023](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q02--tradingpremisestradingpremisepostcode) |  |  | Pending | CLR-008 |
+| MTS-02-Q03 | [source L1042](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q03--tradingpremisestradingpremisetypeid) |  |  | Pending | CLR-001 |
+| MTS-02-Q04 | [source L1061](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q04--tradingpremisestradingpremiseyearstrading) |  |  | Pending |  |
+| MTS-02-Q05 | [source L1080](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q05--tradingpremisestradingpremiseissharedworksite) |  |  | Pending |  |
+| MTS-02-Q06 | [source L1099](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q06--tradingpremisestradingpremisehouseno) |  |  | Pending |  |
+| MTS-02-Q07 | [source L1118](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q07--tradingpremisestradingpremisestreet) |  |  | Pending |  |
+| MTS-02-Q08 | [source L1137](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q08--tradingpremisestradingpremisetown) |  |  | Pending |  |
+| MTS-02-Q09 | [source L1156](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q09--tradingpremisestradingpremisecity) |  |  | Pending |  |
+| MTS-02-Q10 | [source L1175](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-q10--tradingpremisestradingpremisecounty) |  |  | Pending |  |
+| MTS-02-R01 | [source L1194](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-r01--trading-from-branch-and-repeatable-row-lifecycle) |  |  | Pending |  |
+| MTS-02-R02 | [source L1205](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-r02--premise-postcode-lookup-and-manual-address) |  |  | Pending |  |
+| MTS-02-R03 | [source L1216](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-r03--present-row-validation-without-an-array-cardinality-rule) |  |  | Pending |  |
+| MTS-02-R04 | [source L1227](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-r04--successful-persistence-summary-and-navigation) |  |  | Pending |  |
+| MTS-02-U01 | [source L995](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-u01--page-heading) |  |  | Pending |  |
+| MTS-02-U02 | [source L1238](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-u02--indexed-row-and-addremove-controls) |  |  | Pending |  |
+| MTS-02-U03 | [source L1247](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-02-u03--navigation) |  |  | Pending |  |
+| MTS-03 | [source L1256](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03--business-details) |  |  | Pending |  |
+| MTS-03-Q01 | [source L1271](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-q01--businessstarteddate) |  |  | Pending |  |
+| MTS-03-Q02 | [source L1290](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-q02--businessannualturnover) |  |  | Pending |  |
+| MTS-03-Q03 | [source L1309](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-q03--businessannualwageroll) |  |  | Pending |  |
+| MTS-03-Q04 | [source L1328](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-q04--businessistradeassociationmember) |  |  | Pending |  |
+| MTS-03-Q05 | [source L1347](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-q05--businesstradeassociationname) |  |  | Pending |  |
+| MTS-03-Q06 | [source L1366](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-q06--businessisvatregistered) |  |  | Pending |  |
+| MTS-03-Q07 | [source L1385](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-q07--businessvatnumber) |  |  | Pending |  |
+| MTS-03-Q08 | [source L1404](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-q08--businessnumberofvehicleshandleperyear) |  |  | Pending |  |
+| MTS-03-Q09 | [source L1423](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-q09--businessnumberofvehiclecapacity) |  |  | Pending |  |
+| MTS-03-R01 | [source L1442](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-r01--trade-association-visibility-requirement-and-clear) |  |  | Pending |  |
+| MTS-03-R02 | [source L1453](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-r02--vat-number-visibility-optionality-and-reset) |  |  | Pending |  |
+| MTS-03-R03 | [source L1464](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-r03--90000-vat-assurance-gate) |  |  | Pending | CLR-004 |
+| MTS-03-R04 | [source L1475](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-r04--successful-persistence-back-persistence-and-summary) |  |  | Pending | CLR-004 |
+| MTS-03-U01 | [source L1262](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-u01--page-heading) |  |  | Pending |  |
+| MTS-03-U02 | [source L1486](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-u02--vat-assurance-dialog) |  |  | Pending | CLR-004 |
+| MTS-03-U03 | [source L1495](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-03-u03--navigation) |  |  | Pending |  |
+| MTS-04 | [source L1504](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04--occupation) |  |  | Pending |  |
+| MTS-04-Q01 | [source L1519](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-q01--occupationsoccupationid) |  |  | Pending | CLR-001 |
+| MTS-04-Q02 | [source L1538](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-q02--occupationspercentage) |  |  | Pending |  |
+| MTS-04-R01 | [source L1557](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-r01--row-initialization-addremove-and-percentage-transitions) |  |  | Pending |  |
+| MTS-04-R02 | [source L1568](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-r02--minimum-cardinality-and-source-defined-uniqueness) |  |  | Pending | CLR-008 |
+| MTS-04-R03 | [source L1579](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-r03--requirecarjockeyradius-singularity) |  |  | Pending | CLR-001 |
+| MTS-04-R04 | [source L1590](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-r04--strict-percentage-total) |  |  | Pending | CLR-008 |
+| MTS-04-R05 | [source L1601](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-r05--successful-persistence-and-back) |  |  | Pending |  |
+| MTS-04-U01 | [source L1510](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-u01--page-heading) |  |  | Pending |  |
+| MTS-04-U02 | [source L1612](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-u02--indexed-headings-removal-errors-and-add-control) |  |  | Pending |  |
+| MTS-04-U03 | [source L1621](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-04-u03--navigation) |  |  | Pending |  |
+| MTS-05 | [source L1630](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05--cover-required) |  |  | Pending |  |
+| MTS-05-Q01 | [source L1645](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q01--coverlevelid) |  |  | Pending | CLR-001 |
+| MTS-05-Q02 | [source L1673](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q02--coverindemnitylimitownvehiclesid) |  |  | Pending | CLR-001 |
+| MTS-05-Q03 | [source L1692](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q03--coverindemnitylimitcustomervehiclesid) |  |  | Pending | CLR-001 |
+| MTS-05-Q04 | [source L1720](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q04--coverexcessid) |  |  | Pending | CLR-001 |
+| MTS-05-Q05 | [source L1739](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q05--coveraddallsectionsexcess) |  |  | Pending |  |
+| MTS-05-Q06 | [source L1758](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q06--coverexcesslateid) |  |  | Pending | CLR-001 |
+| MTS-05-Q07 | [source L1777](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q07--coverremovecoinsuraneexcess) |  |  | Pending |  |
+| MTS-05-Q08 | [source L1796](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q08--requirecustomerloancover) |  |  | Pending |  |
+| MTS-05-Q09 | [source L1815](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q09--customerloancoverlevelid) |  |  | Pending | CLR-001 |
+| MTS-05-Q10 | [source L1843](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q10--coverncbid) |  |  | Pending | CLR-001 |
+| MTS-05-Q11 | [source L1862](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q11--coverncbearnedid) |  |  | Pending | CLR-001 |
+| MTS-05-Q12 | [source L1881](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q12--coverncbexpirydate) |  |  | Pending |  |
+| MTS-05-Q13 | [source L1900](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q13--coverncbpreviousinsurerid) |  |  | Pending | CLR-001 |
+| MTS-05-Q14 | [source L1919](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q14--hascoverncbintrorenewal) |  |  | Pending | CLR-001 |
+| MTS-05-Q15 | [source L1938](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q15--coverncbintrorenewalyearid) |  |  | Pending | CLR-001 |
+| MTS-05-Q16 | [source L1957](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q16--coverncbpreviousinsurerother) |  |  | Pending |  |
+| MTS-05-Q17 | [source L1976](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-q17--coverisncbprotected) |  |  | Pending |  |
+| MTS-05-R01 | [source L1995](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-r01--cover-level-branch-requiredness-and-id-3-normalization) |  |  | Pending | CLR-001 |
+| MTS-05-R02 | [source L2006](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-r02--indemnity-filters-and-nested-excess-dependency) |  |  | Pending | CLR-001 |
+| MTS-05-R03 | [source L2017](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-r03--occupation-metadata-customer-indemnity-branch) |  |  | Pending | CLR-001 |
+| MTS-05-R04 | [source L2028](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-r04--customer-loan-branch-and-non-mounted-vehicle-count) |  |  | Pending |  |
+| MTS-05-R05 | [source L2039](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-r05--ncb-detail-visibility-mta-protection-and-base-clears) |  |  | Pending | CLR-001 |
+| MTS-05-R06 | [source L2050](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-r06--introductory-renewal-metadata-branch-and-normalization) |  |  | Pending | CLR-001 |
+| MTS-05-R07 | [source L2061](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-r07--driversflatten-cross-step-mutation) |  |  | Pending | CLR-001 |
+| MTS-05-R08 | [source L2072](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-r08--successful-persistence-back-and-summary-projection-boundary) |  |  | Pending |  |
+| MTS-05-U01 | [source L1636](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-u01--page-heading) |  |  | Pending |  |
+| MTS-05-U02 | [source L1664](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-u02--limit-of-indemnity-heading) |  |  | Pending |  |
+| MTS-05-U03 | [source L1711](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-u03--excess-heading) |  |  | Pending |  |
+| MTS-05-U04 | [source L1834](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-u04--no-claims-bonus-heading) |  |  | Pending |  |
+| MTS-05-U05 | [source L2083](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-05-u05--navigation) |  |  | Pending |  |
+| MTS-06 | [source L2092](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06--drivers) |  |  | Pending | CLR-001, CLR-007 |
+| MTS-06-Q01 | [source L2100](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q01--driverplanid) |  |  | Pending | CLR-001 |
+| MTS-06-Q02 | [source L2128](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q02--aaddrivernumber) |  |  | Pending |  |
+| MTS-06-Q03 | [source L2147](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q03--aaddriverminageid) |  |  | Pending | CLR-001 |
+| MTS-06-Q04 | [source L2166](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q04--aaddrivermaxageid) |  |  | Pending | CLR-001 |
+| MTS-06-Q05 | [source L2185](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q05--aadmaxvehiclegroupingid) |  |  | Pending | CLR-001 |
+| MTS-06-Q06 | [source L2204](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q06--aadmaxvehiclegvwid) |  |  | Pending | CLR-001 |
+| MTS-06-Q07 | [source L2223](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q07--aadmaxmotorcycleccid) |  |  | Pending | CLR-001 |
+| MTS-06-Q08 | [source L2277](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q08--titleid) |  |  | Pending | CLR-001 |
+| MTS-06-Q09 | [source L2296](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q09--firstname) |  |  | Pending |  |
+| MTS-06-Q10 | [source L2315](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q10--surname) |  |  | Pending |  |
+| MTS-06-Q11 | [source L2334](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q11--dateofbirth) |  |  | Pending |  |
+| MTS-06-Q12 | [source L2353](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q12--relationshippolicyholderid) |  |  | Pending | CLR-001 |
+| MTS-06-Q13 | [source L2372](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q13--postcode) |  |  | Pending | CLR-008 |
+| MTS-06-Q14 | [source L2391](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q14--houseno) |  |  | Pending |  |
+| MTS-06-Q15 | [source L2410](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q15--street) |  |  | Pending |  |
+| MTS-06-Q16 | [source L2429](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q16--town) |  |  | Pending |  |
+| MTS-06-Q17 | [source L2448](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q17--city) |  |  | Pending |  |
+| MTS-06-Q18 | [source L2467](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q18--county) |  |  | Pending |  |
+| MTS-06-Q19 | [source L2486](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q19--usageid) |  |  | Pending | CLR-001 |
+| MTS-06-Q20 | [source L2505](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q20--gvwlimitid) |  |  | Pending | CLR-001 |
+| MTS-06-Q21 | [source L2524](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q21--isukresidentsincebirth) |  |  | Pending |  |
+| MTS-06-Q22 | [source L2543](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q22--ukresidencesince) |  |  | Pending |  |
+| MTS-06-Q23 | [source L2562](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q23--licencetypeid) |  |  | Pending | CLR-001 |
+| MTS-06-Q24 | [source L2581](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q24--licenseissuedate) |  |  | Pending |  |
+| MTS-06-Q25 | [source L2600](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q25--motorcyclecoverid) |  |  | Pending | CLR-001 |
+| MTS-06-Q26 | [source L2619](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q26--motorcyclelicenceissuedate) |  |  | Pending |  |
+| MTS-06-Q27 | [source L2638](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q27--maxabigroupid) |  |  | Pending | CLR-001, CLR-008 |
+| MTS-06-Q28 | [source L2657](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q28--tradeemploymentbasisid) |  |  | Pending | CLR-001 |
+| MTS-06-Q29 | [source L2676](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q29--driveroccupationsmotortraderoadrisksoccupationid) |  |  | Pending | CLR-001 |
+| MTS-06-Q30 | [source L2695](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q30--driveroccupationsisbusinessuserequired) |  |  | Pending |  |
+| MTS-06-Q31 | [source L2723](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q31--coverpersonalvehicle) |  |  | Pending |  |
+| MTS-06-Q32 | [source L2742](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q32--coverdrivingothervehicles) |  |  | Pending |  |
+| MTS-06-Q33 | [source L2761](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q33--hasmotoringconvictions) |  |  | Pending |  |
+| MTS-06-Q34 | [source L2780](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q34--drivermotortradingconvictionsconvictiondate) |  |  | Pending |  |
+| MTS-06-Q35 | [source L2799](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q35--drivermotortradingconvictionsdrivermotortradingconvictioncodeid) |  |  | Pending | CLR-001 |
+| MTS-06-Q36 | [source L2818](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q36--drivermotortradingconvictionsfineamount) |  |  | Pending |  |
+| MTS-06-Q37 | [source L2837](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q37--drivermotortradingconvictionspoints) |  |  | Pending |  |
+| MTS-06-Q38 | [source L2856](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q38--drivermotortradingconvictionsdisqualified) |  |  | Pending |  |
+| MTS-06-Q39 | [source L2875](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q39--drivermotortradingconvictionsbanlength) |  |  | Pending |  |
+| MTS-06-Q40 | [source L2894](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q40--hasclaimsoraccidents) |  |  | Pending |  |
+| MTS-06-Q41 | [source L2913](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q41--driverclaimsclaimdate) |  |  | Pending |  |
+| MTS-06-Q42 | [source L2932](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q42--driverclaimsclaimtypeid) |  |  | Pending | CLR-001 |
+| MTS-06-Q43 | [source L2951](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q43--driverclaimsdescription) |  |  | Pending |  |
+| MTS-06-Q44 | [source L2970](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q44--driverclaimstotalcost) |  |  | Pending |  |
+| MTS-06-Q45 | [source L2989](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q45--driverclaimsclaimstatusid) |  |  | Pending | CLR-001 |
+| MTS-06-Q46 | [source L3008](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q46--hasreporteddisability) |  |  | Pending |  |
+| MTS-06-Q47 | [source L3027](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q47--hasreporteddisabilitydetails) |  |  | Pending |  |
+| MTS-06-Q48 | [source L3046](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q48--hascriminalconvictions) |  |  | Pending |  |
+| MTS-06-Q49 | [source L3065](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q49--criminalconvictionsconvictiondate) |  |  | Pending |  |
+| MTS-06-Q50 | [source L3084](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q50--criminalconvictionscriminalconvictioncodeid) |  |  | Pending | CLR-001 |
+| MTS-06-Q51 | [source L3103](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q51--criminalconvictionssentencelengthyear) |  |  | Pending |  |
+| MTS-06-Q52 | [source L3122](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q52--criminalconvictionssentencelengthmonth) |  |  | Pending |  |
+| MTS-06-Q53 | [source L3141](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q53--hasccjs) |  |  | Pending |  |
+| MTS-06-Q54 | [source L3160](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q54--countycourtjudgementsccjdate) |  |  | Pending |  |
+| MTS-06-Q55 | [source L3179](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q55--countycourtjudgementscountycourtjudgementstatusid) |  |  | Pending | CLR-001 |
+| MTS-06-Q56 | [source L3198](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q56--countycourtjudgementsamount) |  |  | Pending |  |
+| MTS-06-Q57 | [source L3217](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q57--countycourtjudgementscircumstances) |  |  | Pending |  |
+| MTS-06-Q58 | [source L3236](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q58--ageadditionalexcess) |  |  | Pending | CLR-001 |
+| MTS-06-Q59 | [source L3255](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q59--ageindemnitylimitid) |  |  | Pending | CLR-001 |
+| MTS-06-Q60 | [source L3274](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q60--ageincreasevehicleccid) |  |  | Pending | CLR-001 |
+| MTS-06-Q61 | [source L3293](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q61--experiencebasedexcessid) |  |  | Pending | CLR-001 |
+| MTS-06-Q62 | [source L3312](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-q62--experienceincreasevehiclecclimitid) |  |  | Pending | CLR-001 |
+| MTS-06-R01 | [source L2242](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r01--driver-plan-branches-validation-and-movement) |  |  | Pending | CLR-001 |
+| MTS-06-R02 | [source L2253](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r02--existing-driver-sequential-revalidation) |  |  | Pending |  |
+| MTS-06-R03 | [source L3340](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r03--age-licence-experience-and-derived-young-driver-band) |  |  | Pending | CLR-001 |
+| MTS-06-R04 | [source L3351](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r04--relationship-usage-and-personalother-vehicle-conditions) |  |  | Pending | CLR-001 |
+| MTS-06-R05 | [source L3362](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r05--residence-licence-motorcycle-abi-gvw-and-cc-conditions) |  |  | Pending | CLR-001 |
+| MTS-06-R06 | [source L3373](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r06--disability-schema-identifier-mismatch) |  |  | Pending |  |
+| MTS-06-R07 | [source L3384](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r07--detail-createeditrevalidation-and-navigation) |  |  | Pending |  |
+| MTS-06-R08 | [source L3395](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r08--driver-occupation-repeated-row-contract) |  |  | Pending | CLR-001 |
+| MTS-06-R09 | [source L3415](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r09--driver-detail-condition-family-matrix) |  |  | Pending | CLR-001 |
+| MTS-06-R10 | [source L3488](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r10--mts-06ab-bidirectional-reconciliation) |  |  | Pending | CLR-001, CLR-007 |
+| MTS-06-R11 | [source L3499](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r11--motor-trading-conviction-repeated-row-contract) |  |  | Pending | CLR-001 |
+| MTS-06-R12 | [source L3510](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r12--claim-repeated-row-contract) |  |  | Pending | CLR-001 |
+| MTS-06-R13 | [source L3521](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r13--disability-detail-non-array-contract) |  |  | Pending |  |
+| MTS-06-R14 | [source L3532](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r14--criminal-conviction-repeated-row-contract) |  |  | Pending | CLR-001 |
+| MTS-06-R15 | [source L3543](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r15--ccj-repeated-row-contract-and-ccj-write) |  |  | Pending |  |
+| MTS-06-R16 | [source L3554](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r16--setvalidators-raw-driver-projection) |  |  | Pending | CLR-001 |
+| MTS-06-R17 | [source L3565](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r17--driversflatten-stored-versus-projected-omission) |  |  | Pending | CLR-001 |
+| MTS-06-R18 | [source L3589](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r18--driverssorted-grouping-alphabetization-and-raw-index) |  |  | Pending |  |
+| MTS-06-R19 | [source L3609](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r19--edit-add-delete-owner-block-and-sole-driver-transition) |  |  | Pending | CLR-007 |
+| MTS-06-R20 | [source L3620](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r20--pagination-and-emptydisabled-display-states) |  |  | Pending | CLR-007 |
+| MTS-06-R21 | [source L3631](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r21--validatedrivers-caller-boundary-and-returned-fields) |  |  | Pending |  |
+| MTS-06-R22 | [source L3662](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-r22--complete-mts-06-projection-and-reconciliation-audit) |  |  | Pending | CLR-001, CLR-007 |
+| MTS-06-U01 | [source L2119](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u01--any-driver-instruction) |  |  | Pending |  |
+| MTS-06-U02 | [source L2264](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u02--mts-06a-navigation) |  |  | Pending |  |
+| MTS-06-U03 | [source L2714](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u03--customoccupationserror) |  |  | Pending |  |
+| MTS-06-U04 | [source L3331](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u04--young-and-inexperienced-headings) |  |  | Pending |  |
+| MTS-06-U05 | [source L3406](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u05--mts-06b-navigation) |  |  | Pending |  |
+| MTS-06-U06 | [source L3439](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u06--driver-summary-projection) |  |  | Pending | CLR-001 |
+| MTS-06-U08 | [source L3580](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u08--driver-heading-and-validation-error-panel) |  |  | Pending |  |
+| MTS-06-U09 | [source L3600](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u09--driver-card-compact-and-expanded-content) |  |  | Pending | CLR-001 |
+| MTS-06-U10 | [source L3642](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u10--mts-06c-actions-and-navigation) |  |  | Pending | CLR-007 |
+| MTS-06-U11 | [source L3653](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06-u11--empty-driver-loading-container) |  |  | Pending |  |
+| MTS-06A | [source L2096](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06a--driver-plan) |  |  | Pending |  |
+| MTS-06B | [source L2273](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06b--driver-details) |  |  | Pending |  |
+| MTS-06C | [source L3576](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06c--driver-list) |  |  | Pending |  |
+| MTS-06L | [source L3651](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-06l--empty-loading-state) |  |  | Pending |  |
+| MTS-07 | [source L3693](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-07--trade-plates) |  |  | Pending |  |
+| MTS-07-Q01 | [source L3697](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-07-q01--tradeplatecovered) |  |  | Pending |  |
+| MTS-07-Q02 | [source L3716](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-07-q02--tradeplatemaxnumber) |  |  | Pending |  |
+| MTS-07-Q03 | [source L3735](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-07-q03--tradeplatenumbersplatenumber) |  |  | Pending |  |
+| MTS-07-R01 | [source L3754](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-07-r01--layered-trade-plate-cardinality-and-uniqueness) |  |  | Pending |  |
+| MTS-07-R02 | [source L3765](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-07-r02--mtaexisting-plate-disablement) |  |  | Pending |  |
+| MTS-07-R03 | [source L3776](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-07-r03--submit-vehicle-revalidation-and-back) |  |  | Pending | CLR-001 |
+| MTS-07-U01 | [source L3787](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-07-u01--heading-actions-and-summary-projection) |  |  | Pending |  |
+| MTS-08 | [source L3796](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08--vehicles) |  |  | Pending |  |
+| MTS-08-Q01 | [source L3802](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q01--regnumber) |  |  | Pending |  |
+| MTS-08-Q02 | [source L3821](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q02--make) |  |  | Pending |  |
+| MTS-08-Q03 | [source L3840](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q03--model) |  |  | Pending |  |
+| MTS-08-Q04 | [source L3859](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q04--abicode) |  |  | Pending |  |
+| MTS-08-Q05 | [source L3878](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q05--abigroup) |  |  | Pending | CLR-001 |
+| MTS-08-Q06 | [source L3897](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q06--vehicletypeid) |  |  | Pending | CLR-001 |
+| MTS-08-Q07 | [source L3916](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q07--bodytype) |  |  | Pending |  |
+| MTS-08-Q08 | [source L3935](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q08--gvw) |  |  | Pending | CLR-001 |
+| MTS-08-Q09 | [source L3954](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q09--seats) |  |  | Pending |  |
+| MTS-08-Q10 | [source L3973](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q10--doors) |  |  | Pending |  |
+| MTS-08-Q11 | [source L3992](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q11--fueltype) |  |  | Pending |  |
+| MTS-08-Q12 | [source L4011](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q12--transmission) |  |  | Pending |  |
+| MTS-08-Q13 | [source L4030](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q13--enginesize) |  |  | Pending | CLR-001 |
+| MTS-08-Q14 | [source L4049](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q14--registrationyear) |  |  | Pending |  |
+| MTS-08-Q15 | [source L4068](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q15--registrationdate) |  |  | Pending |  |
+| MTS-08-Q16 | [source L4087](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q16--isimported) |  |  | Pending |  |
+| MTS-08-Q17 | [source L4106](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q17--vehiclevalue) |  |  | Pending | CLR-001, CLR-008 |
+| MTS-08-Q18 | [source L4125](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q18--purchasedate) |  |  | Pending |  |
+| MTS-08-Q19 | [source L4144](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q19--ownertypeid-and-ownerguid) |  |  | Pending |  |
+| MTS-08-Q20 | [source L4163](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q20--keptovernighttypeid) |  |  | Pending | CLR-001 |
+| MTS-08-Q21 | [source L4182](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q21--vehiclekeptaddress) |  |  | Pending |  |
+| MTS-08-Q22 | [source L4201](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q22--ispartleaseagreement) |  |  | Pending |  |
+| MTS-08-Q23 | [source L4220](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q23--leaselengthyears) |  |  | Pending |  |
+| MTS-08-Q24 | [source L4239](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q24--iscustomerloan) |  |  | Pending |  |
+| MTS-08-Q25 | [source L4258](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q25--hasmodification) |  |  | Pending |  |
+| MTS-08-Q26 | [source L4277](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-q26--vehiclemodificationsmodificationid) |  |  | Pending | CLR-001 |
+| MTS-08-R01 | [source L4296](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r01--lookupmanual-population-boundary) |  |  | Pending |  |
+| MTS-08-R02 | [source L4307](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r02--vehicledetailschema-parameter-derivation) |  |  | Pending | CLR-001 |
+| MTS-08-R03 | [source L4318](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r03--generated-vehicle-owner-option-order-and-normalization) |  |  | Pending | CLR-001 |
+| MTS-08-R04 | [source L4329](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r04--generated-overnight-address-option-order-and-invalidation) |  |  | Pending |  |
+| MTS-08-R05 | [source L4340](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r05--modification-row-lifecycle) |  |  | Pending | CLR-001 |
+| MTS-08-R06 | [source L4351](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r06--detail-createeditrevalidation-back-and-summary-sanitizer) |  |  | Pending |  |
+| MTS-08-R07 | [source L4390](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r07--mts-07mts-08a-bidirectional-reconciliation) |  |  | Pending | CLR-001 |
+| MTS-08-R08 | [source L4414](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r08--card-values-formatting-and-disclosure) |  |  | Pending | CLR-001 |
+| MTS-08-R09 | [source L4425](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r09--generated-owner-display-on-cards) |  |  | Pending |  |
+| MTS-08-R10 | [source L4436](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r10--add-edit-and-delete-mutations) |  |  | Pending |  |
+| MTS-08-R11 | [source L4447](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r11--add-capacity-guard-and-exact-timed-error) |  |  | Pending |  |
+| MTS-08-R12 | [source L4458](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r12--pagination-by-vite_coverx_page_size) |  |  | Pending | CLR-007 |
+| MTS-08-R13 | [source L4469](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r13--continue-customer-loan-and-capacity-gates) |  |  | Pending |  |
+| MTS-08-R14 | [source L4480](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r14--step-9-inclusion-branch-and-stale-raw-state) |  |  | Pending | CLR-001 |
+| MTS-08-R15 | [source L4522](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-r15--complete-mts-08-liststate-reconciliation) |  |  | Pending | CLR-007, CLR-001 |
+| MTS-08-U01 | [source L4362](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-u01--mts-08a-heading-lookup-card-custom-errors-and-actions) |  |  | Pending |  |
+| MTS-08-U03 | [source L4405](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-u03--list-heading-empty-instruction-and-card-sequence) |  |  | Pending | CLR-001 |
+| MTS-08-U04 | [source L4491](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-u04--list-actions-and-mts-14-summary-projection) |  |  | Pending | CLR-007 |
+| MTS-08-U05 | [source L4502](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-u05--empty-vehicle-loading-container) |  |  | Pending |  |
+| MTS-08-U06 | [source L4513](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08-u06--no-flag-blank-fallback) |  |  | Pending |  |
+| MTS-08A | [source L3798](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08a--vehicle-details) |  |  | Pending |  |
+| MTS-08B | [source L4401](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08b--vehicle-list) |  |  | Pending |  |
+| MTS-08L | [source L4500](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08l--empty-loading-state) |  |  | Pending |  |
+| MTS-08Ø | [source L4511](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-08ø--blank-fallback) |  |  | Pending |  |
+| MTS-09 | [source L4533](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09--specified-vehicle) |  |  | Pending |  |
+| MTS-09-Q01 | [source L4537](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q01--addspecifiedvehicle) |  |  | Pending |  |
+| MTS-09-Q02 | [source L4556](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q02--regnumber) |  |  | Pending |  |
+| MTS-09-Q03 | [source L4575](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q03--make) |  |  | Pending |  |
+| MTS-09-Q04 | [source L4594](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q04--model) |  |  | Pending |  |
+| MTS-09-Q05 | [source L4613](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q05--abicode) |  |  | Pending |  |
+| MTS-09-Q06 | [source L4632](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q06--abigroup) |  |  | Pending | CLR-001 |
+| MTS-09-Q07 | [source L4651](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q07--vehicletypeid) |  |  | Pending | CLR-001 |
+| MTS-09-Q08 | [source L4670](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q08--bodytype) |  |  | Pending |  |
+| MTS-09-Q09 | [source L4689](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q09--gvw) |  |  | Pending | CLR-001 |
+| MTS-09-Q10 | [source L4708](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q10--seats) |  |  | Pending |  |
+| MTS-09-Q11 | [source L4727](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q11--doors) |  |  | Pending |  |
+| MTS-09-Q12 | [source L4746](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q12--fueltype) |  |  | Pending |  |
+| MTS-09-Q13 | [source L4765](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q13--transmission) |  |  | Pending |  |
+| MTS-09-Q14 | [source L4784](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q14--enginesize) |  |  | Pending | CLR-001 |
+| MTS-09-Q15 | [source L4803](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q15--registrationyear) |  |  | Pending |  |
+| MTS-09-Q16 | [source L4822](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q16--registrationdate) |  |  | Pending |  |
+| MTS-09-Q17 | [source L4841](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q17--isimported) |  |  | Pending |  |
+| MTS-09-Q18 | [source L4860](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q18--vehiclevalue) |  |  | Pending |  |
+| MTS-09-Q19 | [source L4879](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q19--purchasedate) |  |  | Pending |  |
+| MTS-09-Q20 | [source L4898](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q20--ownertypeid-and-ownerguid) |  |  | Pending | CLR-008 |
+| MTS-09-Q21 | [source L4917](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q21--keptovernighttypeid) |  |  | Pending | CLR-001 |
+| MTS-09-Q22 | [source L4936](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q22--vehiclekeptaddress) |  |  | Pending |  |
+| MTS-09-Q23 | [source L4955](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q23--ispartleaseagreement) |  |  | Pending |  |
+| MTS-09-Q24 | [source L4974](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q24--leaselengthyears) |  |  | Pending |  |
+| MTS-09-Q25 | [source L4993](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q25--hasmodification) |  |  | Pending |  |
+| MTS-09-Q26 | [source L5012](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-q26--modificationsmodificationid) |  |  | Pending | CLR-001 |
+| MTS-09-R16 | [source L5031](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-r16--leanfull-resolver-and-one-row-submit-writes) |  |  | Pending |  |
+| MTS-09-R17 | [source L5042](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-r17--specified-generated-owneraddress-differences) |  |  | Pending |  |
+| MTS-09-R18 | [source L5053](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-r18--raw-stale-values-versus-sanitizemotortradevehicles) |  |  | Pending | CLR-001 |
+| MTS-09-R19 | [source L5064](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-r19--back-without-save-and-summary-projection) |  |  | Pending |  |
+| MTS-09-R20 | [source L5124](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-r20--mts-0709-final-bidirectional-reconciliation) |  |  | Pending | CLR-001, CLR-007 |
+| MTS-09-U01 | [source L5075](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-09-u01--heading-lookupmanual-states-and-actions) |  |  | Pending |  |
+| MTS-10 | [source L5155](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10--vehicles-to-be-driven) |  |  | Pending |  |
+| MTS-10-Q01 | [source L5185](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q01--standardcars) |  |  | Pending |  |
+| MTS-10-Q02 | [source L5204](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q02--percentageofstandardcars) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q03 | [source L5223](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q03--sportsperformancevehicles) |  |  | Pending |  |
+| MTS-10-Q04 | [source L5242](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q04--percentageofsportsperformancevehicles) |  |  | Pending |  |
+| MTS-10-Q05 | [source L5261](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q05--commercialvehicles) |  |  | Pending |  |
+| MTS-10-Q06 | [source L5280](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q06--percentageofcommercialvehicles) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q07 | [source L5299](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q07--motorcycles) |  |  | Pending |  |
+| MTS-10-Q08 | [source L5318](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q08--percentageofmotorcycles) |  |  | Pending |  |
+| MTS-10-Q09 | [source L5337](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q09--classicsover25years) |  |  | Pending |  |
+| MTS-10-Q10 | [source L5356](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q10--percentageofclassicsover25years) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q11 | [source L5375](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q11--importedvehicles) |  |  | Pending |  |
+| MTS-10-Q12 | [source L5394](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q12--percentageofimportedvehicles) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q13 | [source L5413](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q13--modifiedvehicles) |  |  | Pending | CLR-009 |
+| MTS-10-Q14 | [source L5432](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q14--percentageofmodifiedvehicles) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q15 | [source L5451](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q15--horseboxesagriculturalplantmachinery) |  |  | Pending |  |
+| MTS-10-Q16 | [source L5470](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q16--percentageofhorseboxesagriculturalplantmachinery) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q17 | [source L5489](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q17--rallytrackkitcarstrikes) |  |  | Pending | CLR-001 |
+| MTS-10-Q18 | [source L5508](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q18--percentageofrallytrackkitcarstrikes) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q19 | [source L5527](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q19--transporterscarryingmorethan2vehicles) |  |  | Pending |  |
+| MTS-10-Q20 | [source L5546](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q20--percentageoftransporterscarryingmorethan2vehicles) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q21 | [source L5565](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q21--maxvehiclescarriedbytransporter) |  |  | Pending | CLR-009 |
+| MTS-10-Q22 | [source L5584](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q22--quadbikes) |  |  | Pending | CLR-001 |
+| MTS-10-Q23 | [source L5603](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q23--percentageofquadbikes) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q24 | [source L5622](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q24--motorhomes) |  |  | Pending |  |
+| MTS-10-Q25 | [source L5641](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q25--percentageofmotorhomes) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q26 | [source L5660](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q26--vehicleswithmorethan7seats) |  |  | Pending |  |
+| MTS-10-Q27 | [source L5679](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q27--percentageofvehicleswithmorethan7seats) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q28 | [source L5698](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q28--taxis) |  |  | Pending |  |
+| MTS-10-Q29 | [source L5717](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q29--percentageoftaxis) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q30 | [source L5736](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q30--vehiclescarryingcorrosivetoxicexplosiveflammablegoods) |  |  | Pending |  |
+| MTS-10-Q31 | [source L5755](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q31--percentageofvehiclescarryingcorrosivetoxicexplosiveflammablegoods) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q32 | [source L5774](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q32--corrosivetoxicexplosiveflammablegoodsdetails) |  |  | Pending | CLR-009 |
+| MTS-10-Q33 | [source L5793](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q33--airsideorhazardouslocations) |  |  | Pending |  |
+| MTS-10-Q34 | [source L5812](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q34--percentageofairsideorhazardouslocations) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-Q35 | [source L5831](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q35--airsideorhazardouslocationsdetails) |  |  | Pending | CLR-009 |
+| MTS-10-Q36 | [source L5850](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q36--tankers) |  |  | Pending |  |
+| MTS-10-Q37 | [source L5869](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-q37--percentageoftankers) |  |  | Pending | CLR-009, CLR-008 |
+| MTS-10-R01 | [source L5890](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r01--defaultobject-raw-defaults-and-exact-null-omission) |  |  | Pending | CLR-001 |
+| MTS-10-R02 | [source L5901](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r02--eight-forced-category-predicates-and-bare-percentage-rendering) |  |  | Pending | CLR-001 |
+| MTS-10-R03 | [source L5912](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r03--sports-and-motorcycle-forbidden-criteria) |  |  | Pending |  |
+| MTS-10-R04 | [source L5923](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r04--strict-total-percentage-custom-test-and-occupations-wording) |  |  | Pending | CLR-008 |
+| MTS-10-R05 | [source L5934](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r05--no-category-custom-test-with-empty-string) |  |  | Pending |  |
+| MTS-10-R06 | [source L5945](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r06--detailcollapser-close-mutation-versus-force-state) |  |  | Pending |  |
+| MTS-10-R07 | [source L5956](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r07--valid-submit-clearing-and-shallow-persistence) |  |  | Pending |  |
+| MTS-10-R08 | [source L5967](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r08--back-persistence-without-submit-normalization) |  |  | Pending | CLR-001 |
+| MTS-10-R09 | [source L5978](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r09--vehiclestobedriven-derivation-and-summary-rendering) |  |  | Pending |  |
+| MTS-10-R10 | [source L6015](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-r10--ui-schema-lifecycle-and-summary-reconciliation) |  |  | Pending | CLR-001 |
+| MTS-10-U01 | [source L5989](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-10-u01--error-channels-and-navigation) |  |  | Pending |  |
+| MTS-11 | [source L6026](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11--extras) |  |  | Pending |  |
+| MTS-11-Q01 | [source L6043](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q01--demonstrationcover) |  |  | Pending |  |
+| MTS-11-Q02 | [source L6062](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q02--demonstrationcovertypeid) |  |  | Pending | CLR-009, CLR-008, CLR-001 |
+| MTS-11-Q03 | [source L6081](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q03--demonstrationcoverformotorcycles) |  |  | Pending | CLR-009 |
+| MTS-11-Q04 | [source L6100](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q04--windscreencover) |  |  | Pending |  |
+| MTS-11-Q05 | [source L6119](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q05--windscreencovertypeid) |  |  | Pending | CLR-009, CLR-001 |
+| MTS-11-Q06 | [source L6138](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q06--isadditionalwindscreencoverrequired) |  |  | Pending | CLR-009 |
+| MTS-11-Q07 | [source L6157](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q07--lossofusecover) |  |  | Pending | CLR-009 |
+| MTS-11-Q08 | [source L6176](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q08--vehiclesatsubcontractorscover) |  |  | Pending | CLR-009 |
+| MTS-11-Q09 | [source L6195](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q09--thirdpartypropertydamagecovertypeid) |  |  | Pending | CLR-009, CLR-001 |
+| MTS-11-Q10 | [source L6216](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q10--annualeuropeancover) |  |  | Pending |  |
+| MTS-11-Q11 | [source L6239](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q11--europeancoverannualextrasregnumber) |  |  | Pending | CLR-009 |
+| MTS-11-Q12 | [source L6258](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q12--europeancoverannualextraseuropeancoverusagetypeid) |  |  | Pending | CLR-009, CLR-008, CLR-001 |
+| MTS-11-Q13 | [source L6299](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q13--temporaryeuropeancover) |  |  | Pending |  |
+| MTS-11-Q14 | [source L6322](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q14--europeancovertemporaryextrasregnumber) |  |  | Pending | CLR-009 |
+| MTS-11-Q15 | [source L6341](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q15--europeancovertemporaryextrasstartdateeuropeantrip) |  |  | Pending | CLR-008 |
+| MTS-11-Q16 | [source L6360](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q16--europeancovertemporaryextrasenddateeuropeantrip) |  |  | Pending | CLR-008 |
+| MTS-11-Q17 | [source L6379](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q17--europeancovertemporaryextraseuropeanareaid) |  |  | Pending | CLR-009, CLR-001 |
+| MTS-11-Q18 | [source L6398](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q18--europeancovertemporaryextraseuropeancoverdriverguids) |  |  | Pending |  |
+| MTS-11-Q19 | [source L6417](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q19--europeancovertemporaryextraseuropeancovertypeid) |  |  | Pending | CLR-009, CLR-008, CLR-001 |
+| MTS-11-Q20 | [source L6436](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-q20--europeancovertemporaryextraseuropeancoverusagetypeid) |  |  | Pending | CLR-009, CLR-001 |
+| MTS-11-R01 | [source L6277](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r01--annual-row-initialization-registration-options-addremove-and-persistence) |  |  | Pending |  |
+| MTS-11-R02 | [source L6288](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r02--annual-registration-uniqueness-and-empty-array-behavior) |  |  | Pending |  |
+| MTS-11-R03 | [source L6455](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r03--temporary-draft-locked-rows-addremove-and-no-local-finalization) |  |  | Pending |  |
+| MTS-11-R04 | [source L6466](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r04--sixtwelve-month-policy-end-and-date-tests) |  |  | Pending | CLR-008 |
+| MTS-11-R05 | [source L6477](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r05--temporary-driver-plan-and-usage-metadata-validation) |  |  | Pending | CLR-001 |
+| MTS-11-R06 | [source L6490](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r06--exact-null-defaults-and-third-party-default) |  |  | Pending |  |
+| MTS-11-R07 | [source L6501](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r07--demonstration-and-windscreen-cover-level-dependencies) |  |  | Pending | CLR-001, CLR-008 |
+| MTS-11-R08 | [source L6512](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r08--valid-submit-omission-and-dependent-clears) |  |  | Pending |  |
+| MTS-11-R09 | [source L6523](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r09--back-persistence-differs-from-valid-submit) |  |  | Pending |  |
+| MTS-11-R10 | [source L6534](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r10--european-collapser-and-temporary-control-lock-predicate) |  |  | Pending |  |
+| MTS-11-R11 | [source L6581](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r11--extras-and-european-summary-projection) |  |  | Pending | CLR-001 |
+| MTS-11-R12 | [source L6613](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-r12--mts-1011-final-bidirectional-reconciliation) |  |  | Pending | CLR-001 |
+| MTS-11-U01 | [source L6545](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-u01--customwindscreenerror) |  |  | Pending |  |
+| MTS-11-U02 | [source L6554](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-u02--customregnumbererror) |  |  | Pending |  |
+| MTS-11-U03 | [source L6563](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-u03--schema-only-europeancover) |  |  | Pending |  |
+| MTS-11-U04 | [source L6572](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-11-u04--repeated-row-non-question-fields) |  |  | Pending |  |
+| MTS-12 | [source L6644](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12--declaration) |  |  | Pending |  |
+| MTS-12-Q01 | [source L6669](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q01--haveanyofdrivershadspecialtermsapplied) |  |  | Pending | CLR-009 |
+| MTS-12-Q02 | [source L6688](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q02--anyofdrivershadspecialtermsapplieddetails) |  |  | Pending | CLR-009 |
+| MTS-12-Q03 | [source L6707](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q03--haveanyofdrivershadclaimrefused) |  |  | Pending | CLR-009 |
+| MTS-12-Q04 | [source L6726](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q04--anyofdrivershadclaimrefuseddetails) |  |  | Pending | CLR-009 |
+| MTS-12-Q05 | [source L6745](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q05--haveanyofnotlisteddrivershaveccjs) |  |  | Pending | CLR-009 |
+| MTS-12-Q06 | [source L6764](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q06--anyofnotlisteddrivershaveccjsdetails) |  |  | Pending | CLR-009 |
+| MTS-12-Q07 | [source L6783](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q07--haveanyofdriversorpartnerdirectorbankrupted) |  |  | Pending | CLR-009 |
+| MTS-12-Q08 | [source L6802](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q08--anyofdriversorpartnerdirectorbankrupteddetails) |  |  | Pending | CLR-009 |
+| MTS-12-Q09 | [source L6821](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q09--haveanyofdrivershaddisabilitiesnotreported) |  |  | Pending | CLR-009 |
+| MTS-12-Q10 | [source L6840](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q10--anyofdrivershaddisabilitiesnotreporteddetails) |  |  | Pending | CLR-009 |
+| MTS-12-Q11 | [source L6859](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q11--haveanyofpartnerdirectorhadcriminalconviction) |  |  | Pending | CLR-009 |
+| MTS-12-Q12 | [source L6878](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q12--anyofpartnerdirectorhadcriminalconvictiondetails) |  |  | Pending | CLR-009 |
+| MTS-12-Q13 | [source L6897](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q13--hasanyonebeendirectororpartnerotherthanmotortrade) |  |  | Pending | CLR-009 |
+| MTS-12-Q14 | [source L6916](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q14--anyonebeendirectororpartnerotherthanmotortradedetails) |  |  | Pending | CLR-009 |
+| MTS-12-Q15 | [source L6935](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q15--hasanyonebeenvehiclerentalhireleasingcompany) |  |  | Pending | CLR-009 |
+| MTS-12-Q16 | [source L6954](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q16--anyonebeenvehiclerentalhireleasingcompanydetails) |  |  | Pending | CLR-009 |
+| MTS-12-Q17 | [source L6973](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q17--haveanyonebeendisqualifiedforactingasdirector) |  |  | Pending | CLR-009 |
+| MTS-12-Q18 | [source L6992](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q18--anyonebeendisqualifiedforactingasdirectordetails) |  |  | Pending | CLR-009 |
+| MTS-12-Q19 | [source L7011](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q19--haveanyofdirectorgoneintoliquidation) |  |  | Pending | CLR-009 |
+| MTS-12-Q20 | [source L7030](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-q20--anyofdirectorgoneintoliquidationdetails) |  |  | Pending | CLR-009 |
+| MTS-12-R01 | [source L7053](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r01--q01-controls-q02-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R02 | [source L7064](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r02--q01-false-clears-q02) |  |  | Pending |  |
+| MTS-12-R03 | [source L7075](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r03--q03-controls-q04-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R04 | [source L7086](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r04--q03-false-clears-q04) |  |  | Pending |  |
+| MTS-12-R05 | [source L7097](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r05--q05-controls-q06-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R06 | [source L7108](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r06--q05-false-clears-q06) |  |  | Pending |  |
+| MTS-12-R07 | [source L7119](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r07--q07-controls-q08-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R08 | [source L7130](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r08--q07-false-clears-q08) |  |  | Pending |  |
+| MTS-12-R09 | [source L7141](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r09--q09-controls-q10-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R10 | [source L7152](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r10--q09-false-clears-q10) |  |  | Pending |  |
+| MTS-12-R11 | [source L7163](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r11--q11-controls-q12-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R12 | [source L7174](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r12--q11-false-clears-q12) |  |  | Pending |  |
+| MTS-12-R13 | [source L7185](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r13--q13-controls-q14-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R14 | [source L7196](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r14--q13-false-clears-q14) |  |  | Pending |  |
+| MTS-12-R15 | [source L7207](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r15--q15-controls-q16-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R16 | [source L7218](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r16--q15-false-clears-q16) |  |  | Pending |  |
+| MTS-12-R17 | [source L7229](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r17--q17-controls-q18-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R18 | [source L7240](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r18--q17-false-clears-q18) |  |  | Pending |  |
+| MTS-12-R19 | [source L7251](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r19--q19-controls-q20-visibility-and-requiredness) |  |  | Pending |  |
+| MTS-12-R20 | [source L7262](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r20--q19-false-clears-q20) |  |  | Pending |  |
+| MTS-12-R21 | [source L7275](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r21--defaults-valid-submit-and-back-persistence) |  |  | Pending |  |
+| MTS-12-R22 | [source L7286](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-r22--declarationarray-one-to-one-summary-projection) |  |  | Pending |  |
+| MTS-12-U01 | [source L7297](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-12-u01--heading-layout-error-channels-and-navigation) |  |  | Pending |  |
+| MTS-13 | [source L7325](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13--additional-information) |  |  | Pending | CLR-001 |
+| MTS-13-Q01 | [source L7337](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-q01--essentialriskinformation) |  |  | Pending |  |
+| MTS-13-Q02 | [source L7356](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-q02--carjockeyradiusid) |  |  | Pending | CLR-009, CLR-001 |
+| MTS-13-Q03 | [source L7375](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-q03--restrictshunterspolicyradius) |  |  | Pending |  |
+| MTS-13-R01 | [source L7405](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-r01--derive-car-jockey-visibility-and-schema-requiredness) |  |  | Pending | CLR-001 |
+| MTS-13-R02 | [source L7416](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-r02--derive-shunter-visibility-without-requiredness) |  |  | Pending | CLR-001 |
+| MTS-13-R03 | [source L7427](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-r03--form-defaults-and-resolver-boundary) |  |  | Pending |  |
+| MTS-13-R04 | [source L7438](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-r04--valid-submit-nulling-precedes-persistence-and-next) |  |  | Pending |  |
+| MTS-13-R05 | [source L7449](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-r05--back-nulling-precedes-persistence-and-previous) |  |  | Pending |  |
+| MTS-13-R06 | [source L7460](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-r06--additional-information-summary-projection) |  |  | Pending |  |
+| MTS-13-U01 | [source L7482](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-13-u01--heading-layout-error-channels-and-navigation) |  |  | Pending |  |
+| MTS-14 | [source L7512](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14--summary-and-terminal-gate) |  |  | Pending |  |
+| MTS-14-Q01 | [source L7516](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-q01--proposerpolicystarttime) |  |  | Pending |  |
+| MTS-14-R01 | [source L7535](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-r01--mtstepsummaryschema-start-datetime-gate) |  |  | Pending |  |
+| MTS-14-R02 | [source L7546](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-r02--pre-invocation-utc-preserving-iso-and-local-argument-preparation) |  |  | Pending |  |
+| MTS-14-R03 | [source L7559](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-r03--back-persists-the-raw-time-without-validation) |  |  | Pending |  |
+| MTS-14-R04 | [source L7590](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-r04--summary-lookup-boolean-date-array-and-empty-value-conventions) |  |  | Pending | CLR-001 |
+| MTS-14-R05 | [source L7601](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-r05--vehicle-sanitizer-changes-the-two-vehicle-disclosures) |  |  | Pending | CLR-001 |
+| MTS-14-R06 | [source L7612](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-r06--formatter-driver-omission-and-sorting-boundaries) |  |  | Pending |  |
+| MTS-14-U01 | [source L7623](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-u01--summarycollapser-disclosure-and-edit-primitive) |  |  | Pending |  |
+| MTS-14-U02 | [source L7632](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-u02--error-list-panel) |  |  | Pending |  |
+| MTS-14-U03 | [source L7641](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mts-14-u03--terminal-actions-and-complete-mts-14-reconciliation) |  |  | Pending |  |
+| OPT-MT-01 | [source L299](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-02 | [source L300](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-03 | [source L301](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-04 | [source L302](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-05 | [source L303](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-06 | [source L304](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-07 | [source L305](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-08 | [source L306](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-09 | [source L307](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-10 | [source L308](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-11 | [source L309](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-12 | [source L310](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-13 | [source L311](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-14 | [source L312](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-15 | [source L313](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-16 | [source L314](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-17 | [source L315](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-18 | [source L316](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-19 | [source L317](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-20 | [source L318](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-21 | [source L319](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-22 | [source L320](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-23 | [source L321](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-24 | [source L322](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-25 | [source L323](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-26 | [source L324](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-27 | [source L325](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-28 | [source L326](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-29 | [source L327](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-30 | [source L328](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-31 | [source L329](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-32 | [source L330](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-33 | [source L331](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-34 | [source L332](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-35 | [source L333](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-36 | [source L334](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-37 | [source L335](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-38 | [source L336](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-39 | [source L337](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-40 | [source L338](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-41 | [source L339](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-42 | [source L340](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-43 | [source L341](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-44 | [source L342](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-45 | [source L343](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-46 | [source L344](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-47 | [source L345](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-48 | [source L346](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-49 | [source L347](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#mounted-collection-records) |  |  | Pending | CLR-001 |
+| OPT-MT-50 | [source L357](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-51 | [source L358](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-52 | [source L359](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-53 | [source L360](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-54 | [source L361](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-55 | [source L362](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-56 | [source L363](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-57 | [source L364](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-58 | [source L365](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-59 | [source L366](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-60 | [source L367](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-61 | [source L368](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-62 | [source L369](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-63 | [source L370](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-64 | [source L371](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending |  |
+| OPT-MT-65 | [source L372](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending |  |
+| OPT-MT-66 | [source L373](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-67 | [source L374](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-68 | [source L375](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-69 | [source L376](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-70 | [source L377](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-71 | [source L378](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| OPT-MT-72 | [source L379](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#consumed-metadata-records) |  |  | Pending | CLR-001 |
+| ROOT-001 | [source L67](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#canonical-root-facts) | src/components/home.tsx | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | Implemented / tested | Source composition, ordering, links and no form-state coupling are verified. |
+| ROOT-002 | [source L68](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#canonical-root-facts) | src/components/home.tsx, src/app/globals.scss | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | In progress | Known layout/alt/cap verified; missing actual logo remains IMP-CLR-001. |
+| ROOT-003 | [source L69](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#canonical-root-facts) | src/components/home.tsx | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | Implemented / tested | Source composition, ordering, links and no form-state coupling are verified. |
+| ROOT-004 | [source L70](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#canonical-root-facts) | src/components/home.tsx | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | Implemented / tested | Source composition, ordering, links and no form-state coupling are verified. |
+| ROOT-005 | [source L71](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#canonical-root-facts) | src/components/home.tsx | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | Implemented / tested | Source composition, ordering, links and no form-state coupling are verified. |
+| ROOT-006 | [source L72](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#canonical-root-facts) | src/components/home.tsx | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | Implemented / tested | Source composition, ordering, links and no form-state coupling are verified. |
+| ROOT-007 | [source L73](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#canonical-root-facts) | src/components/home.tsx | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | Implemented / tested | Source composition, ordering, links and no form-state coupling are verified. |
+| ROOT-008 | [source L83](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#root-differences-matrix) |  |  | Pending | CLR-003 |
+| ROOT-009 | [source L84](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#root-differences-matrix) |  |  | Pending | CLR-003 |
+| ROOT-010 | [source L85](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#root-differences-matrix) |  |  | Pending | CLR-003 |
+| ROOT-011 | [source L86](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#root-differences-matrix) |  |  | Pending | CLR-003 |
+| ROOT-012 | [source L87](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#root-differences-matrix) |  |  | Pending | CLR-003 |
+| ROOT-013 | [source L88](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#root-differences-matrix) | src/components/home.tsx | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | Implemented / tested | Source composition, ordering, links and no form-state coupling are verified. |
+| ROOT-014 | [source L89](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#root-differences-matrix) | src/components/home.tsx | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | Implemented / tested | Source composition, ordering, links and no form-state coupling are verified. |
+| ROOT-015 | [source L90](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#root-differences-matrix) | src/components/home.tsx | tests/components/home.test.tsx, tests/e2e/root-and-routes.spec.ts | Implemented / tested | Source composition, ordering, links and no form-state coupling are verified. |
+| RT-ALIAS-INDEX | [source L175](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-ALIAS-STEP | [source L176](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-BO-BUY-GUID | [source L162](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending | CLR-002, CLR-005 |
+| RT-BO-BUY-INDEX | [source L161](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending | CLR-002 |
+| RT-BO-BUY-STEP | [source L163](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending | CLR-002 |
+| RT-BO-CLIENT-CLONE | [source L169](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending | CLR-005 |
+| RT-BO-CLIENT-INDEX | [source L167](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-BO-CLIENT-NEW | [source L168](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending | CLR-005 |
+| RT-BO-CLIENT-STEP | [source L170](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-BO-NEW-BROKER | [source L165](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-BO-NEW-INDEX | [source L164](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-BO-NEW-STEP | [source L166](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-BROKER-GUID | [source L159](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending | CLR-005 |
+| RT-BROKER-INDEX | [source L158](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-BROKER-STEP | [source L160](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-CLEAN-BO-BUY | [source L172](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-CLEAN-BO-CLIENT | [source L174](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-CLEAN-BO-NEW | [source L173](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-CLEAN-BROKER | [source L171](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-DIRECT-INDEX | [source L156](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-DIRECT-STEP | [source L157](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| RT-REFERRAL | [source L177](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#route-equivalence-groups-and-concrete-entries) |  |  | Pending |  |
+| SHR-MT-R01 | [source L383](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#shr-mt-r01--motor-trade-option-fetch-raw-cache-hydration-and-loading) | src/domain/option-cache.ts, src/runtime/client-application.tsx | tests/domain/entry.test.ts | In progress | CLR-001; Confirmed subset implemented; full owner reconciliation remains pending. |
+| SHR-MT-R02 | [source L393](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#shr-mt-r02--option-producer-stop-boundary) |  |  | Pending | CLR-001 |
+| SHR-MT-R03 | [source L400](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#shr-mt-r03--mandatory-value-lifecycle-vocabulary) | src/domain/session.ts, src/domain/control-values.ts | tests/domain/navigation.test.ts, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| SHR-MT-R04 | [source L407](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#shr-mt-r04--primitive-and-empty-value-fidelity) | src/domain/session.ts, src/domain/control-values.ts | tests/domain/navigation.test.ts, tests/domain/control-values.test.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| SHR-MT-R05 | [source L414](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#shr-mt-r05--exact-mounted-copy-authority) |  |  | Pending |  |
+| SHR-MT-R06 | [source L421](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#shr-mt-r06--responsive-grid-and-breakpoints) | src/app/globals.scss, src/components/navigator.tsx, src/components/controls.tsx | tests/components/home.test.tsx, tests/components/controls.test.tsx, tests/e2e/root-and-routes.spec.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| SHR-MT-R07 | [source L428](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#shr-mt-r07--source-specific-layout-exceptions) | src/app/globals.scss, src/components/navigator.tsx, src/components/controls.tsx | tests/components/home.test.tsx, tests/components/controls.test.tsx, tests/e2e/root-and-routes.spec.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| SHR-MT-R08 | [source L435](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#shr-mt-r08--accessibility-evidence-without-invention) | src/app/globals.scss, src/components/navigator.tsx, src/components/controls.tsx | tests/components/home.test.tsx, tests/components/controls.test.tsx, tests/e2e/root-and-routes.spec.ts | In progress | Confirmed subset implemented; full owner reconciliation remains pending. |
+| SHR-MT-R09 | [source L442](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#shr-mt-r09--environment-controlled-driver-and-pagination-limits) | src/domain/options.ts | tests/domain/navigation.test.ts | In progress | CLR-007; Confirmed subset implemented; full owner reconciliation remains pending. |
+| TERM-001 | [source L98](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#terminal-pre-quotation-boundary) |  |  | Pending |  |
+| TERM-002 | [source L99](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#terminal-pre-quotation-boundary) |  |  | Pending |  |
+| TERM-003 | [source L100](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#terminal-pre-quotation-boundary) |  |  | Pending |  |
+| TERM-004 | [source L101](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#terminal-pre-quotation-boundary) |  |  | Pending |  |
+| TERM-005 | [source L102](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#terminal-pre-quotation-boundary) |  |  | Pending |  |
+| TERM-006 | [source L103](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#terminal-pre-quotation-boundary) |  |  | Pending |  |
+| TERM-007 | [source L104](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#terminal-pre-quotation-boundary) |  |  | Pending |  |
+| TERM-008 | [source L105](../../docs/motor-trade-funnel/01-scope-and-source-inventory.md#terminal-pre-quotation-boundary) |  |  | Pending |  |
