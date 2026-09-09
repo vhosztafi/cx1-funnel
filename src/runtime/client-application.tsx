@@ -150,9 +150,11 @@ export function ApplicationRoutes() {
         ].map((prefix) => (
           <Route
             key={`${prefix}-${family}`}
-            path={`${prefix}/${family}/*`}
+            path={`${prefix}/${family}`}
             element={<CleanSurface />}
-          />
+          >
+            <Route path="*" element={<CleanSurface />} />
+          </Route>
         )),
         <Route key={`${family}-direct`} path={`/${family}`} element={<Container />}>
           <Route index element={<Controller />} />
