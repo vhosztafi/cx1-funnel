@@ -4,6 +4,8 @@ import { useState, type ReactNode, type Ref } from 'react';
 import Select, { type SelectInstance } from 'react-select';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Popover from 'react-bootstrap/Popover';
 import { IMaskInput } from 'react-imask';
 import {
   emitCurrency,
@@ -516,6 +518,7 @@ export function FormHourBox({
 }
 export function DetailCollapser({
   text,
+  info,
   initialAdded,
   added,
   setValue,
@@ -524,6 +527,7 @@ export function DetailCollapser({
   children,
 }: {
   text: ReactNode;
+  info?: string;
   initialAdded?: boolean;
   added?: string;
   setValue?: (name: string, value: boolean) => void;
@@ -533,9 +537,30 @@ export function DetailCollapser({
 }) {
   const [open, setOpen] = useState(initialAdded);
   return (
-    <div className="border rounded p-4 mt-3">
+    <div className={`border rounded p-4 mt-3${disabled ? ' opacity-50' : ''}`}>
       <div className="d-flex align-items-center justify-content-between">
         <div>{text}</div>
+        {info && (
+          <OverlayTrigger
+            trigger="focus"
+            overlay={
+              <Popover>
+                <Popover.Body>
+                  <div dangerouslySetInnerHTML={{ __html: info }} />
+                </Popover.Body>
+              </Popover>
+            }
+          >
+            <Button type="button">
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M11 17h2v-6h-2v6Zm1-15a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 7h-2V7h2v2Z"
+                />
+              </svg>
+            </Button>
+          </OverlayTrigger>
+        )}
         <Button
           type="button"
           disabled={disabled}
@@ -547,7 +572,12 @@ export function DetailCollapser({
             setOpen(!open);
           }}
         >
-          {open ? '−' : '+'}
+          <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d={open ? 'M19 13H5v-2h14v2Z' : 'M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2Z'}
+            />
+          </svg>
         </Button>
       </div>
       <Collapse in={!!open}>

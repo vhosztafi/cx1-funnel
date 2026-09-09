@@ -220,6 +220,19 @@ describe('mounted shared control contracts', () => {
     expect(container.firstElementChild?.className).not.toContain('mt-');
     expect(container.firstElementChild?.className).toContain('mb-2 synthetic');
   });
+  it('CTL-MT-16 renders unnamed icons and opens supplied HTML info on focus', async () => {
+    const { container } = render(
+      <DetailCollapser text="Synthetic card" info="<strong>Synthetic HTML</strong>" disabled>
+        Body
+      </DetailCollapser>,
+    );
+    const buttons = screen.getAllByRole('button');
+    expect(buttons.every((button) => button.textContent === '')).toBe(true);
+    expect(buttons[1]).toBeDisabled();
+    expect(container.firstElementChild).toHaveClass('opacity-50');
+    fireEvent.focus(buttons[0]);
+    expect(await screen.findByText('Synthetic HTML')).toHaveProperty('tagName', 'STRONG');
+  });
   it('controlled parent retains false after radio selection', () => {
     function Wrapper() {
       const [value, setValue] = useState<unknown>();
