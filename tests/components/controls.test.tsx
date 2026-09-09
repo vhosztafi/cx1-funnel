@@ -41,6 +41,9 @@ describe('mounted shared control contracts', () => {
     expect(no).toHaveAttribute('value', '1');
     fireEvent.click(no);
     expect(calls).toEqual([yesNo[1], 'negative', false]);
+    calls.length = 0;
+    fireEvent.click(no);
+    expect(calls).toEqual([yesNo[1], 'negative', false]);
     expect(container.querySelector('label[for="opt_syntheticField_false"]')).not.toBeNull();
   });
   it('CTL-MT-04 strict selection, disabled state and absent-options animation dimensions', () => {
@@ -211,6 +214,11 @@ describe('mounted shared control contracts', () => {
     rerender(<FormError message="Exact supplied text" />);
     expect(screen.getByText('Exact supplied text')).not.toHaveAttribute('role');
     expect(container.querySelector('[aria-live]')).toBeNull();
+    expect(container.querySelector('svg')).not.toBeNull();
+    expect(container.firstElementChild?.className).toContain('mt-undefined');
+    rerender(<FormError message="Exact supplied text" mt={null} mb={2} className="synthetic" />);
+    expect(container.firstElementChild?.className).not.toContain('mt-');
+    expect(container.firstElementChild?.className).toContain('mb-2 synthetic');
   });
   it('controlled parent retains false after radio selection', () => {
     function Wrapper() {

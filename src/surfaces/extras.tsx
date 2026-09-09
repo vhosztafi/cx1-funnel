@@ -173,7 +173,6 @@ export function ExtrasSurface() {
                 field={field}
                 label={label(10)}
                 options={yesNo}
-                repeatSelection
                 error={fieldState.error?.message}
                 onPositive={() => annual.append(newAnnualTrip())}
                 onNegative={() => annual.remove()}
@@ -248,7 +247,6 @@ export function ExtrasSurface() {
                 field={field}
                 label={label(13)}
                 options={yesNo}
-                repeatSelection
                 disabled={locked}
                 error={fieldState.error?.message}
                 onPositive={() => temporary.append(newTemporaryTrip(raw.driverPlanId))}
@@ -337,10 +335,7 @@ export function ExtrasSurface() {
                     {[14, 15, 16, 17].map(field)}
                     {raw.driverPlanId === 3 ? (
                       <p>
-                        Any driver between the ages of{' '}
-                        {strictOption(journey.options.aadDriverMinAge, raw.aadDriverMinAgeId)?.text}{' '}
-                        and{' '}
-                        {strictOption(journey.options.aadDriverMaxAge, raw.aadDriverMaxAgeId)?.text}
+                        {`Any driver between the ages of ${strictOption(journey.options.aadDriverMinAge, raw.aadDriverMinAgeId)?.text} and ${strictOption(journey.options.aadDriverMaxAge, raw.aadDriverMaxAgeId)?.text}`}
                       </p>
                     ) : disabled ? (
                       <div className="opacity-50">

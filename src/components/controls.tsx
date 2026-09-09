@@ -32,9 +32,31 @@ export interface ControlProps {
   id?: string;
   placeholder?: string;
 }
-export function FormError({ message }: { message?: string }) {
+export function FormError({
+  message,
+  mt,
+  mb,
+  className,
+}: {
+  message?: string;
+  mt?: number | null;
+  mb?: number | null;
+  className?: string;
+}) {
   // CTL-MT-21: no role, aria-live or empty-message placeholder.
-  return message ? <div className="field-error">{message}</div> : null;
+  return message ? (
+    <div
+      className={`field-error ${mt !== null ? `mt-${mt}` : ''} ${mb != null ? `mb-${mb}` : ''} ${className}`}
+    >
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" style={{ flexShrink: 0 }}>
+        <path
+          fill="currentColor"
+          d="M1.9 18.5 10.3 4a2 2 0 0 1 3.4 0l8.4 14.5a2 2 0 0 1-1.7 3H3.6a2 2 0 0 1-1.7-3ZM11 9v5h2V9h-2Zm0 7v2h2v-2h-2Z"
+        />
+      </svg>
+      {message}
+    </div>
+  ) : null;
 }
 export function Loader({ size = 150, animation }: { size?: number; animation?: ReactNode }) {
   return (
@@ -98,7 +120,7 @@ export function LogicMultiSelect({
         inputId={id}
         options={options}
         getOptionLabel={(o) => o.text}
-        getOptionValue={optionValue}
+        getOptionValue={(option) => option.value?.toString() || ''}
         value={options?.find((o) => o.value === field.value) ?? null}
         placeholder="Select"
         isDisabled={disabled}
@@ -131,7 +153,7 @@ export function MultiSelect({
         options={options}
         getOptionLabel={(o) => o.text}
         getOptionValue={optionValue}
-        value={value}
+        value={value?.length ? value : undefined}
         placeholder="Start typing"
         isDisabled={disabled}
         onBlur={field.onBlur}
@@ -152,7 +174,6 @@ export function RadioList({
   onPositive,
   onNegative,
   animation,
-  repeatSelection,
 }: {
   options?: readonly Choice[];
   info?: ReactNode;
@@ -160,7 +181,6 @@ export function RadioList({
   onPositive?: () => void;
   onNegative?: () => void;
   animation?: ReactNode;
-  repeatSelection?: boolean;
 } & ControlProps) {
   return (
     <div className="mb-4">
@@ -180,15 +200,8 @@ export function RadioList({
                   checked={o.value === field.value}
                   disabled={disabled}
                   onBlur={field.onBlur}
+                  onChange={() => {}}
                   onClick={() => {
-                    if (repeatSelection && o.value === field.value) {
-                      onChoice?.(o);
-                      if (o.value === true) onPositive?.();
-                      if (o.value === false) onNegative?.();
-                      field.onChange(o.value);
-                    }
-                  }}
-                  onChange={() => {
                     onChoice?.(o);
                     if (o.value === true) onPositive?.();
                     if (o.value === false) onNegative?.();
@@ -220,9 +233,7 @@ export function CheckboxArray({
   options,
   marketing = false,
 }: { options: readonly Choice[]; marketing?: boolean } & ControlProps) {
-  const [values, setValues] = useState<unknown[]>(() =>
-    Array.isArray(field.value) ? field.value : [],
-  );
+  const [values, setValues] = useState<unknown[]>(() => (field.value || []) as unknown[]);
   return (
     <div className="mb-4">
       {label && <label>{label}</label>}
