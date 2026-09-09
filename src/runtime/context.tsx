@@ -15,6 +15,7 @@ import type { DriverErrorInputs } from '@/domain/driver-rules';
 import type { TerminalBranch, prepareTerminal } from '@/domain/terminal';
 import type { AddressPorts } from '@/components/address-control';
 import type { VehicleRegistrationProps } from '@/components/vehicle-registration';
+import type { LookupCardFormatter } from '@/domain/vehicle-card';
 export interface HostInputs {
   mode?: string;
   clean?: CleanInputs;
@@ -48,6 +49,7 @@ export interface HostInputs {
   existingTradePlates?: unknown;
   consumeVehicleLookup?: VehicleRegistrationProps['consume'];
   vehicleLookupEligibility?: VehicleRegistrationProps['eligibility'];
+  lookupCardFormatter?: LookupCardFormatter;
   terminalBranch?: TerminalBranch;
   terminalPort?: { prepared?: ReturnType<typeof prepareTerminal> };
 }

@@ -1,4 +1,5 @@
 'use client';
+import { lookupCardValue, selectedVehicleCategory } from '@/domain/vehicle-card';
 import { currencyFormat } from '@/domain/currency';
 import { useState } from 'react';
 import {
@@ -173,7 +174,7 @@ export function VehicleDetails({ specified = false }: { specified?: boolean }) {
                 callback={(value) =>
                   methods.setValue(
                     'chosenVehicleType',
-                    strictOption(journey.options.vehicleType, value)?.category,
+                    selectedVehicleCategory(journey.options, value),
                   )
                 }
               />
@@ -287,8 +288,7 @@ export function VehicleDetails({ specified = false }: { specified?: boolean }) {
                       setShowLookup(false);
                       methods.setValue(
                         'chosenVehicleType',
-                        strictOption(journey.options.vehicleType, result.values.vehicleTypeID)
-                          ?.category,
+                        selectedVehicleCategory(journey.options, result.values.vehicleTypeID),
                       );
                     }}
                     failed={() => setRetrieved(null)}
@@ -302,7 +302,13 @@ export function VehicleDetails({ specified = false }: { specified?: boolean }) {
                 <div>{retrieved.regNumber}</div>
                 {definition.questions.slice(1, 16).map((q) => (
                   <div key={q.path}>
-                    {q.label} {String(retrieved[q.path] ?? '')}
+                    {q.label}{' '}
+                    {lookupCardValue(
+                      q.path,
+                      retrieved,
+                      journey.options,
+                      journey.host.lookupCardFormatter,
+                    )}
                   </div>
                 ))}
                 <button type="button" className="btn btn-link" onClick={enterManual}>
