@@ -2282,14 +2282,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001, CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001, CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q01": {
     "implementation": [
@@ -2297,14 +2303,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q02": {
     "implementation": [
@@ -2312,14 +2324,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q03": {
     "implementation": [
@@ -2327,14 +2345,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q04": {
     "implementation": [
@@ -2342,14 +2366,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q05": {
     "implementation": [
@@ -2357,14 +2387,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q06": {
     "implementation": [
@@ -2372,14 +2408,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q07": {
     "implementation": [
@@ -2387,14 +2429,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q08": {
     "implementation": [
@@ -2402,14 +2450,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q09": {
     "implementation": [
@@ -2417,14 +2471,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q10": {
     "implementation": [
@@ -2432,14 +2492,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q11": {
     "implementation": [
@@ -2447,14 +2513,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q12": {
     "implementation": [
@@ -2462,14 +2534,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q13": {
     "implementation": [
@@ -2477,14 +2555,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-008; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-008; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q14": {
     "implementation": [
@@ -2492,14 +2576,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q15": {
     "implementation": [
@@ -2507,14 +2597,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q16": {
     "implementation": [
@@ -2522,14 +2618,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q17": {
     "implementation": [
@@ -2537,14 +2639,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q18": {
     "implementation": [
@@ -2552,14 +2660,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q19": {
     "implementation": [
@@ -2567,14 +2681,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q20": {
     "implementation": [
@@ -2582,14 +2702,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q21": {
     "implementation": [
@@ -2597,14 +2723,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q22": {
     "implementation": [
@@ -2612,14 +2744,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q23": {
     "implementation": [
@@ -2627,14 +2765,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q24": {
     "implementation": [
@@ -2642,14 +2786,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q25": {
     "implementation": [
@@ -2657,14 +2807,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q26": {
     "implementation": [
@@ -2672,14 +2828,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q27": {
     "implementation": [
@@ -2687,14 +2849,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001, CLR-008; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001, CLR-008; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q28": {
     "implementation": [
@@ -2702,14 +2870,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q29": {
     "implementation": [
@@ -2717,14 +2891,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q30": {
     "implementation": [
@@ -2732,14 +2912,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q31": {
     "implementation": [
@@ -2747,14 +2933,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q32": {
     "implementation": [
@@ -2762,14 +2954,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q33": {
     "implementation": [
@@ -2777,14 +2975,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q34": {
     "implementation": [
@@ -2792,14 +2996,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q35": {
     "implementation": [
@@ -2807,14 +3017,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q36": {
     "implementation": [
@@ -2822,14 +3038,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q37": {
     "implementation": [
@@ -2837,14 +3059,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q38": {
     "implementation": [
@@ -2852,14 +3080,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q39": {
     "implementation": [
@@ -2867,14 +3101,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q40": {
     "implementation": [
@@ -2882,14 +3122,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q41": {
     "implementation": [
@@ -2897,14 +3143,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q42": {
     "implementation": [
@@ -2912,14 +3164,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q43": {
     "implementation": [
@@ -2927,14 +3185,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q44": {
     "implementation": [
@@ -2942,14 +3206,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q45": {
     "implementation": [
@@ -2957,14 +3227,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q46": {
     "implementation": [
@@ -2972,14 +3248,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q47": {
     "implementation": [
@@ -2987,14 +3269,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q48": {
     "implementation": [
@@ -3002,14 +3290,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q49": {
     "implementation": [
@@ -3017,14 +3311,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q50": {
     "implementation": [
@@ -3032,14 +3332,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q51": {
     "implementation": [
@@ -3047,14 +3353,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q52": {
     "implementation": [
@@ -3062,14 +3374,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q53": {
     "implementation": [
@@ -3077,14 +3395,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q54": {
     "implementation": [
@@ -3092,14 +3416,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q55": {
     "implementation": [
@@ -3107,14 +3437,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q56": {
     "implementation": [
@@ -3122,14 +3458,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q57": {
     "implementation": [
@@ -3137,14 +3479,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q58": {
     "implementation": [
@@ -3152,14 +3500,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q59": {
     "implementation": [
@@ -3167,14 +3521,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q60": {
     "implementation": [
@@ -3182,14 +3542,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q61": {
     "implementation": [
@@ -3197,14 +3563,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-Q62": {
     "implementation": [
@@ -3212,14 +3584,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R01": {
     "implementation": [
@@ -3227,14 +3605,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R02": {
     "implementation": [
@@ -3242,14 +3626,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R03": {
     "implementation": [
@@ -3257,14 +3647,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R04": {
     "implementation": [
@@ -3272,14 +3668,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R05": {
     "implementation": [
@@ -3287,14 +3689,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R06": {
     "implementation": [
@@ -3302,14 +3710,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R07": {
     "implementation": [
@@ -3317,14 +3731,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R08": {
     "implementation": [
@@ -3332,14 +3752,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R09": {
     "implementation": [
@@ -3347,14 +3773,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R10": {
     "implementation": [
@@ -3362,14 +3794,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001, CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001, CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R11": {
     "implementation": [
@@ -3377,14 +3815,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R12": {
     "implementation": [
@@ -3392,14 +3836,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R13": {
     "implementation": [
@@ -3407,14 +3857,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R14": {
     "implementation": [
@@ -3422,14 +3878,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R15": {
     "implementation": [
@@ -3437,14 +3899,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R16": {
     "implementation": [
@@ -3452,14 +3920,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R17": {
     "implementation": [
@@ -3467,14 +3941,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R18": {
     "implementation": [
@@ -3482,14 +3962,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R19": {
     "implementation": [
@@ -3497,14 +3983,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R20": {
     "implementation": [
@@ -3512,14 +4004,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R21": {
     "implementation": [
@@ -3527,14 +4025,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-R22": {
     "implementation": [
@@ -3542,74 +4046,160 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001, CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "CLR-001, CLR-007; Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-007"
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-007; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06-U11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
+    ],
+    "tests": [
+      "tests/e2e/drivers.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06A": {
     "implementation": [
@@ -3617,14 +4207,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06B": {
     "implementation": [
@@ -3632,14 +4228,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06C": {
     "implementation": [
@@ -3647,14 +4249,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-06L": {
     "implementation": [
@@ -3662,14 +4270,20 @@
       "src/domain/driver-rules.ts",
       "src/domain/driver-schema.ts",
       "src/domain/driver-histories.ts",
-      "src/contracts/driver/questions.json"
+      "src/contracts/driver/questions.json",
+      "src/surfaces/drivers.tsx",
+      "src/surfaces/driver-plan.tsx",
+      "src/surfaces/driver-details.tsx",
+      "src/surfaces/driver-list.tsx",
+      "src/runtime/driver-ports.ts"
     ],
     "tests": [
       "tests/domain/driver-workflow.test.ts",
-      "tests/domain/driver-schema.test.ts"
+      "tests/domain/driver-schema.test.ts",
+      "tests/e2e/drivers.spec.ts"
     ],
     "status": "In progress",
-    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply"
+    "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-07": {
     "implementation": [],
@@ -4200,10 +4814,14 @@
     "notes": ""
   },
   "MTS-09-R18": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/converter.ts"
+    ],
+    "tests": [
+      "tests/domain/converter.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Local converter/sanitizer tested as driver-list dependency; owning terminal/UI pending"
   },
   "MTS-09-R19": {
     "implementation": [],
@@ -5088,10 +5706,14 @@
     "notes": ""
   },
   "MTS-14-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/converter.ts"
+    ],
+    "tests": [
+      "tests/domain/converter.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "; Local converter/sanitizer tested as driver-list dependency; owning terminal/UI pending"
   },
   "MTS-14-R03": {
     "implementation": [],
@@ -5106,10 +5728,14 @@
     "notes": "CLR-001"
   },
   "MTS-14-R05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/converter.ts"
+    ],
+    "tests": [
+      "tests/domain/converter.test.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Local converter/sanitizer tested as driver-list dependency; owning terminal/UI pending"
   },
   "MTS-14-R06": {
     "implementation": [],
