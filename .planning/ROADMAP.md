@@ -34,5 +34,5 @@ Each phase receives an executable plan before code changes. Commits separate pla
 | 6 | Implemented input flow; reconciliation pending |
 | 7 | Implemented input flow; reconciliation pending |
 | 8 | Implemented input flow; reconciliation pending |
-| 9 | Pending |
-| 10 | Pending |
+| 9 | Implemented input flow and local terminal preparation; reconciliation pending |
+| 10 | In progress: behavioral owner audit and visual verification |
