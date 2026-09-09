@@ -10,7 +10,11 @@ export interface OptionItem {
   [metadata: string]: unknown;
 }
 export interface ExcessRow { value: Id; text: string; isDefault?: boolean; numericValue?: number | null; [key:string]:unknown; }
-export type Options = Partial<Record<string, readonly OptionItem[]>>;
+export const optionCollections = ["proposerTitles","marketingMethods","companyTypes","tradingFroms","tradingPremiseTypes","mtOccupations","coverLevels","customerLoanCoverLevels","indemnityOwnVehicles","indemnityCustomerVehicles","excessLates","noClaimBonuses","noClaimBonusesEarned","noClaimBonusPreviousInsurers","noClaimBonusIntroRenewalYears","driverPlans","aadDriverMinAge","aadDriverMaxAge","aadMaxVehicleGrouping","aadMaxVehicleGvw","aadMaxMotorcycleCc","youngDriverIndemnityLimit","driverTitles","driverRelationshipsPolicyHolder","driverUsages","driverGVWLimits","driverLicenceTypes","driverMotorcycleCovers","driverMaxABIGroups","driverTradeEmploymentBasises","occupations","driverMTConvictionCodes","driverClaimTypes","driverClaimStatuses","driverCriminalConvictionCodes","driverCCJStatuses","driverExperienceBasedExcesses","driverExperienceBasedVehicleCCLimits","vehicleType","vehicleKeptOvernightType","vehicleModifications","demonstrationCovers","windScreenCovers","thirdPartyDamageLimits","europeanTripUsage","europeanArea","europeanTripCover","carJockeyRadii"] as const;
+export type OptionCollection = (typeof optionCollections)[number];
+export interface YoungBand {ageFrom:number|null;ageTo:number|null;additionalExcess?:string;defaultAdditionalIndemnity?:string;defaultCc?:string;indemnities?:readonly OptionItem[];cCs?:readonly OptionItem[];}
+export type Options = Partial<Record<OptionCollection, readonly OptionItem[]>> & {youngDriverConfiguration?:readonly YoungBand[]};
+export function optionRows(options:Options,name:string|undefined){return name?options[name as OptionCollection]:undefined;}
 export function looseOption(rows: readonly OptionItem[] | undefined, value: unknown) {
   return rows?.find(option => option.value == value);
 }

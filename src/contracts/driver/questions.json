@@ -1,0 +1,371 @@
+{
+  "version": 1,
+  "owner": "MTS-06B",
+  "questions": [
+    {
+      "owner": "MTS-06-Q08",
+      "path": "titleID",
+      "control": "auto",
+      "label": "Driver Title:",
+      "id": "Driver Title",
+      "options": "driverTitles"
+    },
+    {
+      "owner": "MTS-06-Q09",
+      "path": "firstName",
+      "control": "text",
+      "label": "First Name:"
+    },
+    {
+      "owner": "MTS-06-Q10",
+      "path": "surname",
+      "control": "text",
+      "label": "Surname:"
+    },
+    {
+      "owner": "MTS-06-Q11",
+      "path": "dateOfBirth",
+      "control": "birth",
+      "label": "Date of Birth:"
+    },
+    {
+      "owner": "MTS-06-Q12",
+      "path": "relationshipPolicyholderID",
+      "control": "auto",
+      "label": "Driver Relationship to Policyholder:",
+      "id": "Rel Policyholder",
+      "options": "driverRelationshipsPolicyHolder"
+    },
+    {
+      "owner": "MTS-06-Q13",
+      "path": "postCode",
+      "control": "address",
+      "label": "Postcode:"
+    },
+    {
+      "owner": "MTS-06-Q14",
+      "path": "houseNo",
+      "control": "address",
+      "label": "House Number:",
+      "maxLength": 50
+    },
+    {
+      "owner": "MTS-06-Q15",
+      "path": "street",
+      "control": "address",
+      "label": "Street:",
+      "maxLength": 50
+    },
+    {
+      "owner": "MTS-06-Q16",
+      "path": "town",
+      "control": "address",
+      "label": "Town:",
+      "maxLength": 50
+    },
+    {
+      "owner": "MTS-06-Q17",
+      "path": "city",
+      "control": "address",
+      "label": "City:",
+      "maxLength": 50
+    },
+    {
+      "owner": "MTS-06-Q18",
+      "path": "county",
+      "control": "address",
+      "label": "County:",
+      "maxLength": 50
+    },
+    {
+      "owner": "MTS-06-Q19",
+      "path": "usageID",
+      "control": "radio",
+      "label": "Vehicle Usage Required:",
+      "options": "driverUsages"
+    },
+    {
+      "owner": "MTS-06-Q20",
+      "path": "gvwLimitID",
+      "control": "auto",
+      "label": "Gross vehicle weight limit:",
+      "id": "Gross Weight Limit",
+      "options": "driverGVWLimits"
+    },
+    {
+      "owner": "MTS-06-Q21",
+      "path": "isUKResidentSinceBirth",
+      "control": "radio",
+      "label": "Have you been a UK resident since birth?"
+    },
+    {
+      "owner": "MTS-06-Q22",
+      "path": "ukResidenceSince",
+      "control": "date",
+      "label": "Length of UK residency:"
+    },
+    {
+      "owner": "MTS-06-Q23",
+      "path": "licenceTypeID",
+      "control": "auto",
+      "label": "Type of Licence:",
+      "id": "type_of_licence",
+      "options": "driverLicenceTypes"
+    },
+    {
+      "owner": "MTS-06-Q24",
+      "path": "licenseIssueDate",
+      "control": "date",
+      "label": "Driving Licence Issue:"
+    },
+    {
+      "owner": "MTS-06-Q25",
+      "path": "motorcycleCoverID",
+      "control": "auto",
+      "label": "Is Motorcycle Cover Required?",
+      "id": "Motorcycle Cover",
+      "options": "driverMotorcycleCovers"
+    },
+    {
+      "owner": "MTS-06-Q26",
+      "path": "motorcycleLicenceIssueDate",
+      "control": "date",
+      "label": "Motorcycle Licence Issue Date:"
+    },
+    {
+      "owner": "MTS-06-Q27",
+      "path": "maxABIGroupID",
+      "control": "auto",
+      "label": "What is the maximum ABI Group cover required for this driver?",
+      "id": "Max ABI Group Cover",
+      "options": "driverMaxABIGroups"
+    },
+    {
+      "owner": "MTS-06-Q28",
+      "path": "tradeEmploymentBasisID",
+      "control": "radio",
+      "label": "Is the driver in the motor trade on a full time or part time basis? ",
+      "options": "driverTradeEmploymentBasises"
+    },
+    {
+      "owner": "MTS-06-Q29",
+      "path": "driverOccupations[].motortradeRoadRisksOccupationID",
+      "control": "auto",
+      "label": "Additional Occupation",
+      "id": "Occupation",
+      "options": "occupations"
+    },
+    {
+      "owner": "MTS-06-Q30",
+      "path": "driverOccupations[].isBusinessUseRequired",
+      "control": "radio",
+      "label": "Business Use Required"
+    },
+    {
+      "owner": "MTS-06-Q31",
+      "path": "coverPersonalVehicle",
+      "control": "radio",
+      "label": "Does this driver require cover for Personally Owned Vehicles? "
+    },
+    {
+      "owner": "MTS-06-Q32",
+      "path": "coverDrivingOtherVehicles",
+      "control": "radio",
+      "label": "Does this driver require cover to drive other vehicles? "
+    },
+    {
+      "owner": "MTS-06-Q33",
+      "path": "hasMotoringConvictions",
+      "control": "radio",
+      "label": "Has this driver been convicted of ANY motoring offences (other than parking) in the last 5 years, or have prosecutions or inquiries pending? "
+    },
+    {
+      "owner": "MTS-06-Q34",
+      "path": "driverMotortradingConvictions[].convictionDate",
+      "control": "date",
+      "label": "Conviction Date:"
+    },
+    {
+      "owner": "MTS-06-Q35",
+      "path": "driverMotortradingConvictions[].driverMotortradingConvictionCodeID",
+      "control": "auto",
+      "label": "Conviction Code:",
+      "id": "Conviction Code",
+      "options": "driverMTConvictionCodes"
+    },
+    {
+      "owner": "MTS-06-Q36",
+      "path": "driverMotortradingConvictions[].fineAmount",
+      "control": "currency",
+      "label": "Fine Amount:"
+    },
+    {
+      "owner": "MTS-06-Q37",
+      "path": "driverMotortradingConvictions[].points",
+      "control": "number",
+      "label": "Points:"
+    },
+    {
+      "owner": "MTS-06-Q38",
+      "path": "driverMotortradingConvictions[].disqualified",
+      "control": "radio",
+      "label": "Disqualified"
+    },
+    {
+      "owner": "MTS-06-Q39",
+      "path": "driverMotortradingConvictions[].banLength",
+      "control": "number",
+      "label": "Ban Length (months):",
+      "maxLength": 4
+    },
+    {
+      "owner": "MTS-06-Q40",
+      "path": "hasClaimsOrAccidents",
+      "control": "radio",
+      "label": "Has the driver had any accidents or claims in the past 5 years, regardless of fault or whether a claim was made? "
+    },
+    {
+      "owner": "MTS-06-Q41",
+      "path": "driverClaims[].claimDate",
+      "control": "date",
+      "label": "Claim Date:"
+    },
+    {
+      "owner": "MTS-06-Q42",
+      "path": "driverClaims[].claimTypeID",
+      "control": "auto",
+      "label": "Claim Type:",
+      "id": "Claim Type",
+      "options": "driverClaimTypes"
+    },
+    {
+      "owner": "MTS-06-Q43",
+      "path": "driverClaims[].description",
+      "control": "text",
+      "label": "Description:"
+    },
+    {
+      "owner": "MTS-06-Q44",
+      "path": "driverClaims[].totalCost",
+      "control": "currency",
+      "label": "Total Cost:"
+    },
+    {
+      "owner": "MTS-06-Q45",
+      "path": "driverClaims[].claimStatusID",
+      "control": "auto",
+      "label": "Claim Status:",
+      "id": "claim_status",
+      "options": "driverClaimStatuses"
+    },
+    {
+      "owner": "MTS-06-Q46",
+      "path": "hasReportedDisability",
+      "control": "radio",
+      "label": "Does the driver have any disability that has been reported to the DVLA and/or hold a restricted licence? "
+    },
+    {
+      "owner": "MTS-06-Q47",
+      "path": "hasReportedDisabilityDetails",
+      "control": "text",
+      "label": "Please provide details:",
+      "maxLength": 50
+    },
+    {
+      "owner": "MTS-06-Q48",
+      "path": "hasCriminalConvictions",
+      "control": "radio",
+      "label": "Does this driver have any criminal conviction not spent under the Rehabilitation of Offenders Act or have any prosecutions pending? "
+    },
+    {
+      "owner": "MTS-06-Q49",
+      "path": "criminalConvictions[].convictionDate",
+      "control": "date",
+      "label": "Conviction Date:"
+    },
+    {
+      "owner": "MTS-06-Q50",
+      "path": "criminalConvictions[].criminalConvictionCodeID",
+      "control": "auto",
+      "label": "Conviction Code:",
+      "id": "Conviction Code2",
+      "options": "driverCriminalConvictionCodes"
+    },
+    {
+      "owner": "MTS-06-Q51",
+      "path": "criminalConvictions[].sentenceLengthYear",
+      "control": "number",
+      "label": "Sentence Length (years):"
+    },
+    {
+      "owner": "MTS-06-Q52",
+      "path": "criminalConvictions[].sentenceLengthMonth",
+      "control": "number",
+      "label": "Sentence Length (months):"
+    },
+    {
+      "owner": "MTS-06-Q53",
+      "path": "hasCCJs",
+      "control": "radio",
+      "label": "Has the driver ever been the subject of a County Court Judgement and/or ever been cited in any unsatisfied court judgments (or the Scottish equivalent)? "
+    },
+    {
+      "owner": "MTS-06-Q54",
+      "path": "countyCourtJudgements[].ccjDate",
+      "control": "date",
+      "label": "Date:"
+    },
+    {
+      "owner": "MTS-06-Q55",
+      "path": "countyCourtJudgements[].countyCourtJudgementStatusID",
+      "control": "auto",
+      "label": "Status:",
+      "id": "CCJ Status",
+      "options": "driverCCJStatuses"
+    },
+    {
+      "owner": "MTS-06-Q56",
+      "path": "countyCourtJudgements[].amount",
+      "control": "currency",
+      "label": "Amount:"
+    },
+    {
+      "owner": "MTS-06-Q57",
+      "path": "countyCourtJudgements[].circumstances",
+      "control": "text",
+      "label": "Circumstances:"
+    },
+    {
+      "owner": "MTS-06-Q58",
+      "path": "ageAdditionalExcess",
+      "control": "radio",
+      "label": "An additional excess of {{additionalExcess}} will apply to {{firstName || ''}} {{surname || ''}} due to their age.  Do you wish to remove this excess for an additional premium? "
+    },
+    {
+      "owner": "MTS-06-Q59",
+      "path": "ageIndemnityLimitID",
+      "control": "radio",
+      "unresolvedLabel": "MTS-06-Q59"
+    },
+    {
+      "owner": "MTS-06-Q60",
+      "path": "ageIncreaseVehicleCCID",
+      "control": "radio",
+      "label": "{{fullName}} is restricted to drive vehicles up to a maximum of {{defaultCc}}. Do you wish to increase this restriction for an additional premium?"
+    },
+    {
+      "owner": "MTS-06-Q61",
+      "path": "experienceBasedExcessID",
+      "control": "radio",
+      "options": "driverExperienceBasedExcesses",
+      "unresolvedLabel": "MTS-06-Q61"
+    },
+    {
+      "owner": "MTS-06-Q62",
+      "path": "experienceIncreaseVehicleCCLimitID",
+      "control": "radio",
+      "options": "driverExperienceBasedVehicleCCLimits",
+      "unresolvedLabel": "MTS-06-Q62"
+    }
+  ]
+}

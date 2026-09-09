@@ -1,4 +1,5 @@
 'use client';
+import {optionRows} from '@/domain/options';
 import {useMemo,useState} from 'react';
 import {useForm,useWatch,Controller,type Resolver} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
@@ -29,10 +30,10 @@ export function ProposerSurface() {
       const props={field,label:label??q.label,error:fieldState.error?.message,id:q.id};
       if(q.control==='checkbox')return <><CheckboxLine {...props}/>{fieldState.error&&<div className="mb-4"><FormError message={fieldState.error.message}/></div>}</>;
       if(q.control==='marketing')return <CheckboxLineArray {...props}/>;
-      if(q.control==='checkboxArray')return <CheckboxArray {...props} options={journey.options[q.options!]??[]}/>;
+      if(q.control==='checkboxArray')return <CheckboxArray {...props} options={optionRows(journey.options,q.options)??[]}/>;
       if(q.control==='date')return <DateControl {...props} label={raw.isMta?'When do you want the adjustment to start?':q.label} minDate={bounds.controlMin} maxDate={bounds.controlMax}/>;
       if(q.control==='radio')return <RadioList {...props} options={yesNo} disabled={!!raw.isMta}/>;
-      if(q.control==='logic')return <LogicMultiSelect {...props} options={journey.options[q.options!]} disabled={index===6?disabled:undefined} callback={index===6?(option:Choice|null)=>field.onChange(option?.value):undefined}/>;
+      if(q.control==='logic')return <LogicMultiSelect {...props} options={optionRows(journey.options,q.options)} disabled={index===6?disabled:undefined} callback={index===6?(option:Choice|null)=>field.onChange(option?.value):undefined}/>;
       const phone=index===12||index===13;
       const sibling=index===12?'proposerMobileNumber':'proposerTelephoneNumber';
       return <FormTextBox {...props} disabled={[6,7,8,10,12,13].includes(index)?disabled:undefined} maxLength={index===10?(primary?50:undefined):q.maxLength} numberPattern={phone?journey.host.textNumberPattern:undefined} onChangeCallback={phone?()=>{if(errors[sibling])void methods.trigger(sibling);}:undefined}/>;

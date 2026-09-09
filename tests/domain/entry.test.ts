@@ -30,12 +30,12 @@ describe('entry source order and retention',()=>{
   });
 });
 describe('SHR-MT-R01 raw options cache',()=>{
-  function setup(storage=memory()) {return {storage,merge:vi.fn(),setLoading:vi.fn(),setFetching:vi.fn(),markFetched:vi.fn(),delay:vi.fn(async()=>{}),consume:vi.fn(async()=>({data:{syntheticOptions:[{text:'SYNTHETIC',value:999}]}}))};}
+  function setup(storage=memory()) {return {storage,merge:vi.fn(),setLoading:vi.fn(),setFetching:vi.fn(),markFetched:vi.fn(),delay:vi.fn(async()=>{}),consume:vi.fn(async()=>({data:{driverPlans:[{text:'SYNTHETIC',value:999}]}}))};}
   it('hydrates cached JSON without fetching or validating its shape',async()=>{
     const p=setup(memory({motorTradeOptions:'{"arbitrary":"retained"}'}));await hydrateOptions('/motortrade-roadrisks/steps/step1',false,p);expect(p.merge).toHaveBeenCalledWith({arbitrary:'retained'});expect(p.consume).not.toHaveBeenCalled();expect(p.markFetched).toHaveBeenCalledOnce();
   });
   it('waits 300ms, consumes data, stores raw JSON then clears loading',async()=>{
-    const p=setup();await hydrateOptions('/motortrade-roadrisks',false,p);expect(p.delay).toHaveBeenCalledWith(300);expect(p.consume).toHaveBeenCalledOnce();expect(p.storage.getItem('motorTradeOptions')).toBe('{"syntheticOptions":[{"text":"SYNTHETIC","value":999}]}');expect(p.setLoading.mock.calls).toEqual([[true],[false]]);
+    const p=setup();await hydrateOptions('/motortrade-roadrisks',false,p);expect(p.delay).toHaveBeenCalledWith(300);expect(p.consume).toHaveBeenCalledOnce();expect(p.storage.getItem('motorTradeOptions')).toBe('{"driverPlans":[{"text":"SYNTHETIC","value":999}]}');expect(p.setLoading.mock.calls).toEqual([[true],[false]]);
   });
   it('failure clears loading without manufactured data or error copy',async()=>{
     const p=setup();p.consume.mockRejectedValueOnce(new Error('synthetic failure'));await expect(hydrateOptions('/motortrade-roadrisks',false,p)).rejects.toThrow('synthetic failure');expect(p.merge).not.toHaveBeenCalled();expect(p.setFetching.mock.calls).toEqual([[true],[false]]);expect(p.markFetched).not.toHaveBeenCalled();

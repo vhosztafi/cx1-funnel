@@ -1,4 +1,5 @@
 'use client';
+import {optionRows} from '@/domain/options';
 import {useRef,useState} from 'react';
 import type {SelectInstance} from 'react-select';
 import {Controller,useForm,useWatch,type Resolver} from 'react-hook-form';
@@ -19,10 +20,10 @@ export function CoverSurface(){
     const q=definition.questions[index] as {path:string;label:string;control:string;id?:string;options?:string;defaultValue?:unknown;disabled?:boolean;placeholder?:string;};
     return <Controller key={q.path} name={q.path} control={methods.control} defaultValue={q.defaultValue} render={({field,fieldState})=>{
       const props={field,label:q.label,error:fieldState.error?.message,disabled:q.disabled,id:q.id,placeholder:q.placeholder};
-      if(q.control==='radio')return <RadioList {...props} options={q.options?options[q.options]:yesNo} disabled={index===16?!!raw.isMta:q.disabled} animation={journey.host.loadingAnimation}/>;
+      if(q.control==='radio')return <RadioList {...props} options={q.options?optionRows(options,q.options):yesNo} disabled={index===16?!!raw.isMta:q.disabled} animation={journey.host.loadingAnimation}/>;
       if(q.control==='date')return <DateControl {...props} minDate="1900-01-01" maxDate={today}/>;
       if(q.control==='text')return <><label>{q.label}</label><FormTextBox {...props} label={undefined} maxLength={50}/></>;
-      const rows=index===1?ownCoverOptions(values.coverLevelID,options):index===2?customerCoverOptions(values.coverLevelID,options):index===3?coverExcesses(values.coverLevelID,values.coverIndemnityLimitOwnVehiclesID,options):options[q.options!];
+      const rows=index===1?ownCoverOptions(values.coverLevelID,options):index===2?customerCoverOptions(values.coverLevelID,options):index===3?coverExcesses(values.coverLevelID,values.coverIndemnityLimitOwnVehiclesID,options):optionRows(options,q.options);
       return <AutoComplete {...props} options={rows} selectRef={index===3?excess:undefined} callback={value=>{
         if(index===1){excess.current?.clearValue();methods.setValue('coverExcessID','');}
         if(index===9&&value===1)methods.setValue('coverNCBEarnedID',undefined);

@@ -5,7 +5,7 @@ export type DateValue = string | Date | null;
 export interface RawAddress { [key: string]: unknown; showAddress?: boolean; }
 export interface RawDriver extends RawAddress {
   guid?: string; firstName?: string; surname?: string; dateOfBirth?: DateValue;
-  relationshipToPolicyholderID?: NullableId; usageID?: NullableId;
+  relationshipPolicyholderID?: NullableId; usageID?: NullableId;
   coverPersonalVehicle?: boolean | null; maxABIGroupID?: NullableId; gvwLimitID?: NullableId;
   licenceTypeID?: NullableId; licenceHeldYearsID?: NullableId;
 }
