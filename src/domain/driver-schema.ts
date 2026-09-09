@@ -34,7 +34,16 @@ function missingMessageRule(
 ) {
   return function (this: yup.TestContext) {
     const failure = rule(this.parent);
-    return !failure || this.createError({ message: context.messages?.[failure] ?? '' });
+    if (!failure) return true;
+    const message = context.messages?.[failure] ?? '';
+    const error = this.createError({ message });
+    // CLR-009 must not let this dependency substitute generic copy for an
+    // unavailable custom literal (IMP-CLR-009).
+    if (!message) {
+      error.message = '';
+      error.errors = [''];
+    }
+    return error;
   };
 }
 export function driverAbiTest(raw: RawForm) {

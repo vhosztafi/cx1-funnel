@@ -75,6 +75,19 @@ describe('MTS-06 driver detail conditions', () => {
       otherCoverFailure({ ...syntheticDriver, usageID: 2, relationshipPolicyholderID: 3 }, raw),
     ).toBe('otherAutomatic');
   });
+  it('Q12/R04 keeps unavailable custom errors empty and uses supplied text without substitution', async () => {
+    const driver = { ...syntheticDriver, dateOfBirth: '2005-01-01', relationshipPolicyholderID: 5 };
+    const context = { raw, options: {}, now: new Date('2026-09-09') };
+    await expect(
+      driverDetailSchema(context).validateAt('relationshipPolicyholderID', driver),
+    ).rejects.toMatchObject({ message: '', errors: [''] });
+    await expect(
+      driverDetailSchema({
+        ...context,
+        messages: { spouseUnder25: 'Synthetic supplied error' },
+      }).validateAt('relationshipPolicyholderID', driver),
+    ).rejects.toMatchObject({ message: 'Synthetic supplied error' });
+  });
   it('R06 requiredness uses exact misspelled sibling rather than visible disability answer', async () => {
     const schema = driverDetailSchema({ raw, options: {}, now: new Date() });
     await expect(
