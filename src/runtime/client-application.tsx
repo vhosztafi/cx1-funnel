@@ -10,6 +10,8 @@ import {
   useParams,
 } from 'react-router-dom';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import { DebugPanel } from '@/components/debug';
+import { CleanSurface } from './clean';
 import { Home } from '@/components/home';
 import { Loader } from '@/components/controls';
 import { createSession } from '@/domain/session';
@@ -93,6 +95,7 @@ export function ClientApplication() {
       }}
     >
       <BrowserRouter useTransitions={false}>
+        <DebugPanel />
         <OptionContainer merge={mergeOptions}>
           <ApplicationRoutes />
         </OptionContainer>
@@ -139,6 +142,18 @@ export function ApplicationRoutes() {
     <Routes>
       <Route path="/" element={<Home logo={host.logo} />} />
       {families.flatMap((family) => [
+        ...[
+          '/broker/clean/buy',
+          '/back-office/clean/buy',
+          '/back-office/clean/new-quote/buy',
+          '/back-office/clean/new-quote-client/buy',
+        ].map((prefix) => (
+          <Route
+            key={`${prefix}-${family}`}
+            path={`${prefix}/${family}/*`}
+            element={<CleanSurface />}
+          />
+        )),
         <Route key={`${family}-direct`} path={`/${family}`} element={<Container />}>
           <Route index element={<Controller />} />
           <Route path="steps/:step" element={<Controller />} />

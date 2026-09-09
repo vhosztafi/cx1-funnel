@@ -7,6 +7,7 @@ import {
   type ComponentType,
 } from 'react';
 import type { FormSession } from '@/domain/session';
+import type { CleanInputs } from '@/domain/clean';
 import type { Options, RuntimeLimits } from '@/domain/options';
 import type { PopulationPorts } from '@/domain/entry';
 import type { Step } from '@/domain/types';
@@ -16,6 +17,12 @@ import type { AddressPorts } from '@/components/address-control';
 import type { VehicleRegistrationProps } from '@/components/vehicle-registration';
 export interface HostInputs {
   mode?: string;
+  clean?: CleanInputs;
+  debug?: {
+    applyMotorTrade?: (step: unknown, alternate: boolean) => void;
+    brokerArea?: unknown;
+    backofficeArea?: unknown;
+  };
   logo?: string;
   loadingAnimation?: ReactNode;
   limits?: RuntimeLimits;
