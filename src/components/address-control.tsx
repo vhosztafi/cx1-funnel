@@ -2,8 +2,8 @@
 import {useState,type ReactNode} from 'react';
 import {FormError,Loader} from './controls';
 
-export interface AddressChoice {key:string;text:string;}
-export interface AddressField {path:string;label:string;}
+export interface AddressChoice {value:string|number;text:string;}
+export interface AddressField {path:string;label:string;maxLength?:number;}
 export interface AddressPorts {
   /** Local injected lookup outputs. No transport implementation is included. */
   lookup:(postcode:string)=>Promise<readonly AddressChoice[]>;
@@ -16,7 +16,7 @@ interface Props {
   label:string;fields:readonly AddressField[];values:Record<string,unknown>;defaults:Record<string,unknown>;
   setValue:(path:string,value:unknown)=>void;errors?:Record<string,string|undefined>;
   setError:(path:string,message:string)=>void;clearError:(path:string)=>void;trigger:(path:string)=>void;
-  ports:AddressPorts;disabled?:boolean;animation?:ReactNode;
+  ports:AddressPorts;disabled?:boolean;animation?:ReactNode;placeholder?:string;manualText?:string;
 }
 // CTL-MT-17/18/19: callers supply exact paths and copy; runtime address text is not invented.
 export function AddressControl(p:Props) {
@@ -24,7 +24,8 @@ export function AddressControl(p:Props) {
   const [results,setResults]=useState<readonly AddressChoice[]>([]);
   const [loading,setLoading]=useState(false);
   const disabled=p.variant==='proposer'?p.disabled:undefined;
-  const postcode=String(p.values[p.postcodePath]||'');
+  const normalize=(value:unknown)=>p.ports.formatPostcode(String(value||'').toUpperCase().replace(/[^A-Z0-9]/g,''));
+  const postcode=normalize(p.values[p.postcodePath]);
   async function lookup() {
     if(!postcode){p.trigger(p.postcodePath);return;}
     if(p.variant==='driver'){p.clearError(p.postcodePath);p.setValue(p.showAddressPath,false);}
@@ -37,5 +38,5 @@ export function AddressControl(p:Props) {
     const result=await p.ports.select(choice);setResults([]);await p.ports.delay(10);
     p.fields.forEach(field=>p.setValue(field.path,result[field.path]));p.setValue(p.showAddressPath,true);setManual(true);p.fields.forEach(field=>p.trigger(field.path));
   }
-  return <div className="position-relative mb-4"><label htmlFor="">{p.label}</label><div className="input-group"><input type="text" value={postcode} maxLength={10} disabled={disabled} className="form-control" onChange={e=>p.setValue(p.postcodePath,p.ports.formatPostcode(e.currentTarget.value.toUpperCase().replace(/[^A-Z0-9]/g,'')))}/><button type="button" className="btn btn-primary" disabled={disabled} onClick={()=>void lookup()}>Lookup</button></div><FormError message={p.errors?.[p.postcodePath]}/>{!manual&&<a onClick={()=>{setManual(true);p.setValue(p.showAddressPath,true);}}>Enter manually</a>}{results.length>0&&<ul>{results.map(row=><li key={row.key} onClick={()=>void select(row)}>{row.text}</li>)}</ul>}{manual&&p.fields.map(field=><div className="mb-4" key={field.path}><label htmlFor="">{field.label}</label><input type="text" className="form-control" value={String(p.values[field.path]||'')} disabled={disabled} onChange={e=>p.setValue(field.path,e.currentTarget.value)}/><FormError message={p.errors?.[field.path]}/></div>)}{loading&&<div className="lookup-overlay"><Loader size={p.variant==='driver'?100:150} animation={p.animation}/></div>}</div>;
+  return <div className="position-relative mb-4"><label htmlFor="">{p.label}</label><div className="input-group"><input type="text" value={postcode} maxLength={10} placeholder={p.placeholder} disabled={disabled} className="form-control" onChange={e=>{p.setValue(p.postcodePath,normalize(e.currentTarget.value));p.clearError(p.postcodePath);}}/><button type="button" className="btn btn-primary" disabled={disabled} onClick={()=>void lookup()}>Lookup</button></div><FormError message={p.errors?.[p.postcodePath]}/>{!manual&&results.length===0&&<a onClick={()=>{setManual(true);p.setValue(p.showAddressPath,true);}}>{p.manualText??'Enter manually'}</a>}{results.length>0&&<ul>{results.map(row=><li key={row.value} onClick={()=>void select(row)}>{row.text}</li>)}</ul>}{manual&&p.fields.map(field=><div className="mb-4" key={field.path}><label htmlFor="">{field.label}</label><input type="text" className="form-control" maxLength={field.maxLength} value={String(p.values[field.path]||'')} disabled={disabled} onChange={e=>p.setValue(field.path,e.currentTarget.value)}/><FormError message={p.errors?.[field.path]}/></div>)}{loading&&<div className="lookup-overlay"><Loader size={p.variant==='driver'?100:150} animation={p.animation}/></div>}</div>;
 }

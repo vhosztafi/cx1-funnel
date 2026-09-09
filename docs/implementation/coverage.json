@@ -319,9 +319,14 @@
     "notes": "Confirmed subset implemented; full owner reconciliation remains pending."
   },
   "EDGE-01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
+    "implementation": [
+      "src/surfaces/proposer.tsx",
+      "src/runtime/use-journey.ts"
+    ],
+    "tests": [
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "Implemented / tested",
     "notes": ""
   },
   "EDGE-02": {
@@ -799,202 +804,466 @@
     "notes": ""
   },
   "MTS-01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q15": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-008"
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-008; Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q16": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q17": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q18": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q19": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-Q20": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-R05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-R06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-R07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-U02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-U03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-U04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-01-U05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/questions.ts",
+      "src/domain/proposer.ts",
+      "src/surfaces/proposer.tsx"
+    ],
+    "tests": [
+      "tests/domain/proposer.test.ts",
+      "tests/components/proposer.test.tsx",
+      "tests/e2e/proposer.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-02": {
     "implementation": [],

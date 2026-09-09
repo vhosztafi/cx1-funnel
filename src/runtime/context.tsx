@@ -4,11 +4,13 @@ import type {FormSession} from '@/domain/session';
 import type {Options,RuntimeLimits} from '@/domain/options';
 import type {PopulationPorts} from '@/domain/entry';
 import type {Step} from '@/domain/types';
+import type {AddressPorts} from '@/components/address-control';
 export interface HostInputs {
   mode?:string;logo?:string;loadingAnimation?:ReactNode;limits?:RuntimeLimits;
   consumeOptions?:()=>Promise<{data:Options}>;consumePopulation?:PopulationPorts['consume'];
   brokerDashboard?:string;backofficeDashboard?:string;
   brokerRibbon?:ReactNode;backofficeRibbon?:ReactNode;
+  address?:AddressPorts;postcodePattern?:RegExp;textNumberPattern?:RegExp;now?:()=>Date;
 }
 export interface Runtime {
   form:FormSession;options:Options;host:HostInputs;loading:boolean;setLoading:(value:boolean)=>void;
