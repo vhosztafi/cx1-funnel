@@ -10,6 +10,12 @@ $grid-gutter-width: 1.25rem;
 $enable-negative-margins: true;
 @import 'bootstrap/scss/bootstrap';
 
+// CTL-MT-16 / MTS-14-U01: Bootstrap owns this class. Tailwind's unrelated
+// visibility-collapse utility must not hide an expanded Bootstrap disclosure.
+.collapse {
+  visibility: visible;
+}
+
 // SHR-MT-R06/R07: source body caps and spacing exceptions.
 .container-body-sm {
   max-width: 440px;

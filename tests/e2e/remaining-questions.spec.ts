@@ -1,5 +1,11 @@
 import { test, expect } from '@playwright/test';
 import declarations from '../../src/contracts/declaration/pairs.json' with { type: 'json' };
+test.afterEach(async ({ page }, info) => {
+  if (info.status !== info.expectedStatus) {
+    await info.attach('rendered-dom', { body: await page.content(), contentType: 'text/html' });
+    await page.screenshot({ path: info.outputPath('failure.png'), fullPage: true });
+  }
+});
 test('MTS-10–13 category totals, repeated annual Yes, declaration nulling and optional risk continue', async ({
   page,
 }) => {
