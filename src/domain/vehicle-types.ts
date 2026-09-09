@@ -87,31 +87,24 @@ export function vehicleTypesSchema(forces: TypeForces) {
             }),
         });
     } else
-      shape[category.percentage.path] = yup
-        .number()
-        .when(category.path, {
-          is: true,
-          then: (s) => s.min(1).required().label('This'),
-          otherwise: (s) => s.notRequired(),
-        });
+      shape[category.percentage.path] = yup.number().when(category.path, {
+        is: true,
+        then: (s) => s.min(1).required().label('This'),
+        otherwise: (s) => s.notRequired(),
+      });
     if (category.detail)
       shape[category.detail.path] =
         category.detail.type === 'number'
-          ? yup
-              .number()
-              .when(category.path, {
-                is: true,
-                then: (s) =>
-                  s.required().min(3).typeError('This is a required field').label('This'),
-                otherwise: (s) => s.notRequired(),
-              })
-          : yup
-              .string()
-              .when(category.path, {
-                is: true,
-                then: (s) => s.required().label('This'),
-                otherwise: (s) => s.notRequired(),
-              });
+          ? yup.number().when(category.path, {
+              is: true,
+              then: (s) => s.required().min(3).typeError('This is a required field').label('This'),
+              otherwise: (s) => s.notRequired(),
+            })
+          : yup.string().when(category.path, {
+              is: true,
+              then: (s) => s.required().label('This'),
+              otherwise: (s) => s.notRequired(),
+            });
   }
   return yup.object({
     ...shape,

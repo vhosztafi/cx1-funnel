@@ -86,13 +86,11 @@ export function businessSchema(policyStart: DateValue | undefined) {
     businessAnnualTurnover: yup.number().required().label('This'),
     businessAnnualWageRoll: yup.number().required().label('This'),
     businessIsTradeAssociationMember: yup.boolean().required().label('This'),
-    businessTradeAssociationName: yup
-      .string()
-      .when('businessIsTradeAssociationMember', {
-        is: true,
-        then: (s) => s.required().label('This'),
-        otherwise: (s) => s.notRequired(),
-      }),
+    businessTradeAssociationName: yup.string().when('businessIsTradeAssociationMember', {
+      is: true,
+      then: (s) => s.required().label('This'),
+      otherwise: (s) => s.notRequired(),
+    }),
     businessIsVATRegistered: yup.boolean().required().label('This'),
     businessVATNumber: yup.string().notRequired(),
     businessNumberOfVehiclesHandlePerYear: yup

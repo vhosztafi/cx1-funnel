@@ -84,13 +84,11 @@ export function proposerSchema(context: ProposerContext) {
     proposerName: yup.string().required().label('This'),
     proposerSurname: yup.string().required().label('This'),
     proposerTradingName: yup.string().notRequired().label('This'),
-    proposerCompanyPartnershipName: yup
-      .string()
-      .when('proposerCompanyTypeId', {
-        is: (value: unknown) => value === 2 || value === 3 || value === 4,
-        then: (schema) => schema.required().max(50).label('This'),
-        otherwise: (schema) => schema.notRequired(),
-      }),
+    proposerCompanyPartnershipName: yup.string().when('proposerCompanyTypeId', {
+      is: (value: unknown) => value === 2 || value === 3 || value === 4,
+      then: (schema) => schema.required().max(50).label('This'),
+      otherwise: (schema) => schema.notRequired(),
+    }),
     proposerEmail: yup.string().email().required().label('This'),
     proposerTelephoneNumber: yup
       .string()

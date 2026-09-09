@@ -220,13 +220,11 @@ export function extrasSchema(raw: RawForm, options: Options) {
           'Chosen demonstration cover is not valid.',
         ),
       ),
-    demonstrationCoverForMotorcycles: yup
-      .boolean()
-      .when('demonstrationCover', {
-        is: (value: unknown) => !!value && motorcycleDemonstrationVisible(raw),
-        then: (s) => s.required().label('This'),
-        otherwise: (s) => s.notRequired(),
-      }),
+    demonstrationCoverForMotorcycles: yup.boolean().when('demonstrationCover', {
+      is: (value: unknown) => !!value && motorcycleDemonstrationVisible(raw),
+      then: (s) => s.required().label('This'),
+      otherwise: (s) => s.notRequired(),
+    }),
     windscreenCover: yup
       .boolean()
       .notRequired()
@@ -240,20 +238,16 @@ export function extrasSchema(raw: RawForm, options: Options) {
           })
         );
       }),
-    windscreenCoverTypeID: yup
-      .number()
-      .when('windscreenCover', {
-        is: true,
-        then: (s) => s.required().label('This'),
-        otherwise: (s) => s.notRequired(),
-      }),
-    isAdditionalWindscreenCoverRequired: yup
-      .boolean()
-      .when('windscreenCover', {
-        is: true,
-        then: (s) => s.required().label('This'),
-        otherwise: (s) => s.notRequired(),
-      }),
+    windscreenCoverTypeID: yup.number().when('windscreenCover', {
+      is: true,
+      then: (s) => s.required().label('This'),
+      otherwise: (s) => s.notRequired(),
+    }),
+    isAdditionalWindscreenCoverRequired: yup.boolean().when('windscreenCover', {
+      is: true,
+      then: (s) => s.required().label('This'),
+      otherwise: (s) => s.notRequired(),
+    }),
     lossOfUseCover: bool(),
     vehiclesAtSubcontractorsCover: bool(),
     thirdPartyPropertyDamageCoverTypeID: number(),

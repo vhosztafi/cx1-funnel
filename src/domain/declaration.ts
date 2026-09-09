@@ -17,13 +17,11 @@ export function declarationSchema() {
         [pair.path, yup.boolean().required().label('This')],
         [
           pair.detail.path,
-          yup
-            .string()
-            .when(pair.path, {
-              is: true,
-              then: (s) => s.required().label('This'),
-              otherwise: (s) => s.notRequired(),
-            }),
+          yup.string().when(pair.path, {
+            is: true,
+            then: (s) => s.required().label('This'),
+            otherwise: (s) => s.notRequired(),
+          }),
         ],
       ]),
     ),

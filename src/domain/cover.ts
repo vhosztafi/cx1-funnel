@@ -266,13 +266,11 @@ export function coverSchema(raw: RawForm, options: Options) {
       otherwise: (s) => s.notRequired(),
     });
   const ncbNumber = () =>
-    yup
-      .number()
-      .when('coverNCBID', {
-        is: hasNcb,
-        then: (s) => s.required().label('This'),
-        otherwise: (s) => s.notRequired(),
-      });
+    yup.number().when('coverNCBID', {
+      is: hasNcb,
+      then: (s) => s.required().label('This'),
+      otherwise: (s) => s.notRequired(),
+    });
   return yup.object({
     coverLevelID: yup.number().required().label('This'),
     coverIndemnityLimitOwnVehiclesID: yup
@@ -354,12 +352,10 @@ export function coverSchema(raw: RawForm, options: Options) {
         then: (s) => s.required().label('This'),
         otherwise: (s) => s.notRequired(),
       }),
-    coverIsNCBProtected: yup
-      .boolean()
-      .when('coverNCBEarnedID', {
-        is: (value: unknown) => !!value && value === 3,
-        then: (s) => s.required().label('This'),
-        otherwise: (s) => s.notRequired(),
-      }),
+    coverIsNCBProtected: yup.boolean().when('coverNCBEarnedID', {
+      is: (value: unknown) => !!value && value === 3,
+      then: (s) => s.required().label('This'),
+      otherwise: (s) => s.notRequired(),
+    }),
   });
 }

@@ -152,36 +152,30 @@ export function driverHistorySchemas(raw: RawForm) {
           }),
       }),
     ),
-    driverClaims: yup
-      .array()
-      .of(
-        yup.object({
-          claimDate: minDriverDate().required().label('This'),
-          claimTypeID: requiredNumber(),
-          description: requiredString(),
-          totalCost: requiredNumber(),
-          claimStatusID: requiredNumber(),
-        }),
-      ),
-    criminalConvictions: yup
-      .array()
-      .of(
-        yup.object({
-          convictionDate: minDriverDate().required().label('This'),
-          criminalConvictionCodeID: requiredNumber(),
-          sentenceLengthYear: requiredNumber(),
-          sentenceLengthMonth: requiredNumber(),
-        }),
-      ),
-    countyCourtJudgements: yup
-      .array()
-      .of(
-        yup.object({
-          ccjDate: minDriverDate().required().label('This'),
-          countyCourtJudgementStatusID: requiredNumber(),
-          amount: requiredNumber(),
-          circumstances: requiredString(),
-        }),
-      ),
+    driverClaims: yup.array().of(
+      yup.object({
+        claimDate: minDriverDate().required().label('This'),
+        claimTypeID: requiredNumber(),
+        description: requiredString(),
+        totalCost: requiredNumber(),
+        claimStatusID: requiredNumber(),
+      }),
+    ),
+    criminalConvictions: yup.array().of(
+      yup.object({
+        convictionDate: minDriverDate().required().label('This'),
+        criminalConvictionCodeID: requiredNumber(),
+        sentenceLengthYear: requiredNumber(),
+        sentenceLengthMonth: requiredNumber(),
+      }),
+    ),
+    countyCourtJudgements: yup.array().of(
+      yup.object({
+        ccjDate: minDriverDate().required().label('This'),
+        countyCourtJudgementStatusID: requiredNumber(),
+        amount: requiredNumber(),
+        circumstances: requiredString(),
+      }),
+    ),
   };
 }

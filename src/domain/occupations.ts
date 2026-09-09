@@ -84,25 +84,21 @@ export function occupationsSchema(options: readonly OptionItem[]) {
       .array()
       .of(
         yup.object({
-          occupationId: yup
-            .number()
-            .when('type', {
-              is: 'number',
-              then: (s) => s.required().label('This'),
-              otherwise: (s) =>
-                s.typeError('This is a required field.').required('This is a required field.'),
-            }),
-          percentage: yup
-            .number()
-            .when('type', {
-              is: 'number',
-              then: (s) => s.required().label('This'),
-              otherwise: (s) =>
-                s
-                  .typeError('This is a required field.')
-                  .required('This is a required field.')
-                  .min(1, 'This field must be greater than 0'),
-            }),
+          occupationId: yup.number().when('type', {
+            is: 'number',
+            then: (s) => s.required().label('This'),
+            otherwise: (s) =>
+              s.typeError('This is a required field.').required('This is a required field.'),
+          }),
+          percentage: yup.number().when('type', {
+            is: 'number',
+            then: (s) => s.required().label('This'),
+            otherwise: (s) =>
+              s
+                .typeError('This is a required field.')
+                .required('This is a required field.')
+                .min(1, 'This field must be greater than 0'),
+          }),
         }),
       )
       .min(1, 'There must be at least one occupation added.')
