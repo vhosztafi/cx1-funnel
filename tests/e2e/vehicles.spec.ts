@@ -1,14 +1,114 @@
-import {test,expect} from '@playwright/test';
-test.beforeEach(async({page})=>{await page.addInitScript(()=>{
-  (window as unknown as {__CX1_HOST_INPUTS__:unknown}).__CX1_HOST_INPUTS__={limits:{pageSize:10},tradePlateAddLabel:'Synthetic add plate',now:()=>new Date('2026-09-09'),consumeVehicleLookup:async()=>({values:{make:'Synthetic Make',model:'Synthetic Model',abiCode:'Synthetic ABI',abiGroup:10,vehicleTypeID:900,bodyType:'Synthetic Body',gvw:'0',seats:9,doors:4,fuelType:'Synthetic Fuel',transmission:'Synthetic Transmission',engineSize:'1000',registrationYear:2020,registrationDate:'2020-01-01',isImported:false}})};
-  sessionStorage.setItem('authBroker','SYNTHETIC TEST ONLY');sessionStorage.setItem('motorTradeOptions',JSON.stringify({indemnityOwnVehicles:[{value:900,text:'Synthetic indemnity',numericValue:15000}],vehicleType:[{value:900,text:'Synthetic car',category:'Car'}]}));
-  sessionStorage.setItem('motorTradeFormStore',JSON.stringify({state:{step:7,stepAsEnum:'step7',stepPath:['step7'],formData:{coverLevelID:1,coverIndemnityLimitOwnVehiclesID:900,businessNumberOfVehicleCapacity:2,tradePlateCovered:false,tradePlateMaxNumber:0,tradePlateNumbers:[],driverPlanId:3}},version:0}));
-});});
-test('MTS-07/08B/09 plate row removal, empty list normalization, and specified No',async({page})=>{
-  await page.goto('/motortrade-roadrisks/steps/step7');await page.locator('label[for="opt_tradePlateCovered_true"]').click();await page.getByRole('button',{name:'Synthetic add plate'}).click();await expect(page.getByRole('heading',{name:'Trade Plate 1',exact:true})).toBeVisible();await page.getByRole('button',{name:'X',exact:true}).click();await expect(page.getByRole('heading',{name:'Trade Plate 1',exact:true})).toHaveCount(0);await page.locator('label[for="opt_tradePlateCovered_false"]').click();await page.getByRole('button',{name:'Next',exact:true}).click();
-  await expect(page.getByText('Please click the button below to add a vehicle')).toBeVisible();await page.getByRole('button',{name:'Next',exact:true}).click();await expect(page.getByRole('heading',{name:'Specified Vehicle',exact:true})).toBeVisible();expect(await page.evaluate(()=>JSON.parse(sessionStorage.getItem('motorTradeFormStore')!).state.formData.vehicles)).toEqual([]);
-  await page.locator('label[for="opt_addSpecifiedVehicle_false"]').click();await page.getByRole('button',{name:'Next',exact:true}).click();await expect(page).toHaveURL(/step10$/);expect(await page.evaluate(()=>JSON.parse(sessionStorage.getItem('motorTradeFormStore')!).state.formData)).toMatchObject({addSpecifiedVehicle:false,specifiedVehicles:[]});
+import { test, expect } from '@playwright/test';
+test.beforeEach(async ({ page }) => {
+  await page.addInitScript(() => {
+    (window as unknown as { __CX1_HOST_INPUTS__: unknown }).__CX1_HOST_INPUTS__ = {
+      limits: { pageSize: 10 },
+      tradePlateAddLabel: 'Synthetic add plate',
+      now: () => new Date('2026-09-09'),
+      consumeVehicleLookup: async () => ({
+        values: {
+          make: 'Synthetic Make',
+          model: 'Synthetic Model',
+          abiCode: 'Synthetic ABI',
+          abiGroup: 10,
+          vehicleTypeID: 900,
+          bodyType: 'Synthetic Body',
+          gvw: '0',
+          seats: 9,
+          doors: 4,
+          fuelType: 'Synthetic Fuel',
+          transmission: 'Synthetic Transmission',
+          engineSize: '1000',
+          registrationYear: 2020,
+          registrationDate: '2020-01-01',
+          isImported: false,
+        },
+      }),
+    };
+    sessionStorage.setItem('authBroker', 'SYNTHETIC TEST ONLY');
+    sessionStorage.setItem(
+      'motorTradeOptions',
+      JSON.stringify({
+        indemnityOwnVehicles: [{ value: 900, text: 'Synthetic indemnity', numericValue: 15000 }],
+        vehicleType: [{ value: 900, text: 'Synthetic car', category: 'Car' }],
+      }),
+    );
+    sessionStorage.setItem(
+      'motorTradeFormStore',
+      JSON.stringify({
+        state: {
+          step: 7,
+          stepAsEnum: 'step7',
+          stepPath: ['step7'],
+          formData: {
+            coverLevelID: 1,
+            coverIndemnityLimitOwnVehiclesID: 900,
+            businessNumberOfVehicleCapacity: 2,
+            tradePlateCovered: false,
+            tradePlateMaxNumber: 0,
+            tradePlateNumbers: [],
+            driverPlanId: 3,
+          },
+        },
+        version: 0,
+      }),
+    );
+  });
 });
-test('MTS-08A lookup hides registration; Edit retains values and Back discards unsaved details',async({page})=>{
-  await page.goto('/motortrade-roadrisks/steps/step7');await page.getByRole('button',{name:'Next',exact:true}).click();await page.getByRole('button',{name:'Add Vehicle',exact:true}).click();await page.locator('input[name="regNumber"]').fill('syn- 1');await expect(page.locator('input[name="regNumber"]')).toHaveValue('SYN 1');await page.getByRole('button',{name:'Search',exact:true}).click();await expect(page.locator('input[name="regNumber"]')).toHaveCount(0);await expect(page.getByText('Make: Synthetic Make',{exact:true})).toBeVisible();await page.getByRole('button',{name:'Edit',exact:true}).click();await expect(page.locator('input[name="make"]')).toHaveValue('Synthetic Make');await expect(page.getByText('MT only usage',{exact:true})).toBeVisible();await page.locator('label[for="opt_hasModification_true"]').click();await expect(page.getByRole('heading',{name:'Modification 1',exact:true})).toBeVisible();await expect(page.getByRole('button',{name:'X',exact:true})).toHaveCount(0);await page.getByRole('button',{name:'Add another modification'}).click();await expect(page.getByRole('heading',{name:'Modification 2',exact:true})).toBeVisible();await page.locator('label[for="opt_hasModification_false"]').click();await expect(page.getByRole('heading',{name:'Modification 1',exact:true})).toHaveCount(0);await page.getByRole('button',{name:'Go Back'}).click();await expect(page.getByRole('heading',{name:'Trade Plates',exact:true})).toBeVisible();expect(await page.evaluate(()=>JSON.parse(sessionStorage.getItem('motorTradeFormStore')!).state.formData.vehicles)).toBeUndefined();
+test('MTS-07/08B/09 plate row removal, empty list normalization, and specified No', async ({
+  page,
+}) => {
+  await page.goto('/motortrade-roadrisks/steps/step7');
+  await page.locator('label[for="opt_tradePlateCovered_true"]').click();
+  await page.getByRole('button', { name: 'Synthetic add plate' }).click();
+  await expect(page.getByRole('heading', { name: 'Trade Plate 1', exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'X', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Trade Plate 1', exact: true })).toHaveCount(0);
+  await page.locator('label[for="opt_tradePlateCovered_false"]').click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByText('Please click the button below to add a vehicle')).toBeVisible();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page.getByRole('heading', { name: 'Specified Vehicle', exact: true })).toBeVisible();
+  expect(
+    await page.evaluate(
+      () => JSON.parse(sessionStorage.getItem('motorTradeFormStore')!).state.formData.vehicles,
+    ),
+  ).toEqual([]);
+  await page.locator('label[for="opt_addSpecifiedVehicle_false"]').click();
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await expect(page).toHaveURL(/step10$/);
+  expect(
+    await page.evaluate(
+      () => JSON.parse(sessionStorage.getItem('motorTradeFormStore')!).state.formData,
+    ),
+  ).toMatchObject({ addSpecifiedVehicle: false, specifiedVehicles: [] });
+});
+test('MTS-08A lookup hides registration; Edit retains values and Back discards unsaved details', async ({
+  page,
+}) => {
+  await page.goto('/motortrade-roadrisks/steps/step7');
+  await page.getByRole('button', { name: 'Next', exact: true }).click();
+  await page.getByRole('button', { name: 'Add Vehicle', exact: true }).click();
+  await page.locator('input[name="regNumber"]').fill('syn- 1');
+  await expect(page.locator('input[name="regNumber"]')).toHaveValue('SYN 1');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await expect(page.locator('input[name="regNumber"]')).toHaveCount(0);
+  await expect(page.getByText('Make: Synthetic Make', { exact: true })).toBeVisible();
+  await page.getByRole('button', { name: 'Edit', exact: true }).click();
+  await expect(page.locator('input[name="make"]')).toHaveValue('Synthetic Make');
+  await expect(page.getByText('MT only usage', { exact: true })).toBeVisible();
+  await page.locator('label[for="opt_hasModification_true"]').click();
+  await expect(page.getByRole('heading', { name: 'Modification 1', exact: true })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'X', exact: true })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Add another modification' }).click();
+  await expect(page.getByRole('heading', { name: 'Modification 2', exact: true })).toBeVisible();
+  await page.locator('label[for="opt_hasModification_false"]').click();
+  await expect(page.getByRole('heading', { name: 'Modification 1', exact: true })).toHaveCount(0);
+  await page.getByRole('button', { name: 'Go Back' }).click();
+  await expect(page.getByRole('heading', { name: 'Trade Plates', exact: true })).toBeVisible();
+  expect(
+    await page.evaluate(
+      () => JSON.parse(sessionStorage.getItem('motorTradeFormStore')!).state.formData.vehicles,
+    ),
+  ).toBeUndefined();
 });

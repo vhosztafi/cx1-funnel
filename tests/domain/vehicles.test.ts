@@ -1,28 +1,265 @@
-import {describe,it,expect,vi} from 'vitest';
-import {tradePlatesSchema,tradePlatesDefaults,tradePlatesDisabled,submitTradePlates,backTradePlates,type TradePlatePorts} from '@/domain/trade-plates';
-import {vehicleAddBlocked,vehicleContinueGate,deleteVehicle,saveVehicleDetail,specifiedDefaults,specifiedResolverBranch,specifiedSubmitProjection,type VehicleWorkflowPorts} from '@/domain/vehicle-workflow';
-import {vehicleOwnerOptions,vehicleOwnerSelection,overnightOptions,vehicleParameters,motorcycleVehicleAllowed,vehicleLookupProjection} from '@/domain/vehicle-rules';
-import {vehicleDetailSchema,vehicleValueTest,type VehicleSchemaContext} from '@/domain/vehicle-schema';
-import type {RawForm} from '@/domain/types';
-import type {TestContext} from 'yup';
-const context:VehicleSchemaContext={raw:{},manualEnter:true,editingIndex:0,now:new Date('2026-09-09'),parameters:vehicleParameters({}, {},{abi:{},gvw:{}})};
-describe('MTS-07 plate contracts',()=>{
-  it('Q01–03 defaults, independent MTA flag and cardinality/normalization',async()=>{expect(tradePlatesDefaults({tradePlateCovered:null})).toEqual({tradePlateMaxNumber:undefined,tradePlateNumbers:[]});expect(tradePlatesDisabled({isMta:true},false)).toBe(false);expect(tradePlatesDisabled({isMta:true},true)).toBe(true);
-    await expect(tradePlatesSchema().validate({tradePlateCovered:true,tradePlateMaxNumber:999,tradePlateNumbers:[]})).resolves.toHaveProperty('tradePlateMaxNumber',999);
-    await expect(tradePlatesSchema().validate({tradePlateCovered:false,tradePlateMaxNumber:0,tradePlateNumbers:[{plateNumber:'Ab 12'},{plateNumber:'aB12'}]})).rejects.toThrow('The trade plates need to be unique');
-    await expect(tradePlatesSchema().validate({tradePlateCovered:true,tradePlateMaxNumber:1,tradePlateNumbers:[{plateNumber:'a'},{plateNumber:'b'}]})).rejects.toThrow('Indicated number');
+import { describe, it, expect, vi } from 'vitest';
+import {
+  tradePlatesSchema,
+  tradePlatesDefaults,
+  tradePlatesDisabled,
+  submitTradePlates,
+  backTradePlates,
+  type TradePlatePorts,
+} from '@/domain/trade-plates';
+import {
+  vehicleAddBlocked,
+  vehicleContinueGate,
+  deleteVehicle,
+  saveVehicleDetail,
+  specifiedDefaults,
+  specifiedResolverBranch,
+  specifiedSubmitProjection,
+  type VehicleWorkflowPorts,
+} from '@/domain/vehicle-workflow';
+import {
+  vehicleOwnerOptions,
+  vehicleOwnerSelection,
+  overnightOptions,
+  vehicleParameters,
+  motorcycleVehicleAllowed,
+  vehicleLookupProjection,
+} from '@/domain/vehicle-rules';
+import {
+  vehicleDetailSchema,
+  vehicleValueTest,
+  type VehicleSchemaContext,
+} from '@/domain/vehicle-schema';
+import type { RawForm } from '@/domain/types';
+import type { TestContext } from 'yup';
+const context: VehicleSchemaContext = {
+  raw: {},
+  manualEnter: true,
+  editingIndex: 0,
+  now: new Date('2026-09-09'),
+  parameters: vehicleParameters({}, {}, { abi: {}, gvw: {} }),
+};
+describe('MTS-07 plate contracts', () => {
+  it('Q01–03 defaults, independent MTA flag and cardinality/normalization', async () => {
+    expect(tradePlatesDefaults({ tradePlateCovered: null })).toEqual({
+      tradePlateMaxNumber: undefined,
+      tradePlateNumbers: [],
+    });
+    expect(tradePlatesDisabled({ isMta: true }, false)).toBe(false);
+    expect(tradePlatesDisabled({ isMta: true }, true)).toBe(true);
+    await expect(
+      tradePlatesSchema().validate({
+        tradePlateCovered: true,
+        tradePlateMaxNumber: 999,
+        tradePlateNumbers: [],
+      }),
+    ).resolves.toHaveProperty('tradePlateMaxNumber', 999);
+    await expect(
+      tradePlatesSchema().validate({
+        tradePlateCovered: false,
+        tradePlateMaxNumber: 0,
+        tradePlateNumbers: [{ plateNumber: 'Ab 12' }, { plateNumber: 'aB12' }],
+      }),
+    ).rejects.toThrow('The trade plates need to be unique');
+    await expect(
+      tradePlatesSchema().validate({
+        tradePlateCovered: true,
+        tradePlateMaxNumber: 1,
+        tradePlateNumbers: [{ plateNumber: 'a' }, { plateNumber: 'b' }],
+      }),
+    ).rejects.toThrow('Indicated number');
   });
-  it('R03 saves then list with no rows, short-circuits revalidation and selects strict plan Back',async()=>{const calls:unknown[]=[];const ports:TradePlatePorts={save:data=>calls.push(['save',data]),scroll:()=>calls.push('scroll'),setStep:step=>calls.push(step),route:(state,step)=>calls.push([state,step]),validate:vi.fn(async()=>{throw Error('synthetic');})};const data={tradePlateCovered:false,tradePlateNumbers:[]};await submitTradePlates(data,{},ports);expect(calls).toEqual([['save',data],8,[{showVehicles:true},8]]);calls.length=0;await submitTradePlates(data,{vehicles:[{regNumber:'A'},{regNumber:'B'}]},ports);expect(ports.validate).toHaveBeenCalledTimes(1);expect(calls.slice(1)).toEqual(['scroll',8,[{editingVehicle:0,editing:true,navigateList:true},8]]);calls.length=0;backTradePlates(data,{driverPlanId:3},ports);expect(calls.at(-1)).toEqual([{},6]);backTradePlates(data,{driverPlanId:'3'},ports);expect(calls.at(-1)).toEqual([{showCards:true},6]);});
+  it('R03 saves then list with no rows, short-circuits revalidation and selects strict plan Back', async () => {
+    const calls: unknown[] = [];
+    const ports: TradePlatePorts = {
+      save: (data) => calls.push(['save', data]),
+      scroll: () => calls.push('scroll'),
+      setStep: (step) => calls.push(step),
+      route: (state, step) => calls.push([state, step]),
+      validate: vi.fn(async () => {
+        throw Error('synthetic');
+      }),
+    };
+    const data = { tradePlateCovered: false, tradePlateNumbers: [] };
+    await submitTradePlates(data, {}, ports);
+    expect(calls).toEqual([['save', data], 8, [{ showVehicles: true }, 8]]);
+    calls.length = 0;
+    await submitTradePlates(data, { vehicles: [{ regNumber: 'A' }, { regNumber: 'B' }] }, ports);
+    expect(ports.validate).toHaveBeenCalledTimes(1);
+    expect(calls.slice(1)).toEqual([
+      'scroll',
+      8,
+      [{ editingVehicle: 0, editing: true, navigateList: true }, 8],
+    ]);
+    calls.length = 0;
+    backTradePlates(data, { driverPlanId: 3 }, ports);
+    expect(calls.at(-1)).toEqual([{}, 6]);
+    backTradePlates(data, { driverPlanId: '3' }, ports);
+    expect(calls.at(-1)).toEqual([{ showCards: true }, 6]);
+  });
 });
-describe('MTS-08/09 independent vehicle behavior',()=>{
-  it('R11/R13 Add equality differs from Continue capacity, with loan taking precedence',()=>{const raw={businessNumberOfVehicleCapacity:1,vehicles:[{},{}]};expect(vehicleAddBlocked(raw)).toBe(false);expect(vehicleContinueGate(raw)).toBe('capacity');expect(vehicleContinueGate({...raw,requireCustomerLoanCover:true})).toBe('loan');expect(vehicleAddBlocked({businessNumberOfVehicleCapacity:0})).toBe(true);expect(vehicleAddBlocked({businessNumberOfVehicleCapacity:'1',vehicles:[{}]})).toBe(false);expect(vehicleContinueGate({})).toBe('normalize');expect(vehicleContinueGate({vehicles:[]})).toBe('continue');expect(deleteVehicle({vehicles:[{}]},0,1,1)).toEqual({activePage:0,vehicles:[],notification:false});});
-  it('R03/R17 owner order, sole-trader exclusion and selection normalization remain distinct',()=>{const raw:RawForm={proposerCompanyTypeId:1,proposerName:'Synthetic',proposerSurname:'Proposer',drivers:[{guid:'a',firstName:'A',surname:'A',relationshipPolicyholderID:3},{guid:'b',firstName:'B',surname:'B',relationshipPolicyholderID:'3'}]};expect(vehicleOwnerOptions(raw).map(row=>row.value)).toEqual(['b',1]);expect(vehicleOwnerOptions(raw,true).map(row=>row.value)).toEqual(['a','b',1]);expect(vehicleOwnerSelection(undefined)).toEqual({ownerTypeID:4,ownerGuid:undefined});expect(vehicleOwnerSelection(3)).toEqual({ownerTypeID:3,ownerGuid:null});});
-  it('R04/R18 overnight dedup uses different raw identities without clearing stale state',()=>{const raw={proposerPostcode:'ab 12',tradingPremises:[{tradingPremisePostcode:'ab12'}],drivers:[{coverPersonalVehicle:true,postCode:'AB12'},{coverPersonalVehicle:false,postCode:'omit'}]};expect(overnightOptions(raw,false,s=>s).map(row=>row.value)).toEqual(['ab12','AB12']);expect(overnightOptions(raw,true)).toEqual([{value:'ab 12',text:'ab 12'},{value:'ab12',text:'ab12'},{value:'AB12',text:'AB12'}]);});
-  it('R02 metadata has strict IDs, raw maxima and null unlimited; absent plan satisfies the literal motorcycle alternative',()=>{expect(motorcycleVehicleAllowed({})).toBe(true);expect(motorcycleVehicleAllowed({driverPlanId:1})).toBe(false);const p=vehicleParameters({coverIndemnityLimitOwnVehiclesID:'1'}, {indemnityOwnVehicles:[{value:1,text:'Synthetic',numericValue:9000}]},{abi:{driverMaxAbi:20,driverPlanMaxAbi:30},gvw:{driverListGvw:null,driverPlanGvw:9000}});expect(p.maxVehicleValue).toBeNull();expect(p.maxAbi).toBe(30);expect(p.maxGvw).toEqual([null,9000]);});
-  it('R01 consumes only named fields and preserves numeric zero versus nonnumeric GVW',()=>{expect(vehicleLookupProjection({gvw:'0',unrelated:'not consumed'},'SYN 1')).toMatchObject({gvw:0,regNumber:'SYN 1',isManualEntry:false});expect(vehicleLookupProjection({gvw:'unknown'},'SYN 1')).not.toHaveProperty('unrelated');expect(vehicleLookupProjection({gvw:'unknown'},'SYN 1').gvw).toBe('unknown');});
-  it('Q05/Q08 ABI error routing and null GVW unlimited are independent from manual mode',async()=>{const schema=vehicleDetailSchema({...context,manualEnter:false,parameters:{...context.parameters,maxAbi:20,maxGvw:[null,9000]}});await expect(schema.validateAt('abiGroup',{abiGroup:21,chosenVehicleType:'Car'})).rejects.toMatchObject({path:'customAbiError',message:'ABI Group must be less than or equal to 20'});await expect(schema.validateAt('gvw',{gvw:999999,chosenVehicleType:'Commercial'})).resolves.toBe(999999);});
-  it('Q17 CLR-008 preserves discarded createError and undefined return on both branches',()=>{const createError=vi.fn();const callback=vehicleValueTest({...context,parameters:{...context.parameters,maxVehicleValue:100},currencyFormat:value=>String(value)});expect(callback.call({createError} as unknown as TestContext,101)).toBeUndefined();expect(createError).toHaveBeenCalledWith({message:'Vehicle Value must be less or equal to 100.'});expect(callback.call({createError} as unknown as TestContext,1)).toBeUndefined();});
-  it('MTS-09 Q18/Q19 minimum and future purchase differ; owner callback remains unreturned',async()=>{const schema=vehicleDetailSchema({...context,specified:true});await expect(schema.validateAt('vehicleValue',{vehicleValue:49999})).rejects.toThrow();await expect(schema.validateAt('vehicleValue',{vehicleValue:50000})).resolves.toBe(50000);await expect(schema.validateAt('purchaseDate',{purchaseDate:'2099-01-01'})).resolves.toBeInstanceOf(Date);await expect(vehicleDetailSchema(context).validateAt('purchaseDate',{purchaseDate:'2099-01-01'})).rejects.toThrow('Purchase date cannot be in the future.');});
-  it('R06 saves raw replacement before testing later rows, then 500ms blank route',async()=>{const calls:unknown[]=[];const raw={vehicles:[{regNumber:'OLD'},{regNumber:'BAD'}]};const ports:VehicleWorkflowPorts={save:data=>calls.push(data),scroll:()=>calls.push('scroll'),loading:value=>calls.push(value),route:state=>calls.push(state),delay:async ms=>{calls.push(ms);},validate:vi.fn(async(_row,_index,closure)=>{expect(closure).toBe(raw);throw Error('synthetic');})};await saveVehicleDetail({regNumber:'NEW',customAbiError:'omit',isManualEntry:true},raw,0,ports);expect(calls).toEqual([{vehicles:[{regNumber:'NEW',isManualEntry:true},{regNumber:'BAD'}]},true,'scroll',false,{vehicleLoading:true},500,{editingVehicle:1,editing:true,navigateList:true}]);});
-  it('MTS-09 resolver branches and one-row projection preserve absent vs empty default',()=>{expect(specifiedDefaults({})).not.toHaveProperty('addSpecifiedVehicle');expect(specifiedDefaults({specifiedVehicles:[]})).toHaveProperty('addSpecifiedVehicle',false);expect(specifiedResolverBranch(false,{specifiedVehicles:[{}]})).toBe('undefined');expect(specifiedResolverBranch(false,{})).toBe('lean');expect(specifiedResolverBranch(true,{})).toBe('full');expect(specifiedSubmitProjection({addSpecifiedVehicle:true,regNumber:'SYN',modifications:[{modificationID:1}]})).toEqual({addSpecifiedVehicle:true,specifiedVehicles:[{regNumber:'SYN',modifications:[{modificationID:1}]}]});});
+describe('MTS-08/09 independent vehicle behavior', () => {
+  it('R11/R13 Add equality differs from Continue capacity, with loan taking precedence', () => {
+    const raw = { businessNumberOfVehicleCapacity: 1, vehicles: [{}, {}] };
+    expect(vehicleAddBlocked(raw)).toBe(false);
+    expect(vehicleContinueGate(raw)).toBe('capacity');
+    expect(vehicleContinueGate({ ...raw, requireCustomerLoanCover: true })).toBe('loan');
+    expect(vehicleAddBlocked({ businessNumberOfVehicleCapacity: 0 })).toBe(true);
+    expect(vehicleAddBlocked({ businessNumberOfVehicleCapacity: '1', vehicles: [{}] })).toBe(false);
+    expect(vehicleContinueGate({})).toBe('normalize');
+    expect(vehicleContinueGate({ vehicles: [] })).toBe('continue');
+    expect(deleteVehicle({ vehicles: [{}] }, 0, 1, 1)).toEqual({
+      activePage: 0,
+      vehicles: [],
+      notification: false,
+    });
+  });
+  it('R03/R17 owner order, sole-trader exclusion and selection normalization remain distinct', () => {
+    const raw: RawForm = {
+      proposerCompanyTypeId: 1,
+      proposerName: 'Synthetic',
+      proposerSurname: 'Proposer',
+      drivers: [
+        { guid: 'a', firstName: 'A', surname: 'A', relationshipPolicyholderID: 3 },
+        { guid: 'b', firstName: 'B', surname: 'B', relationshipPolicyholderID: '3' },
+      ],
+    };
+    expect(vehicleOwnerOptions(raw).map((row) => row.value)).toEqual(['b', 1]);
+    expect(vehicleOwnerOptions(raw, true).map((row) => row.value)).toEqual(['a', 'b', 1]);
+    expect(vehicleOwnerSelection(undefined)).toEqual({ ownerTypeID: 4, ownerGuid: undefined });
+    expect(vehicleOwnerSelection(3)).toEqual({ ownerTypeID: 3, ownerGuid: null });
+  });
+  it('R04/R18 overnight dedup uses different raw identities without clearing stale state', () => {
+    const raw = {
+      proposerPostcode: 'ab 12',
+      tradingPremises: [{ tradingPremisePostcode: 'ab12' }],
+      drivers: [
+        { coverPersonalVehicle: true, postCode: 'AB12' },
+        { coverPersonalVehicle: false, postCode: 'omit' },
+      ],
+    };
+    expect(overnightOptions(raw, false, (s) => s).map((row) => row.value)).toEqual([
+      'ab12',
+      'AB12',
+    ]);
+    expect(overnightOptions(raw, true)).toEqual([
+      { value: 'ab 12', text: 'ab 12' },
+      { value: 'ab12', text: 'ab12' },
+      { value: 'AB12', text: 'AB12' },
+    ]);
+  });
+  it('R02 metadata has strict IDs, raw maxima and null unlimited; absent plan satisfies the literal motorcycle alternative', () => {
+    expect(motorcycleVehicleAllowed({})).toBe(true);
+    expect(motorcycleVehicleAllowed({ driverPlanId: 1 })).toBe(false);
+    const p = vehicleParameters(
+      { coverIndemnityLimitOwnVehiclesID: '1' },
+      { indemnityOwnVehicles: [{ value: 1, text: 'Synthetic', numericValue: 9000 }] },
+      {
+        abi: { driverMaxAbi: 20, driverPlanMaxAbi: 30 },
+        gvw: { driverListGvw: null, driverPlanGvw: 9000 },
+      },
+    );
+    expect(p.maxVehicleValue).toBeNull();
+    expect(p.maxAbi).toBe(30);
+    expect(p.maxGvw).toEqual([null, 9000]);
+  });
+  it('R01 consumes only named fields and preserves numeric zero versus nonnumeric GVW', () => {
+    expect(vehicleLookupProjection({ gvw: '0', unrelated: 'not consumed' }, 'SYN 1')).toMatchObject(
+      { gvw: 0, regNumber: 'SYN 1', isManualEntry: false },
+    );
+    expect(vehicleLookupProjection({ gvw: 'unknown' }, 'SYN 1')).not.toHaveProperty('unrelated');
+    expect(vehicleLookupProjection({ gvw: 'unknown' }, 'SYN 1').gvw).toBe('unknown');
+  });
+  it('Q05/Q08 ABI error routing and null GVW unlimited are independent from manual mode', async () => {
+    const schema = vehicleDetailSchema({
+      ...context,
+      manualEnter: false,
+      parameters: { ...context.parameters, maxAbi: 20, maxGvw: [null, 9000] },
+    });
+    await expect(
+      schema.validateAt('abiGroup', { abiGroup: 21, chosenVehicleType: 'Car' }),
+    ).rejects.toMatchObject({
+      path: 'customAbiError',
+      message: 'ABI Group must be less than or equal to 20',
+    });
+    await expect(
+      schema.validateAt('gvw', { gvw: 999999, chosenVehicleType: 'Commercial' }),
+    ).resolves.toBe(999999);
+  });
+  it('Q17 CLR-008 preserves discarded createError and undefined return on both branches', () => {
+    const createError = vi.fn();
+    const callback = vehicleValueTest({
+      ...context,
+      parameters: { ...context.parameters, maxVehicleValue: 100 },
+      currencyFormat: (value) => String(value),
+    });
+    expect(callback.call({ createError } as unknown as TestContext, 101)).toBeUndefined();
+    expect(createError).toHaveBeenCalledWith({
+      message: 'Vehicle Value must be less or equal to 100.',
+    });
+    expect(callback.call({ createError } as unknown as TestContext, 1)).toBeUndefined();
+  });
+  it('MTS-09 Q18/Q19 minimum and future purchase differ; owner callback remains unreturned', async () => {
+    const schema = vehicleDetailSchema({ ...context, specified: true });
+    await expect(schema.validateAt('vehicleValue', { vehicleValue: 49999 })).rejects.toThrow();
+    await expect(schema.validateAt('vehicleValue', { vehicleValue: 50000 })).resolves.toBe(50000);
+    await expect(
+      schema.validateAt('purchaseDate', { purchaseDate: '2099-01-01' }),
+    ).resolves.toBeInstanceOf(Date);
+    await expect(
+      vehicleDetailSchema(context).validateAt('purchaseDate', { purchaseDate: '2099-01-01' }),
+    ).rejects.toThrow('Purchase date cannot be in the future.');
+  });
+  it('R06 saves raw replacement before testing later rows, then 500ms blank route', async () => {
+    const calls: unknown[] = [];
+    const raw = { vehicles: [{ regNumber: 'OLD' }, { regNumber: 'BAD' }] };
+    const ports: VehicleWorkflowPorts = {
+      save: (data) => calls.push(data),
+      scroll: () => calls.push('scroll'),
+      loading: (value) => calls.push(value),
+      route: (state) => calls.push(state),
+      delay: async (ms) => {
+        calls.push(ms);
+      },
+      validate: vi.fn(async (_row, _index, closure) => {
+        expect(closure).toBe(raw);
+        throw Error('synthetic');
+      }),
+    };
+    await saveVehicleDetail(
+      { regNumber: 'NEW', customAbiError: 'omit', isManualEntry: true },
+      raw,
+      0,
+      ports,
+    );
+    expect(calls).toEqual([
+      { vehicles: [{ regNumber: 'NEW', isManualEntry: true }, { regNumber: 'BAD' }] },
+      true,
+      'scroll',
+      false,
+      { vehicleLoading: true },
+      500,
+      { editingVehicle: 1, editing: true, navigateList: true },
+    ]);
+  });
+  it('MTS-09 resolver branches and one-row projection preserve absent vs empty default', () => {
+    expect(specifiedDefaults({})).not.toHaveProperty('addSpecifiedVehicle');
+    expect(specifiedDefaults({ specifiedVehicles: [] })).toHaveProperty(
+      'addSpecifiedVehicle',
+      false,
+    );
+    expect(specifiedResolverBranch(false, { specifiedVehicles: [{}] })).toBe('undefined');
+    expect(specifiedResolverBranch(false, {})).toBe('lean');
+    expect(specifiedResolverBranch(true, {})).toBe('full');
+    expect(
+      specifiedSubmitProjection({
+        addSpecifiedVehicle: true,
+        regNumber: 'SYN',
+        modifications: [{ modificationID: 1 }],
+      }),
+    ).toEqual({
+      addSpecifiedVehicle: true,
+      specifiedVehicles: [{ regNumber: 'SYN', modifications: [{ modificationID: 1 }] }],
+    });
+  });
 });

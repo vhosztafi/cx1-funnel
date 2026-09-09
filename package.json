@@ -13,7 +13,9 @@
     "test": "node node_modules/vitest/vitest.mjs run",
     "test:e2e": "node node_modules/@playwright/test/cli.js test",
     "contracts:generate": "node scripts/canonical-inventory.mjs",
-    "contracts:check": "node scripts/canonical-inventory.mjs --check"
+    "contracts:check": "node scripts/canonical-inventory.mjs --check",
+    "format": "node node_modules/prettier/bin/prettier.cjs --write \"src/**/*.{ts,tsx,scss}\" \"tests/**/*.{ts,tsx}\" \"*.{ts,mjs}\" \"scripts/*.mjs\"",
+    "format:check": "node node_modules/prettier/bin/prettier.cjs --check \"src/**/*.{ts,tsx,scss}\" \"tests/**/*.{ts,tsx}\" \"*.{ts,mjs}\" \"scripts/*.mjs\""
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -48,6 +50,7 @@
     "eslint": "9.39.5",
     "eslint-config-next": "16.3.4",
     "jsdom": "30.0.1",
+    "prettier": "3.9.6",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
     "vitest": "5.0.0"

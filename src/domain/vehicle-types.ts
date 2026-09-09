@@ -1,23 +1,154 @@
 import * as yup from 'yup';
-import {max,concat} from 'lodash-es';
+import { max, concat } from 'lodash-es';
 import definition from '@/contracts/vehicle-types/categories.json';
-import type {RawForm,RawVehicle} from './types';
-import {strictOption,type Options} from './options';
-import type {VehicleValidators} from './vehicle-rules';
-export {definition as vehicleTypesDefinition};
-export function vehicleTypeForces(raw:RawForm,options:Options,abi:VehicleValidators['abi']){const maximum=max([abi.driverMaxAbi,abi.driverPlanMaxAbi]);const all=concat(raw.vehicles as RawVehicle[],raw.specifiedVehicles as RawVehicle[]);const metadata=(row:RawVehicle|undefined|null)=>strictOption(options.vehicleType,row?.vehicleTypeID);return {
-  sportsPerformanceVehicles:typeof maximum==='number'&&maximum>28,
-  commercialVehicles:all.some(row=>row?.vehicleTypeID&&metadata(row)?.category==='Commercial'&&(row?.gvw as number)>3500),
-  motorcycles:!!raw.drivers?.some(driver=>driver.motorcycleLicenceIssueDate)||(raw.driverPlanId!==1&&raw.aadMaxMotorcycleCcID!==1),
-  importedVehicles:all.some(row=>row?.isImported),modifiedVehicles:!!raw.vehicles?.some(row=>row.vehicleModifications?.length),
-  rallyTrackKitCarsTrikes:all.some(row=>metadata(row)?.requiresRallyTrackKitCarsTrikes),quadBikes:all.some(row=>metadata(row)?.requiresQuadBikes),vehiclesWithMoreThan7Seats:all.some(row=>row?.seats&&(row.seats as number)>7),
-};}
-export type TypeForces=ReturnType<typeof vehicleTypeForces>;
-export function vehicleTypesDefaults(raw:RawForm,forces:TypeForces){const result:Record<string,unknown>={};for(const category of [...definition.categories].reverse()){result[category.path]=category.path in forces?raw[category.path]||forces[category.path as keyof TypeForces]:raw[category.path];result[category.percentage.path]=raw[category.percentage.path];if(category.detail)result[category.detail.path]=raw[category.detail.path];}return Object.fromEntries(Object.entries(result).filter(([,value])=>value!==null));}
-export function vehicleTypesTotalTest(this:yup.TestContext){let total=0;for(const category of definition.categories){const value=this.parent[category.percentage.path];if(typeof value==='number'&&!Number.isNaN(value))total+=value;}if(definition.categories.find(category=>this.parent[category.path])&&total!==100){this.createError({message:'The total of all occupations must equal 100%.',path:this.path});}else return true;}
-export function vehicleTypesSchema(forces:TypeForces){const shape:Record<string,yup.AnySchema>={};for(const category of definition.categories){shape[category.path]=yup.boolean().notRequired();if(category.path==='sportsPerformanceVehicles'){shape[category.percentage.path]=yup.number().notRequired().test('SportsCards','This is a required field.',function(value){return !this.parent.sportsPerformanceVehicles||!forces.sportsPerformanceVehicles||!!value;}).test('SportsCars','To have a Sport Performance Cars cover, policy must meet the criteria',function(){return !this.parent.sportsPerformanceVehicles||forces.sportsPerformanceVehicles;});}else if(category.path==='motorcycles'){shape[category.percentage.path]=yup.number().notRequired().when(category.path,{is:true,then:s=>s.label('This').test('motorCycleAllowed',function(value){if(!forces.motorcycles)return this.createError({message:'To have a Motorcycles cover, policy must meet the criteria'});return !!value||this.createError({message:'This is a required field.'});})});}else shape[category.percentage.path]=yup.number().when(category.path,{is:true,then:s=>s.min(1).required().label('This'),otherwise:s=>s.notRequired()});if(category.detail)shape[category.detail.path]=category.detail.type==='number'?yup.number().when(category.path,{is:true,then:s=>s.required().min(3).typeError('This is a required field').label('This'),otherwise:s=>s.notRequired()}):yup.string().when(category.path,{is:true,then:s=>s.required().label('This'),otherwise:s=>s.notRequired()});}
-  return yup.object({...shape,totalPercentage:yup.mixed().test('TotalPercentage','The total of all vehicles must equal 100%.',vehicleTypesTotalTest as yup.TestFunction),atLeastOneType:yup.mixed().test('OneTypeForce','At least one vehicle type must be added',function(){if(definition.categories.find(category=>this.parent[category.path]))return true;const error=this.createError({message:'',path:this.path});/* MTS-10-R05 overrides Yup's falsey-message fallback. */error.message='';error.errors=[''];return error;})});
+import type { RawForm, RawVehicle } from './types';
+import { strictOption, type Options } from './options';
+import type { VehicleValidators } from './vehicle-rules';
+export { definition as vehicleTypesDefinition };
+export function vehicleTypeForces(raw: RawForm, options: Options, abi: VehicleValidators['abi']) {
+  const maximum = max([abi.driverMaxAbi, abi.driverPlanMaxAbi]);
+  const all = concat(raw.vehicles as RawVehicle[], raw.specifiedVehicles as RawVehicle[]);
+  const metadata = (row: RawVehicle | undefined | null) =>
+    strictOption(options.vehicleType, row?.vehicleTypeID);
+  return {
+    sportsPerformanceVehicles: typeof maximum === 'number' && maximum > 28,
+    commercialVehicles: all.some(
+      (row) =>
+        row?.vehicleTypeID &&
+        metadata(row)?.category === 'Commercial' &&
+        (row?.gvw as number) > 3500,
+    ),
+    motorcycles:
+      !!raw.drivers?.some((driver) => driver.motorcycleLicenceIssueDate) ||
+      (raw.driverPlanId !== 1 && raw.aadMaxMotorcycleCcID !== 1),
+    importedVehicles: all.some((row) => row?.isImported),
+    modifiedVehicles: !!raw.vehicles?.some((row) => row.vehicleModifications?.length),
+    rallyTrackKitCarsTrikes: all.some((row) => metadata(row)?.requiresRallyTrackKitCarsTrikes),
+    quadBikes: all.some((row) => metadata(row)?.requiresQuadBikes),
+    vehiclesWithMoreThan7Seats: all.some((row) => row?.seats && (row.seats as number) > 7),
+  };
+}
+export type TypeForces = ReturnType<typeof vehicleTypeForces>;
+export function vehicleTypesDefaults(raw: RawForm, forces: TypeForces) {
+  const result: Record<string, unknown> = {};
+  for (const category of [...definition.categories].reverse()) {
+    result[category.path] =
+      category.path in forces
+        ? raw[category.path] || forces[category.path as keyof TypeForces]
+        : raw[category.path];
+    result[category.percentage.path] = raw[category.percentage.path];
+    if (category.detail) result[category.detail.path] = raw[category.detail.path];
+  }
+  return Object.fromEntries(Object.entries(result).filter(([, value]) => value !== null));
+}
+export function vehicleTypesTotalTest(this: yup.TestContext) {
+  let total = 0;
+  for (const category of definition.categories) {
+    const value = this.parent[category.percentage.path];
+    if (typeof value === 'number' && !Number.isNaN(value)) total += value;
+  }
+  if (definition.categories.find((category) => this.parent[category.path]) && total !== 100) {
+    this.createError({ message: 'The total of all occupations must equal 100%.', path: this.path });
+  } else return true;
+}
+export function vehicleTypesSchema(forces: TypeForces) {
+  const shape: Record<string, yup.AnySchema> = {};
+  for (const category of definition.categories) {
+    shape[category.path] = yup.boolean().notRequired();
+    if (category.path === 'sportsPerformanceVehicles') {
+      shape[category.percentage.path] = yup
+        .number()
+        .notRequired()
+        .test('SportsCards', 'This is a required field.', function (value) {
+          return (
+            !this.parent.sportsPerformanceVehicles || !forces.sportsPerformanceVehicles || !!value
+          );
+        })
+        .test(
+          'SportsCars',
+          'To have a Sport Performance Cars cover, policy must meet the criteria',
+          function () {
+            return !this.parent.sportsPerformanceVehicles || forces.sportsPerformanceVehicles;
+          },
+        );
+    } else if (category.path === 'motorcycles') {
+      shape[category.percentage.path] = yup
+        .number()
+        .notRequired()
+        .when(category.path, {
+          is: true,
+          then: (s) =>
+            s.label('This').test('motorCycleAllowed', function (value) {
+              if (!forces.motorcycles)
+                return this.createError({
+                  message: 'To have a Motorcycles cover, policy must meet the criteria',
+                });
+              return !!value || this.createError({ message: 'This is a required field.' });
+            }),
+        });
+    } else
+      shape[category.percentage.path] = yup
+        .number()
+        .when(category.path, {
+          is: true,
+          then: (s) => s.min(1).required().label('This'),
+          otherwise: (s) => s.notRequired(),
+        });
+    if (category.detail)
+      shape[category.detail.path] =
+        category.detail.type === 'number'
+          ? yup
+              .number()
+              .when(category.path, {
+                is: true,
+                then: (s) =>
+                  s.required().min(3).typeError('This is a required field').label('This'),
+                otherwise: (s) => s.notRequired(),
+              })
+          : yup
+              .string()
+              .when(category.path, {
+                is: true,
+                then: (s) => s.required().label('This'),
+                otherwise: (s) => s.notRequired(),
+              });
+  }
+  return yup.object({
+    ...shape,
+    totalPercentage: yup
+      .mixed()
+      .test(
+        'TotalPercentage',
+        'The total of all vehicles must equal 100%.',
+        vehicleTypesTotalTest as yup.TestFunction,
+      ),
+    atLeastOneType: yup
+      .mixed()
+      .test('OneTypeForce', 'At least one vehicle type must be added', function () {
+        if (definition.categories.find((category) => this.parent[category.path])) return true;
+        const error = this.createError({ message: '', path: this.path });
+        /* MTS-10-R05 overrides Yup's falsey-message fallback. */ error.message = '';
+        error.errors = [''];
+        return error;
+      }),
+  });
 }
 // MTS-10-R07: transporter, corrosive, airside order; Back doesn't call this projection.
-export function vehicleTypesSubmit(values:Record<string,unknown>){const result={...values};for(const category of definition.categories.filter(category=>category.detail)){if(!result[category.path])result[category.detail!.path]=undefined;}return result;}
-export function vehicleTypesSummary(raw:RawForm){return definition.categories.filter(category=>raw[category.path]).map(category=>({label:category.label,text:category.path,percentage:raw[category.percentage.path],details:raw[`${category.path}Details`],max:category.detail?.type==='number'?raw[category.detail.path]:undefined}));}
+export function vehicleTypesSubmit(values: Record<string, unknown>) {
+  const result = { ...values };
+  for (const category of definition.categories.filter((category) => category.detail)) {
+    if (!result[category.path]) result[category.detail!.path] = undefined;
+  }
+  return result;
+}
+export function vehicleTypesSummary(raw: RawForm) {
+  return definition.categories
+    .filter((category) => raw[category.path])
+    .map((category) => ({
+      label: category.label,
+      text: category.path,
+      percentage: raw[category.percentage.path],
+      details: raw[`${category.path}Details`],
+      max: category.detail?.type === 'number' ? raw[category.detail.path] : undefined,
+    }));
+}
