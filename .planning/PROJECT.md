@@ -10,20 +10,20 @@ Reproduce every confirmed observable legacy contract without inventing missing f
 
 ## Current Milestone: v1.1 Complete Motor Trade implementation
 
-The v1.0 specification was delivered separately; provenance is in docs/provenance. This repository initially contains documentation only. Implementation phase numbering continues after specification phases 1–4.
+The v1.0 specification was delivered separately; provenance is in docs/provenance. The initial documentation-only repository now contains the implemented front-end and its automated evidence. Implementation phase numbering continues after specification phases 1–4.
 
 ## Requirements
 
 ### Validated
 
-- v1.0 canonical behavioral specification and handoff (provenance only; implementation is not validated).
+- v1.0 canonical behavioral specification and handoff (provenance only; implementation verification is reported separately).
 
 ### Active
 
-- [ ] Every applicable MTS, EDGE, CTL, OPT, SHR and AUD owner implemented and tested.
-- [ ] Root entry, numbered and internal surfaces, rules, state, routes and Summary reproduce canonical behavior.
-- [ ] Local terminal preparation stops before transport.
-- [ ] Unit, component, end-to-end, lint, type and production-build verification passes.
+- [x] Every applicable MTS, EDGE, CTL, OPT, SHR and AUD owner implemented and tested.
+- [x] Root entry, numbered and internal surfaces, rules, state, routes and Summary reproduce canonical behavior.
+- [x] Local terminal preparation stops before transport.
+- [x] Unit, component, end-to-end, lint, type and production-build verification passes.
 
 ### Out of Scope
 
@@ -55,4 +55,4 @@ AGENTS.md and IMPLEMENTATION-GUIDE.md govern engineering. Document 04 indexes Do
 
 At each phase transition, update validated requirements, decisions and current context. At milestone completion, review all sections against delivered and verified behavior.
 
-Last updated: 2026-09-09 — milestone initialization.
+Last updated: 2026-09-09 — confirmed implementation remainder verified; CLR-001–009 and localized implementation queries remain unresolved.

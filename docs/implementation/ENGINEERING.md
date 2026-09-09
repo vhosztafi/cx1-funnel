@@ -11,6 +11,6 @@ The canonical documents own behavior. Package versions and this document do not 
 - Runtime options, lookup outputs, assets, dashboard configuration and other unresolved host inputs remain typed injected values. No production values are synthesized and no transport adapter exists.
 - Unit/component tests use Vitest and Testing Library. E2E uses Playwright with installed Chrome. Test state is explicitly marked synthetic and is never imported into runtime modules.
 
-Current implementation is in progress. Passing foundation tests and builds do not establish numbered-surface or full-funnel completion. See TRACEABILITY.md for owner status.
+The confirmed implementation remainder has passed unit, component, browser, formatting, lint, type and production-build gates. See VERIFICATION.md for the exact evidence and limitations, and TRACEABILITY.md for owner mappings. Unresolved source facts remain unresolved.
 
 - Lodash ES 4.18.1 (types 4.17.12) supplies the documented stable sortBy and max operations for driver projection; no hand-written replacement ordering is introduced. Current dependency outcomes do not settle legacy CLR gaps.
