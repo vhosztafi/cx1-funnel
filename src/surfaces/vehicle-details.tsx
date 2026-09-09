@@ -24,6 +24,7 @@ import { DateControl } from '@/components/date-control';
 import { VehicleRegistration } from '@/components/vehicle-registration';
 import { Navigator } from '@/components/navigator';
 import definition from '@/contracts/vehicle/questions.json';
+import specifiedDefinition from '@/contracts/vehicle/specified-questions.json';
 import { vehicleDetailSchema, specifiedLeanSchema } from '@/domain/vehicle-schema';
 import {
   vehicleOwnerOptions,
@@ -100,7 +101,11 @@ export function VehicleDetails({ specified = false }: { specified?: boolean }) {
   };
   const clearModification = () => methods.clearErrors('customModificationError');
   const render = (number: number) => {
-    const q = definition.questions[number - 1];
+    const ordinary = definition.questions[number - 1];
+    const q = specified
+      ? (specifiedDefinition.questions.find((question) => question.path === ordinary.path) ??
+        ordinary)
+      : ordinary;
     const name = q.path;
     return (
       <Controller
@@ -227,7 +232,7 @@ export function VehicleDetails({ specified = false }: { specified?: boolean }) {
             render={({ field, fieldState }) => (
               <RadioList
                 field={field}
-                label="Do you want to add specified vehicle?"
+                label={specifiedDefinition.questions[0].label}
                 options={yesNo}
                 error={fieldState.error?.message}
                 onPositive={() => {

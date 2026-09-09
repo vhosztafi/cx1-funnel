@@ -10,6 +10,7 @@ import { summaryTimeSchema, prepareTerminal } from '@/domain/terminal';
 import { summaryEdit } from '@/domain/navigation';
 import { dayjs } from '@/domain/dates';
 import { useJourney } from '@/runtime/use-journey';
+import { summaryDefinition as definition } from '@/contracts/summary';
 function Rows({ rows }: { rows: SummaryRow[] }) {
   return rows.map((row, index) =>
     row.divider ? (
@@ -93,11 +94,11 @@ export function SummarySurface() {
       >
         <div className="border rounded p-4 mt-3">
           <div className="d-flex justify-content-between mb-3">
-            <span>When do you want the policy to start?</span>
+            <span>{definition.dateLabel}</span>
             <strong>{dayjs(raw.proposerPolicyStartDate).format('DD/MM/YYYY')}</strong>
           </div>
           <div className="d-flex justify-content-between">
-            <span>Please specify the time (hh:mm):</span>
+            <span>{definition.questions[0].label}</span>
             <div style={{ width: '50%' }}>
               <Controller
                 name="proposerPolicyStartTime"
