@@ -1,0 +1,5 @@
+# Starter Prompt
+
+```text
+Implement the complete in-scope CX1 Motor Trade front-end funnel in this repository. First read AGENTS.md and IMPLEMENTATION-GUIDE.md, then follow Document 04's canonical reading order and inspect the repository before changing code. Create a stable-ID-driven implementation plan, then implement and test the root entry, all numbered and internal Motor Trade surfaces, questions, options, business rules, validation, navigation, state, Summary/edit behavior, and local pre-quotation terminal preparation using Next.js, TypeScript, Tailwind CSS, and a behavior-neutral UI kit. Maintain code/test traceability for every applicable MTS, EDGE, CTL, OPT, SHR, and AUD owner. Keep CLR-001 through CLR-009 unresolved and non-blocking, never invent production values or reinterpret legacy quirks, and do not cross into APIs, transport, quotation/results, checkout, or payments. Ask only if a material engineering choice cannot be made without changing observable behavior; otherwise proceed autonomously through planning, implementation, verification, and atomic commits.
+```
