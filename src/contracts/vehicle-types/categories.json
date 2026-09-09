@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "owner": "MTS-10-Q01",
+      "path": "standardCars",
+      "label": "Standard Cars",
+      "percentage": {
+        "owner": "MTS-10-Q02",
+        "path": "percentageOfStandardCars",
+        "label": "Percentage of Standard Cars:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q03",
+      "path": "sportsPerformanceVehicles",
+      "label": "Sport Performance Cars",
+      "percentage": {
+        "owner": "MTS-10-Q04",
+        "path": "percentageOfSportsPerformanceVehicles",
+        "label": "Percentage of Sport Performance Cars:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q05",
+      "path": "commercialVehicles",
+      "label": "Commercial Vehicles",
+      "percentage": {
+        "owner": "MTS-10-Q06",
+        "path": "percentageOfCommercialVehicles",
+        "label": "Percentage of Commercial Vehicles:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q07",
+      "path": "motorcycles",
+      "label": "Motorcycles",
+      "percentage": {
+        "owner": "MTS-10-Q08",
+        "path": "percentageOfMotorcycles",
+        "label": "Percentage of Motorcycles:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q09",
+      "path": "classicsOver25Years",
+      "label": "Classics over 25 years",
+      "percentage": {
+        "owner": "MTS-10-Q10",
+        "path": "percentageOfClassicsOver25Years",
+        "label": "Percentage of Classics over 25 years:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q11",
+      "path": "importedVehicles",
+      "label": "Imported Vehicles",
+      "percentage": {
+        "owner": "MTS-10-Q12",
+        "path": "percentageOfImportedVehicles",
+        "label": "Percentage of Imported Vehicles:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q13",
+      "path": "modifiedVehicles",
+      "label": "Modified Vehicles",
+      "percentage": {
+        "owner": "MTS-10-Q14",
+        "path": "percentageOfModifiedVehicles",
+        "label": "Percentage of Modified Vehicles:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q15",
+      "path": "horseboxesAgriculturalPlantMachinery",
+      "label": "Horseboxes / Agricultural / Plan Machinery",
+      "percentage": {
+        "owner": "MTS-10-Q16",
+        "path": "percentageOfHorseboxesAgriculturalPlantMachinery",
+        "label": "Percentage of Horseboxes / Agricultural / Plan Machinery:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q17",
+      "path": "rallyTrackKitCarsTrikes",
+      "label": "Rally / Track / Kit Cars / Trikes ",
+      "percentage": {
+        "owner": "MTS-10-Q18",
+        "path": "percentageOfRallyTrackKitCarsTrikes",
+        "label": "Percentage of Rally / Track / Kit Cars / Trikes :"
+      }
+    },
+    {
+      "owner": "MTS-10-Q19",
+      "path": "transportersCarryingMoreThan2Vehicles",
+      "label": "Transporters carrying more than 2 vehicles",
+      "percentage": {
+        "owner": "MTS-10-Q20",
+        "path": "percentageOfTransportersCarryingMoreThan2Vehicles",
+        "label": "Percentage of Transporters carrying more than 2 vehicles:"
+      },
+      "detail": {
+        "owner": "MTS-10-Q21",
+        "path": "maxVehiclesCarriedByTransporter",
+        "label": "Maximum number of vehicles that can be carried by transporter: ",
+        "type": "number"
+      }
+    },
+    {
+      "owner": "MTS-10-Q22",
+      "path": "quadBikes",
+      "label": "Quad Bikes",
+      "percentage": {
+        "owner": "MTS-10-Q23",
+        "path": "percentageOfQuadBikes",
+        "label": "Percentage of Quad Bikes:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q24",
+      "path": "motorhomes",
+      "label": "Motorhomes",
+      "percentage": {
+        "owner": "MTS-10-Q25",
+        "path": "percentageOfMotorhomes",
+        "label": "Percentage of Motorhomes:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q26",
+      "path": "vehiclesWithMoreThan7Seats",
+      "label": "Vehicles with more than 7 seats",
+      "percentage": {
+        "owner": "MTS-10-Q27",
+        "path": "percentageOfVehiclesWithMoreThan7Seats",
+        "label": "Percentage of Vehicles with more than 7 seats:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q28",
+      "path": "taxis",
+      "label": "Taxis",
+      "percentage": {
+        "owner": "MTS-10-Q29",
+        "path": "percentageOfTaxis",
+        "label": "Percentage of Taxis:"
+      }
+    },
+    {
+      "owner": "MTS-10-Q30",
+      "path": "vehiclesCarryingCorrosiveToxicExplosiveFlammableGoods",
+      "label": "Vehicles carrying corrosive, toxic, explosive or flammable goods/substances",
+      "percentage": {
+        "owner": "MTS-10-Q31",
+        "path": "percentageOfVehiclesCarryingCorrosiveToxicExplosiveFlammableGoods",
+        "label": "Percentage of Vehicles carrying corrosive, toxic, explosive or flammable goods/substances:"
+      },
+      "detail": {
+        "owner": "MTS-10-Q32",
+        "path": "corrosiveToxicExplosiveFlammableGoodsDetails",
+        "label": "Please provide details for Vehicles carrying corrosive, toxic, explosive or flammable goods/substances",
+        "type": "textarea"
+      }
+    },
+    {
+      "owner": "MTS-10-Q33",
+      "path": "airsideOrHazardousLocations",
+      "label": "Airside or Hazardous Locations",
+      "percentage": {
+        "owner": "MTS-10-Q34",
+        "path": "percentageOfAirsideOrHazardousLocations",
+        "label": "Percentage of Airside or Hazardous Locations:"
+      },
+      "detail": {
+        "owner": "MTS-10-Q35",
+        "path": "airsideOrHazardousLocationsDetails",
+        "label": "Please provide details for Airside or Hazardous Locations",
+        "type": "textarea"
+      }
+    },
+    {
+      "owner": "MTS-10-Q36",
+      "path": "tankers",
+      "label": "Tankers",
+      "percentage": {
+        "owner": "MTS-10-Q37",
+        "path": "percentageOfTankers",
+        "label": "Percentage of Tankers:"
+      }
+    }
+  ]
+}

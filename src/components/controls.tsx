@@ -28,10 +28,10 @@ export function MultiSelect({field,label,error,disabled,options}:{options?:reado
   const value=Array.isArray(field.value)?options?.filter(o=>field.value instanceof Array&&field.value.includes(o.value)):undefined;
   return <div className="mb-4">{label&&<label>{label}</label>}<Select<Choice,true> isMulti options={options} getOptionLabel={o=>o.text} getOptionValue={optionValue} value={value} placeholder="Start typing" isDisabled={disabled} onBlur={field.onBlur} onChange={rows=>field.onChange(rows.map(o=>o.value))}/><FormError message={error}/></div>;
 }
-export function RadioList({field,label,error,disabled,options,info,onChoice,onPositive,onNegative,animation}:{options?:readonly Choice[];info?:ReactNode;onChoice?:(option:Choice)=>void;onPositive?:()=>void;onNegative?:()=>void;animation?:ReactNode}&ControlProps) {
+export function RadioList({field,label,error,disabled,options,info,onChoice,onPositive,onNegative,animation,repeatSelection}:{options?:readonly Choice[];info?:ReactNode;onChoice?:(option:Choice)=>void;onPositive?:()=>void;onNegative?:()=>void;animation?:ReactNode;repeatSelection?:boolean}&ControlProps) {
   return <div className="mb-4">{label&&<label htmlFor={field.name}>{label}</label>}{info&&<p>{info}</p>}<div className="radio-options">{options?.length?options.map((o,index)=>{
     const id=`opt_${field.name}_${o.value}`;
-    return <span key={index}><input id={id} type="radio" name={field.name} value={index} checked={o.value===field.value} disabled={disabled} onBlur={field.onBlur} onChange={()=>{onChoice?.(o);if(o.value===true)onPositive?.();if(o.value===false)onNegative?.();field.onChange(o.value);}}/><label htmlFor={id} className={disabled?'disabled':undefined}>{o.text}</label></span>;
+    return <span key={index}><input id={id} type="radio" name={field.name} value={index} checked={o.value===field.value} disabled={disabled} onBlur={field.onBlur} onClick={()=>{if(repeatSelection&&o.value===field.value){onChoice?.(o);if(o.value===true)onPositive?.();if(o.value===false)onNegative?.();field.onChange(o.value);}}} onChange={()=>{onChoice?.(o);if(o.value===true)onPositive?.();if(o.value===false)onNegative?.();field.onChange(o.value);}}/><label htmlFor={id} className={disabled?'disabled':undefined}>{o.text}</label></span>;
   }):<Loader animation={animation}/>}</div><FormError message={error}/></div>;
 }
 export const yesNo:readonly Choice[]=[{text:'Yes',value:true},{text:'No',value:false}];

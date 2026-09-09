@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "pairs": [
+    {
+      "owner": "MTS-12-Q01",
+      "path": "haveAnyOfDriversHadSpecialTermsApplied",
+      "label": "Has anyone on this policy, or any company director ever had insurance declined, cancelled, avoided or special terms imposed?",
+      "detail": {
+        "owner": "MTS-12-Q02",
+        "path": "anyOfDriversHadSpecialTermsAppliedDetails",
+        "label": "Please provide details"
+      }
+    },
+    {
+      "owner": "MTS-12-Q03",
+      "path": "haveAnyOfDriversHadClaimRefused",
+      "label": "Has anyone on this policy, or any company director ever had a claim repudiated or refused?",
+      "detail": {
+        "owner": "MTS-12-Q04",
+        "path": "anyOfDriversHadClaimRefusedDetails",
+        "label": "Please provide details"
+      }
+    },
+    {
+      "owner": "MTS-12-Q05",
+      "path": "haveAnyOfNotListedDriversHaveCCJS",
+      "label": "Has anyone on this policy, or any company director been the subject of a County Court Judgement and/or ever been cited in any unsatisfiled court judgements (or the Scottish equivalent)",
+      "detail": {
+        "owner": "MTS-12-Q06",
+        "path": "anyOfNotListedDriversHaveCCJSDetails",
+        "label": "Please provide details"
+      }
+    },
+    {
+      "owner": "MTS-12-Q07",
+      "path": "haveAnyOfDriversOrPartnerDirectorBankrupted",
+      "label": "Has anyone on this policy, or any company director been the subject of an individual voluntary arrangement with creditors, voluntary liquidation, a winding up or administrative proceeding or declared bankrupt?",
+      "detail": {
+        "owner": "MTS-12-Q08",
+        "path": "anyOfDriversOrPartnerDirectorBankruptedDetails",
+        "label": "Please provide details"
+      }
+    },
+    {
+      "owner": "MTS-12-Q09",
+      "path": "haveAnyOfDriversHadDisabilitiesNotReported",
+      "label": "Has anyone on this policy, or any company director suffered a disability that has a requirement to contact the DVLA but which has not been reported to the DVLA?",
+      "detail": {
+        "owner": "MTS-12-Q10",
+        "path": "anyOfDriversHadDisabilitiesNotReportedDetails",
+        "label": "Please provide details"
+      }
+    },
+    {
+      "owner": "MTS-12-Q11",
+      "path": "haveAnyOfPartnerDirectorHadCriminalConviction",
+      "label": "Has anyone on this policy, or any company director been convicted of any criminal conviction not spent under the Rehabilitation of Offenders Act or have any prosecutions pending?",
+      "detail": {
+        "owner": "MTS-12-Q12",
+        "path": "anyOfPartnerDirectorHadCriminalConvictionDetails",
+        "label": "Please provide details"
+      }
+    },
+    {
+      "owner": "MTS-12-Q13",
+      "path": "hasAnyoneBeenDirectorOrPartnerOtherThanMotortrade",
+      "label": "Has anyone on this policy, or any company director been a director or business partner of a business or company other than the motor trade business proposed here?",
+      "detail": {
+        "owner": "MTS-12-Q14",
+        "path": "anyoneBeenDirectorOrPartnerOtherThanMotortradeDetails",
+        "label": "Please provide details"
+      }
+    },
+    {
+      "owner": "MTS-12-Q15",
+      "path": "hasAnyoneBeenVehicleRentalHireLeasingCompany",
+      "label": "Has anyone on this policy, or any company director been involved in a vehicle rental, self drive hire, vehicle leasing, vehicle broking or accident claims management?",
+      "detail": {
+        "owner": "MTS-12-Q16",
+        "path": "anyoneBeenVehicleRentalHireLeasingCompanyDetails",
+        "label": "Please provide details"
+      }
+    },
+    {
+      "owner": "MTS-12-Q17",
+      "path": "haveAnyoneBeenDisqualifiedForActingAsDirector",
+      "label": "Has anyone on this policy, or any company director been disqualified from acting as a company director for any period of time?",
+      "detail": {
+        "owner": "MTS-12-Q18",
+        "path": "anyoneBeenDisqualifiedForActingAsDirectorDetails",
+        "label": "Please provide details"
+      }
+    },
+    {
+      "owner": "MTS-12-Q19",
+      "path": "haveAnyOfDirectorGoneIntoLiquidation",
+      "label": "Has anyone on this policy, or any company director been a director of a company that has gone into liquidation or dissolved within the last ten years?",
+      "detail": {
+        "owner": "MTS-12-Q20",
+        "path": "anyOfDirectorGoneIntoLiquidationDetails",
+        "label": "Please provide details"
+      }
+    }
+  ]
+}

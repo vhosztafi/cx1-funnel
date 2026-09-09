@@ -5810,850 +5810,1696 @@
     "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q15": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q16": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q17": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q18": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q19": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q20": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q21": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q22": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q23": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q24": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q25": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q26": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q27": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q28": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q29": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q30": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q31": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q32": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q33": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q34": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q35": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q36": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-Q37": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-008"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-R10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-10-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/vehicle-types.ts",
+      "src/surfaces/vehicle-types.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008, CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008, CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q15": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-008"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q16": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-008"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q17": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q18": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q19": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-008, CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-Q20": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-008"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001, CLR-008"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-R12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-U02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-U03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-11-U04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/extras.ts",
+      "src/surfaces/extras.tsx"
+    ],
+    "tests": [
+      "tests/domain/extras.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q15": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q16": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q17": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q18": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q19": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-Q20": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009"
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R15": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R16": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R17": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R18": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R19": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R20": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R21": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-R22": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-12-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/declaration.ts",
+      "src/surfaces/declaration.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-009, CLR-001"
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-R05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-R06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-13-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/additional-information.ts",
+      "src/surfaces/additional-information.tsx"
+    ],
+    "tests": [
+      "tests/domain/remaining-questions.test.ts",
+      "tests/e2e/remaining-questions.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Connected inputs and domain tests; Summary, per-owner assertions and visual reconciliation pending. CLR-001/008/009 remain unresolved."
   },
   "MTS-14": {
     "implementation": [],

@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "owner": "MTS-11-Q01",
+      "path": "demonstrationCover",
+      "label": "Demonstration cover"
+    },
+    {
+      "owner": "MTS-11-Q02",
+      "path": "demonstrationCoverTypeID",
+      "label": "What level of demonstration cover is required?"
+    },
+    {
+      "owner": "MTS-11-Q03",
+      "path": "demonstrationCoverForMotorcycles",
+      "label": "Do you want to add demonstration cover for motorcycles?"
+    },
+    {
+      "owner": "MTS-11-Q04",
+      "path": "windscreenCover",
+      "label": "Windscreen cover"
+    },
+    {
+      "owner": "MTS-11-Q05",
+      "path": "windscreenCoverTypeID",
+      "label": "Cover Limit:"
+    },
+    {
+      "owner": "MTS-11-Q06",
+      "path": "isAdditionalWindscreenCoverRequired",
+      "label": "Is additional windscreen cover required for stock and customer vehicles?"
+    },
+    {
+      "owner": "MTS-11-Q07",
+      "path": "lossOfUseCover",
+      "label": "Is loss of use cover required? "
+    },
+    {
+      "owner": "MTS-11-Q08",
+      "path": "vehiclesAtSubcontractorsCover",
+      "label": "Vehicles at subcontractor’s cover:"
+    },
+    {
+      "owner": "MTS-11-Q09",
+      "path": "thirdPartyPropertyDamageCoverTypeID",
+      "label": "Third party property damage limit:"
+    },
+    {
+      "owner": "MTS-11-Q10",
+      "path": "annualEuropeanCover",
+      "label": "Do you require Annual Green Card?"
+    },
+    {
+      "owner": "MTS-11-Q11",
+      "path": "europeanCoverAnnualExtras[].regNumber",
+      "label": "Vehicle Registration:"
+    },
+    {
+      "owner": "MTS-11-Q12",
+      "path": "europeanCoverAnnualExtras[].europeanCoverUsageTypeID",
+      "label": "What is the purpose for the requirement of the Annual Green Card?"
+    },
+    {
+      "owner": "MTS-11-Q13",
+      "path": "temporaryEuropeanCover",
+      "label": "Do you require Temporary Green Card?"
+    },
+    {
+      "owner": "MTS-11-Q14",
+      "path": "europeanCoverTemporaryExtras[].regNumber",
+      "label": "Vehicle Registration:"
+    },
+    {
+      "owner": "MTS-11-Q15",
+      "path": "europeanCoverTemporaryExtras[].startDateEuropeanTrip",
+      "label": "Start Date of Trip:"
+    },
+    {
+      "owner": "MTS-11-Q16",
+      "path": "europeanCoverTemporaryExtras[].endDateEuropeanTrip",
+      "label": "End Date of Trip:"
+    },
+    {
+      "owner": "MTS-11-Q17",
+      "path": "europeanCoverTemporaryExtras[].europeanAreaID",
+      "label": "Countries being visited:"
+    },
+    {
+      "owner": "MTS-11-Q18",
+      "path": "europeanCoverTemporaryExtras[].europeanCoverDriverGuids",
+      "label": "Any driver between the ages of ${youngestDriver?.text} and ${oldestDriver?.text}"
+    },
+    {
+      "owner": "MTS-11-Q19",
+      "path": "europeanCoverTemporaryExtras[].europeanCoverTypeID",
+      "label": "Cover requested:"
+    },
+    {
+      "owner": "MTS-11-Q20",
+      "path": "europeanCoverTemporaryExtras[].europeanCoverUsageTypeID",
+      "label": "Usage for Trip:"
+    }
+  ]
+}
