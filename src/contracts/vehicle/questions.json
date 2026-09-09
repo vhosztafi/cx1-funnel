@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "owner": "MTS-08-Q01",
+      "path": "regNumber",
+      "label": "Vehicle Registration"
+    },
+    {
+      "owner": "MTS-08-Q02",
+      "path": "make",
+      "label": "Make:"
+    },
+    {
+      "owner": "MTS-08-Q03",
+      "path": "model",
+      "label": "Model:"
+    },
+    {
+      "owner": "MTS-08-Q04",
+      "path": "abiCode",
+      "label": "ABI Code:"
+    },
+    {
+      "owner": "MTS-08-Q05",
+      "path": "abiGroup",
+      "label": "ABI Group:"
+    },
+    {
+      "owner": "MTS-08-Q06",
+      "path": "vehicleTypeID",
+      "label": "Vehicle Type:"
+    },
+    {
+      "owner": "MTS-08-Q07",
+      "path": "bodyType",
+      "label": "Body Type:"
+    },
+    {
+      "owner": "MTS-08-Q08",
+      "path": "gvw",
+      "label": "Gross Vehicle Weight:"
+    },
+    {
+      "owner": "MTS-08-Q09",
+      "path": "seats",
+      "label": "Seats:"
+    },
+    {
+      "owner": "MTS-08-Q10",
+      "path": "doors",
+      "label": "Doors:"
+    },
+    {
+      "owner": "MTS-08-Q11",
+      "path": "fuelType",
+      "label": "Fuel Type:"
+    },
+    {
+      "owner": "MTS-08-Q12",
+      "path": "transmission",
+      "label": "Transmission:"
+    },
+    {
+      "owner": "MTS-08-Q13",
+      "path": "engineSize",
+      "label": "Engine Size:"
+    },
+    {
+      "owner": "MTS-08-Q14",
+      "path": "registrationYear",
+      "label": "Registration Year:"
+    },
+    {
+      "owner": "MTS-08-Q15",
+      "path": "registrationDate",
+      "label": "Registration Date:"
+    },
+    {
+      "owner": "MTS-08-Q16",
+      "path": "isImported",
+      "label": "Imported:"
+    },
+    {
+      "owner": "MTS-08-Q17",
+      "path": "vehicleValue",
+      "label": "Vehicle Value:"
+    },
+    {
+      "owner": "MTS-08-Q18",
+      "path": "purchaseDate",
+      "label": "Purchase Date:"
+    },
+    {
+      "owner": "MTS-08-Q19",
+      "path": "ownerTypeID",
+      "label": "Vehicle Owner:"
+    },
+    {
+      "owner": "MTS-08-Q20",
+      "path": "keptOvernightTypeID",
+      "label": "Where is the vehicle kept overnight?"
+    },
+    {
+      "owner": "MTS-08-Q21",
+      "path": "vehicleKeptAddress",
+      "label": "Vehicle Overnight Address:"
+    },
+    {
+      "owner": "MTS-08-Q22",
+      "path": "isPartLeaseAgreement",
+      "label": "Is this vehicle part of a lease agreement?"
+    },
+    {
+      "owner": "MTS-08-Q23",
+      "path": "leaseLengthYears",
+      "label": "Length of Lease (years):"
+    },
+    {
+      "owner": "MTS-08-Q24",
+      "path": "isCustomerLoan",
+      "label": "Is this a Customer Loan Vehicle?"
+    },
+    {
+      "owner": "MTS-08-Q25",
+      "path": "hasModification",
+      "label": "Is this vehicle modified?"
+    },
+    {
+      "owner": "MTS-08-Q26",
+      "path": "vehicleModifications[].modificationId",
+      "label": "What modifications have been made?"
+    }
+  ]
+}

@@ -17,7 +17,7 @@ progress:
 
 ## Current Position
 
-Phase: 7 — Driver subflows
-Plan: 07-PLAN.md
-Status: Steps 1–5 implemented and tested; driver subflows next; shared/final verification remains open
+Phase: 9 — Remaining questions, Summary and terminal boundary
+Plan: 09-PLAN.md
+Status: Steps 1–9 input flows implemented; remaining questions/Summary/terminal next; full reconciliation remains open
 Last activity: 2026-09-09 — Milestone v1.1 started

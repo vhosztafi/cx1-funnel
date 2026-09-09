@@ -10,6 +10,8 @@ import {populate,authPresenceGuard,returnToDashboard} from '@/domain/entry';
 import {hydrateOptions} from '@/domain/option-cache';
 import {RuntimeContext,useRuntime,useFormSnapshot,type Runtime,type HostInputs} from './context';
 import type {Options} from '@/domain/options';
+import {TradePlatesSurface} from '@/surfaces/trade-plates';
+import {VehiclesSurface,SpecifiedVehicleSurface} from '@/surfaces/vehicles';
 import {DriversSurface} from '@/surfaces/drivers';
 import {CoverSurface} from '@/surfaces/cover';
 import {OccupationsSurface} from '@/surfaces/occupations';
@@ -27,7 +29,7 @@ export function ClientApplication() {
   const mergeOptions=useCallback((data:Options)=>setOptions(previous=>({...previous,...data})),[]);
   useEffect(()=>{setForm(createSession(window.sessionStorage));setHost(window.__CX1_HOST_INPUTS__??{});},[]);
   if(!form)return null;
-  return <RuntimeContext.Provider value={{form,host,options,loading,setLoading,surfaces:{1:ProposerSurface,2:PremisesSurface,3:BusinessSurface,4:OccupationsSurface,5:CoverSurface,6:DriversSurface}}}><BrowserRouter><OptionContainer merge={mergeOptions}><ApplicationRoutes/></OptionContainer></BrowserRouter></RuntimeContext.Provider>;
+  return <RuntimeContext.Provider value={{form,host,options,loading,setLoading,surfaces:{1:ProposerSurface,2:PremisesSurface,3:BusinessSurface,4:OccupationsSurface,5:CoverSurface,6:DriversSurface,7:TradePlatesSurface,8:VehiclesSurface,9:SpecifiedVehicleSurface}}}><BrowserRouter useTransitions={false}><OptionContainer merge={mergeOptions}><ApplicationRoutes/></OptionContainer></BrowserRouter></RuntimeContext.Provider>;
 }
 function OptionContainer({children,merge}:{children:ReactNode;merge:(data:Options)=>void}) {
   const {pathname}=useLocation();const {host}=useRuntime();const [fetched,setFetched]=useState(false);const [loading,setLoading]=useState(false);

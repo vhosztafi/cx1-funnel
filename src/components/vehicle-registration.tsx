@@ -1,6 +1,7 @@
 'use client';
 import {useState,type ReactNode} from 'react';
 import type {RawVehicle} from '@/domain/types';
+import {vehicleLookupProjection} from '@/domain/vehicle-rules';
 import {FormError,Loader,type Field} from './controls';
 export interface VehicleLookupResult {values:RawVehicle;chosenVehicleType?:unknown;}
 export interface VehicleRegistrationProps {
@@ -12,6 +13,7 @@ export interface VehicleRegistrationProps {
   trigger:()=>void;setError:(message:string)=>void;clearErrors:()=>void;
   reset:(values?:Record<string,unknown>)=>void;setValue:(name:string,value:unknown)=>void;
   populated:(result:VehicleLookupResult)=>void;setManual:(value:boolean)=>void;
+  failed?:()=>void;
   animation?:ReactNode;
 }
 // CTL-MT-20 / MTS-08-Q01 / MTS-09-Q02
@@ -28,10 +30,12 @@ export function VehicleRegistration(p:VehicleRegistrationProps) {
       const result=await p.consume(registration);
       const failure=p.eligibility(result);if(failure){p.setError(failure);return;}
       p.clearErrors();p.setValue('isManualEntry',false);
-      Object.entries(result.values).forEach(([key,value])=>p.setValue(key,value));
-      p.setManual(false);p.populated(result);
+      const values=vehicleLookupProjection(result.values,registration);
+      Object.entries(values).forEach(([key,value])=>p.setValue(key,value));
+      p.setManual(false);p.populated({...result,values});
     } catch {
       if(p.specified)p.reset({addSpecifiedVehicle:true,modifications:[]});else p.reset();
+      p.failed?.();
       p.setError('Vehicle Not Found, if you believe this is incorrect, please contact your broker so this update can be completed');
     } finally {setLoading(false);}
   }

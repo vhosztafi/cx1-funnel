@@ -6,6 +6,7 @@ import type {PopulationPorts} from '@/domain/entry';
 import type {Step} from '@/domain/types';
 import type {DriverErrorInputs} from '@/domain/driver-rules';
 import type {AddressPorts} from '@/components/address-control';
+import type {VehicleRegistrationProps} from '@/components/vehicle-registration';
 export interface HostInputs {
   mode?:string;logo?:string;loadingAnimation?:ReactNode;limits?:RuntimeLimits;
   consumeOptions?:()=>Promise<{data:Options}>;consumePopulation?:PopulationPorts['consume'];
@@ -14,6 +15,8 @@ export interface HostInputs {
   driverErrors?:DriverErrorInputs;driverInstructionBody?:ReactNode;driverPrompts?:Partial<Record<'MTS-06-Q59'|'MTS-06-Q61'|'MTS-06-Q62',(values:Record<string,unknown>)=>string>>;
   consumeDriverValidation?:(argument:{data:Record<string,unknown>})=>Promise<{data:{valid:unknown;errorMessages:string[]}}> ;
   address?:AddressPorts;postcodePattern?:RegExp;textNumberPattern?:RegExp;now?:()=>Date;
+  tradePlateAddLabel?:string;existingTradePlates?:unknown;
+  consumeVehicleLookup?:VehicleRegistrationProps['consume'];vehicleLookupEligibility?:VehicleRegistrationProps['eligibility'];currencyFormat?:(value:unknown,digits:number)=>string;
 }
 export interface Runtime {
   form:FormSession;options:Options;host:HostInputs;loading:boolean;setLoading:(value:boolean)=>void;

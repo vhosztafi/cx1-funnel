@@ -4286,560 +4286,1528 @@
     "notes": "Domain rules and workflows partially tested; driver surfaces and detailed owner assertions pending; IMP-CLR-008/009/010 apply; Driver surfaces connected; final per-owner/component/visual reconciliation pending"
   },
   "MTS-07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/trade-plates.ts",
+      "src/surfaces/trade-plates.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-07-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/trade-plates.ts",
+      "src/surfaces/trade-plates.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-07-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/trade-plates.ts",
+      "src/surfaces/trade-plates.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-07-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/trade-plates.ts",
+      "src/surfaces/trade-plates.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-07-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/trade-plates.ts",
+      "src/surfaces/trade-plates.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-07-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/trade-plates.ts",
+      "src/surfaces/trade-plates.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-07-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/trade-plates.ts",
+      "src/surfaces/trade-plates.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-07-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/trade-plates.ts",
+      "src/surfaces/trade-plates.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q15": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q16": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q17": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001, CLR-008"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q18": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q19": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q20": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q21": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q22": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q23": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q24": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q25": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-Q26": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-007"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-R15": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-007, CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-U03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-U04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-007"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-U05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08-U06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08A": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08B": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08L": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-08Ø": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q15": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q16": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q17": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q18": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q19": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q20": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-008"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q21": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q22": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q23": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q24": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q25": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-Q26": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-R16": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-R17": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-R18": {
     "implementation": [
-      "src/domain/converter.ts"
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
     ],
     "tests": [
-      "tests/domain/converter.test.ts"
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
     ],
     "status": "In progress",
-    "notes": "CLR-001; Local converter/sanitizer tested as driver-list dependency; owning terminal/UI pending"
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-R19": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-R20": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001, CLR-007"
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-09-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/contracts/vehicle/questions.json",
+      "src/domain/vehicle-rules.ts",
+      "src/domain/vehicle-schema.ts",
+      "src/domain/vehicle-workflow.ts",
+      "src/surfaces/vehicle-details.tsx",
+      "src/surfaces/vehicle-list.tsx",
+      "src/surfaces/vehicles.tsx"
+    ],
+    "tests": [
+      "tests/domain/vehicles.test.ts",
+      "tests/e2e/vehicles.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Domain and connected input flows implemented; Summary, exact per-owner assertions and final visual reconciliation pending. CLR-001/007/008/009 remain open; see implementation clarification log."
   },
   "MTS-10": {
     "implementation": [],
