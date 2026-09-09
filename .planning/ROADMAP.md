@@ -30,9 +30,9 @@ Each phase receives an executable plan before code changes. Commits separate pla
 
 | Phase | Status |
 |---|---|
-| 5 | Planning |
-| 6 | Pending |
-| 7 | Pending |
+| 5 | In progress |
+| 6 | Implemented input flow; reconciliation pending |
+| 7 | In progress |
 | 8 | Pending |
 | 9 | Pending |
 | 10 | Pending |

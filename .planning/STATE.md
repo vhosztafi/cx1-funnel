@@ -17,7 +17,7 @@ progress:
 
 ## Current Position
 
-Phase: 5 — Runtime and shared behavioral contracts
-Plan: 05-PLAN.md
-Status: Executing foundation; numbered surfaces pending
+Phase: 7 — Driver subflows
+Plan: 07-PLAN.md
+Status: Steps 1–5 implemented and tested; driver subflows next; shared/final verification remains open
 Last activity: 2026-09-09 — Milestone v1.1 started
