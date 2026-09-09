@@ -7,12 +7,11 @@ import {proposerDefinition as definition} from '@/contracts/questions';
 import {proposerSchema,proposerDefaults,proposerSubmit,proposerLayout,policyDateBounds} from '@/domain/proposer';
 import {CheckboxLine,CheckboxLineArray,CheckboxArray,FormError,LogicMultiSelect,FormTextBox,RadioList,yesNo,type Choice} from '@/components/controls';
 import {DateControl} from '@/components/date-control';
-import {AddressControl,type AddressPorts} from '@/components/address-control';
+import {AddressControl} from '@/components/address-control';
 import {Navigator} from '@/components/navigator';
 import {useJourney} from '@/runtime/use-journey';
 
-// Unprovided local channels remain pending, with no fabricated lookup result.
-const unresolvedAddress:AddressPorts={lookup:()=>new Promise(()=>{}),select:()=>new Promise(()=>{}),formatPostcode:value=>value,delay:ms=>new Promise(resolve=>setTimeout(resolve,ms))};
+import {unresolvedAddress} from '@/runtime/address-input';
 export function ProposerSurface() {
   const journey=useJourney();const raw=journey.snapshot.formData;
   const [now]=useState(()=>journey.host.now?.()??new Date());

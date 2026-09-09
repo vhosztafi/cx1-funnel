@@ -17,3 +17,6 @@ $enable-negative-margins: true;
 .radio-options input:focus-visible+label { outline:2px solid currentColor;outline-offset:2px; }
 .radio-options label.disabled { opacity:.5;cursor:default; }
 .debug { position:fixed;width:150px;right:10px;top:250px;z-index:9999;height:fit-content; }
+
+.business-assurance button { height:46px;padding:12px 40px;border-radius:20px; }
+.business-assurance .disagree { background:#F4F4F4;border-color:transparent;color:#333333; }

@@ -330,21 +330,36 @@
     "notes": ""
   },
   "EDGE-02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
+    "implementation": [
+      "src/runtime/use-journey.ts",
+      "src/domain/navigation.ts"
+    ],
+    "tests": [
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "Implemented / tested",
     "notes": ""
   },
   "EDGE-03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
+    "implementation": [
+      "src/runtime/use-journey.ts",
+      "src/domain/navigation.ts"
+    ],
+    "tests": [
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "Implemented / tested",
     "notes": "CLR-004"
   },
   "EDGE-04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
+    "implementation": [
+      "src/runtime/use-journey.ts",
+      "src/domain/navigation.ts"
+    ],
+    "tests": [
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "Implemented / tested",
     "notes": ""
   },
   "EDGE-05": {
@@ -1266,280 +1281,592 @@
     "notes": "Question/rule implementation tested; Summary projection and final visual verification pending; IMP-CLR-002/003/005 apply"
   },
   "MTS-02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-008"
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "CLR-008; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-Q10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-U02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-02-U03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/premises.ts",
+      "src/surfaces/premises.tsx"
+    ],
+    "tests": [
+      "tests/domain/premises.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts",
+      "tests/components/premises.test.tsx",
+      "tests/components/address.test.tsx"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending; IMP-CLR-003/005/006/007"
   },
   "MTS-03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-Q04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-Q05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-Q06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-Q07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-Q08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-Q09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-004"
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-004; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-004"
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-004; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-U02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-004"
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-004; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-03-U03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/business.ts",
+      "src/surfaces/business.tsx"
+    ],
+    "tests": [
+      "tests/domain/business.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-008"
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-008; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-008"
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-008; Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-R05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-U02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-04-U03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/occupations.ts",
+      "src/surfaces/occupations.tsx"
+    ],
+    "tests": [
+      "tests/domain/occupations.test.ts",
+      "tests/e2e/premises-business-occupations.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-05": {
     "implementation": [],
