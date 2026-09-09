@@ -363,9 +363,14 @@
     "notes": ""
   },
   "EDGE-05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
+    "implementation": [
+      "src/surfaces/cover.tsx",
+      "src/runtime/use-journey.ts"
+    ],
+    "tests": [
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "Implemented / tested",
     "notes": ""
   },
   "EDGE-06A-DETAIL": {
@@ -1869,190 +1874,407 @@
     "notes": "Confirmed input/validation/transition remainder tested; Summary and final visual checks pending"
   },
   "MTS-05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q09": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q10": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q11": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q12": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q13": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q14": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q15": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q16": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-Q17": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-R01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-R02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-R03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-R04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-R05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-R06": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-R07": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": "CLR-001"
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "CLR-001; Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-R08": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-U01": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-U02": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-U03": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-U04": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-05-U05": {
-    "implementation": [],
-    "tests": [],
-    "status": "Pending",
-    "notes": ""
+    "implementation": [
+      "src/domain/cover.ts",
+      "src/surfaces/cover.tsx"
+    ],
+    "tests": [
+      "tests/domain/cover.test.ts",
+      "tests/components/cover.test.tsx",
+      "tests/e2e/cover.spec.ts"
+    ],
+    "status": "In progress",
+    "notes": "Confirmed entry/rules/submit and Back tested; Summary mounting and final visual verification pending"
   },
   "MTS-06": {
     "implementation": [],

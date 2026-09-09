@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, type ReactNode } from 'react';
-import Select from 'react-select';
+import { useState, type ReactNode, type Ref } from 'react';
+import Select, {type SelectInstance} from 'react-select';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 import { IMaskInput } from 'react-imask';
@@ -18,8 +18,8 @@ export function Loader({size=150,animation}:{size?:number;animation?:ReactNode})
   return <div className="legacy-loader" style={{width:size,height:size}}>{animation}</div>;
 }
 const optionValue=(option:Choice)=>option.value===undefined?'':String(option.value);
-export function AutoComplete({field,label,error,disabled,id,placeholder,options,callback}:{options?:readonly Choice[];callback?:(value:unknown)=>void}&ControlProps) {
-  return <div className="mb-4">{label&&<label htmlFor={id}>{label}</label>}<Select<Choice> inputId={id} options={options} getOptionLabel={o=>o.text} getOptionValue={optionValue} value={options?.find(o=>o.value==field.value)} placeholder={placeholder||'Select'} isDisabled={disabled} onBlur={field.onBlur} className={error?'is-invalid':undefined} onChange={o=>{field.onChange(o?.value);callback?.(o?.value);}}/><FormError message={error}/></div>;
+export function AutoComplete({field,label,error,disabled,id,placeholder,options,callback,selectRef}:{options?:readonly Choice[];callback?:(value:unknown)=>void;selectRef?:Ref<SelectInstance<Choice>>}&ControlProps) {
+  return <div className="mb-4">{label&&<label htmlFor={id}>{label}</label>}<Select<Choice> ref={selectRef} inputId={id} options={options} getOptionLabel={o=>o.text} getOptionValue={optionValue} value={options?.find(o=>o.value==field.value)} placeholder={placeholder||'Select'} isDisabled={disabled} onBlur={field.onBlur} className={error?'is-invalid':undefined} onChange={o=>{field.onChange(o?.value);callback?.(o?.value);}}/><FormError message={error}/></div>;
 }
 export function LogicMultiSelect({field,label,error,disabled,id,options,callback}:{options?:readonly Choice[];callback?:(option:Choice|null)=>void}&ControlProps) {
   return <div className="mb-4">{label&&<label htmlFor={id}>{label}</label>}<Select<Choice> inputId={id} options={options} getOptionLabel={o=>o.text} getOptionValue={optionValue} value={options?.find(o=>o.value===field.value)??null} placeholder="Select" isDisabled={disabled} onBlur={field.onBlur} className={error?'is-invalid':undefined} onChange={o=>{field.onChange(o?.value??null);callback?.(o);}}/><FormError message={error}/></div>;

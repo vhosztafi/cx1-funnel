@@ -7,7 +7,7 @@ import {useJourney} from '@/runtime/use-journey';
 import {looseOption} from '@/domain/options';
 import {occupationsDefinition as definition,occupationsDefaults,occupationsSchema,appendOccupation,removeOccupation,type OccupationsForm} from '@/domain/occupations';
 export function OccupationsSurface(){
-  const journey=useJourney();const options=journey.options.occupations??[];
+  const journey=useJourney();const options=journey.options.mtOccupations??[];
   const methods=useForm<OccupationsForm>({defaultValues:occupationsDefaults(journey.snapshot.formData),resolver:yupResolver(occupationsSchema(options)) as unknown as Resolver<OccupationsForm>});
   const {fields,replace}=useFieldArray({control:methods.control,name:'occupations'});const rows=useWatch({control:methods.control,name:'occupations'});const error=methods.formState.errors.occupations;
   return <div className="container container-body-md"><form noValidate onSubmit={methods.handleSubmit(data=>{journey.form.setData({...data});journey.next(4);})}><h3>{definition.heading}</h3>

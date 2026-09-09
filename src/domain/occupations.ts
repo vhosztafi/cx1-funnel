@@ -3,7 +3,7 @@ import type {RawForm} from './types';
 import type {OptionItem} from './options';
 export interface Occupation {occupationId?:number|string|null;percentage?:number|string|null;type?:string;}
 export interface OccupationsForm {occupations:Occupation[];}
-export const occupationsDefinition={version:1,owner:'MTS-04',heading:'Occupation',questions:[{owner:'MTS-04-Q01',path:'occupationId',id:'businessActivity',placeholder:'Start typing',options:'occupations'},{owner:'MTS-04-Q02',path:'percentage',label:'Occupation Percentage: ',numberFormat:true}],add:'Add another occupation'} as const;
+export const occupationsDefinition={version:1,owner:'MTS-04',heading:'Occupation',questions:[{owner:'MTS-04-Q01',path:'occupationId',id:'businessActivity',placeholder:'Start typing',options:'mtOccupations'},{owner:'MTS-04-Q02',path:'percentage',label:'Occupation Percentage: ',numberFormat:true}],add:'Add another occupation'} as const;
 export function occupationsDefaults(raw:RawForm):OccupationsForm{return {occupations:raw.occupations||[{occupationId:'',percentage:100}]};}
 export function appendOccupation(rows:Occupation[]):Occupation[]{return [...(rows.length===1?[{occupationId:rows[0].occupationId,percentage:undefined}]:rows),{occupationId:undefined,percentage:undefined}];}
 export function removeOccupation(rows:Occupation[],index:number):Occupation[]{const remaining=rows.filter((_,i)=>i!==index);return remaining.length===1?[{...remaining[0],percentage:100}]:remaining;}

@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 test.beforeEach(async({page})=>{
   await page.addInitScript(()=>{
     sessionStorage.setItem('authBroker','SYNTHETIC TEST PRESENCE ONLY');
-    sessionStorage.setItem('motorTradeOptions',JSON.stringify({tradingFroms:[{value:3,text:'Synthetic origin'}],occupations:[{value:999,text:'Synthetic occupation'},{value:998,text:'Synthetic second occupation'}]}));
+    sessionStorage.setItem('motorTradeOptions',JSON.stringify({tradingFroms:[{value:3,text:'Synthetic origin'}],mtOccupations:[{value:999,text:'Synthetic occupation'},{value:998,text:'Synthetic second occupation'}]}));
     sessionStorage.setItem('motorTradeFormStore',JSON.stringify({state:{step:2,stepAsEnum:'step2',stepPath:['step1','step2'],formData:{proposerPolicyStartDate:'2026-09-10',tradingFromId:3,tradingPremises:[],businessStartedDate:'2020-01-01',businessAnnualTurnover:89999,businessAnnualWageRoll:0,businessIsTradeAssociationMember:true,businessTradeAssociationName:'Synthetic association',businessIsVATRegistered:true,businessVATNumber:'SYNTHETIC VAT',businessNumberOfVehiclesHandlePerYear:1,businessNumberOfVehicleCapacity:0,occupations:[{occupationId:999,percentage:100}]}},version:0}));
   });
 });

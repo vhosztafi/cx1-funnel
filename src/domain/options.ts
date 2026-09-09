@@ -5,7 +5,7 @@ export interface OptionItem {
   value: Id; text: string; numericValue?: number | null;
   excesses?: ExcessRow[] | null; abiGroup?: number | null; gvwLimitDecimal?: number | null;
   isSocialDomesticPleasure?: boolean | null; requireShunterRadius?: boolean | null;
-  requireCarJockeyRadius?: boolean | null; requireCustomerLOI?: boolean | null;
+  requireCarJockeyRadius?: boolean | null; customerLOI?: boolean | null; isComprehensive?: boolean | null; requireNCBIntroRenewal?: boolean | null;
   categoryCommercial?: boolean | null; countries?: string | null;
   [metadata: string]: unknown;
 }
