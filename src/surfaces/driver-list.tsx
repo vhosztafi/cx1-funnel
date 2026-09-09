@@ -17,6 +17,7 @@ import {
   type Options,
 } from '@/domain/options';
 import type { RawDriver, DateValue } from '@/domain/types';
+import { PencilIcon, DeleteIcon } from '@/components/action-icons';
 import { FormError, Loader } from '@/components/controls';
 function DriverCard({
   driver,
@@ -40,10 +41,10 @@ function DriverCard({
         </h4>
         <div>
           <button type="button" className="btn btn-link" onClick={edit}>
-            Edit
+            <PencilIcon /> Edit
           </button>
           <button type="button" className="btn btn-link" onClick={remove}>
-            Delete
+            <DeleteIcon /> Delete
           </button>
         </div>
       </div>

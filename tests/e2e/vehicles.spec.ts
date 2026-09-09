@@ -1,3 +1,4 @@
+import { captureResponsive } from './visual-capture';
 import { test, expect } from '@playwright/test';
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => {
@@ -94,6 +95,7 @@ test('MTS-08A lookup hides registration; Edit retains values and Back discards u
   await page.getByRole('button', { name: 'Search', exact: true }).click();
   await expect(page.locator('input[name="regNumber"]')).toHaveCount(0);
   await expect(page.getByText('Make: Synthetic Make', { exact: true })).toBeVisible();
+  await captureResponsive(page, 'vehicle-lookup-result');
   await page.getByRole('button', { name: 'Edit', exact: true }).click();
   await expect(page.locator('input[name="make"]')).toHaveValue('Synthetic Make');
   await expect(page.getByText('MT only usage', { exact: true })).toBeVisible();
@@ -102,6 +104,7 @@ test('MTS-08A lookup hides registration; Edit retains values and Back discards u
   await expect(page.getByRole('button', { name: 'X', exact: true })).toHaveCount(0);
   await page.getByRole('button', { name: 'Add another modification' }).click();
   await expect(page.getByRole('heading', { name: 'Modification 2', exact: true })).toBeVisible();
+  await captureResponsive(page, 'vehicle-manual-modifications');
   await page.locator('label[for="opt_hasModification_false"]').click();
   await expect(page.getByRole('heading', { name: 'Modification 1', exact: true })).toHaveCount(0);
   await page.getByRole('button', { name: 'Go Back' }).click();

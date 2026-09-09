@@ -1,3 +1,4 @@
+import { captureResponsive } from './visual-capture';
 import { test, expect } from '@playwright/test';
 import declarations from '../../src/contracts/declaration/pairs.json' with { type: 'json' };
 test.afterEach(async ({ page }, info) => {
@@ -47,6 +48,7 @@ test('MTS-10–13 category totals, repeated annual Yes, declaration nulling and 
   await expect(page.getByText('Vehicle Registration:', { exact: true })).toHaveCount(1);
   await page.locator('label[for="opt_annualEuropeanCover_true"]').click();
   await expect(page.getByText('Vehicle Registration:', { exact: true })).toHaveCount(2);
+  await captureResponsive(page, 'extras-annual');
   await expect(page.getByRole('button', { name: 'X', exact: true })).toHaveCount(1);
   await page.locator('label[for="opt_annualEuropeanCover_false"]').click();
   await expect(page.getByRole('button', { name: 'Add Another Vehicle' })).toHaveCount(0);

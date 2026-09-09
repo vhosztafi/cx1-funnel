@@ -1,3 +1,4 @@
+import { captureResponsive } from './visual-capture';
 import { test, expect } from '@playwright/test';
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => {
@@ -77,6 +78,7 @@ test('MTS-06A/B/C invalid existing driver opens detail; edit preserves GUID; loc
   await page.getByRole('button', { name: 'Save and Continue' }).click();
   await expect(page.locator('input[name="surname"]')).toBeVisible();
   await page.locator('input[name="surname"]').fill('Edited');
+  await captureResponsive(page, 'driver-details');
   await page.getByRole('button', { name: 'Next', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Synthetic Edited' })).toBeVisible();
   expect(
@@ -87,6 +89,7 @@ test('MTS-06A/B/C invalid existing driver opens detail; edit preserves GUID; loc
   ).toBe('synthetic-original');
   await page.getByRole('button', { name: 'Show more' }).click();
   await expect(page.getByText('Vehicle Usage :', { exact: false })).toBeVisible();
+  await captureResponsive(page, 'driver-list-expanded');
   await page.getByRole('button', { name: 'Show less' }).click();
   await expect(page.getByText('Vehicle Usage :', { exact: false })).toHaveCount(0);
   await page.getByRole('button', { name: 'Next', exact: true }).click();
@@ -107,6 +110,7 @@ test('MTS-06 history arrays append only on active empty condition, preserve firs
   await expect(page.getByRole('button', { name: 'X', exact: true })).toHaveCount(0);
   await page.getByRole('button', { name: 'Add another CCJ' }).click();
   await expect(page.getByRole('heading', { name: 'CCJ 2', exact: true })).toBeVisible();
+  await captureResponsive(page, 'driver-history');
   await page.getByRole('button', { name: 'X', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'CCJ 2', exact: true })).toHaveCount(0);
   await page.locator('label[for="opt_hasCCJs_false"]').click();

@@ -1,3 +1,4 @@
+import { captureResponsive } from './visual-capture';
 import { test, expect } from '@playwright/test';
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => {
@@ -90,6 +91,7 @@ test('MTS-03-U02 exact dialog markup and independent Disagree callback (CLR-004)
   await page.getByRole('button', { name: 'Save and Continue' }).click();
   const dialog = page.getByRole('dialog');
   await expect(dialog).toBeVisible();
+  await captureResponsive(page, 'vat-modal');
   await expect(dialog).toHaveAttribute('aria-labelledby', 'alert-dialog-title');
   await expect(dialog.locator('#alert-dialog-title')).toHaveCount(0);
   await expect(dialog.getByRole('button')).toHaveText(['Disagree', 'Agree']);
