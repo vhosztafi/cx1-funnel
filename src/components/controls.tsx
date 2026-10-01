@@ -87,6 +87,7 @@ export function AutoComplete({
     <div className="mb-4">
       {label && <label htmlFor={id}>{label}</label>}
       <Select<Choice>
+        classNamePrefix="quote-select"
         ref={selectRef}
         inputId={id}
         options={options}
@@ -119,6 +120,7 @@ export function LogicMultiSelect({
     <div className="mb-4">
       {label && <label htmlFor={id}>{label}</label>}
       <Select<Choice>
+        classNamePrefix="quote-select"
         inputId={id}
         options={options}
         getOptionLabel={(o) => o.text}
@@ -151,6 +153,7 @@ export function MultiSelect({
     <div className="mb-4">
       {label && <label>{label}</label>}
       <Select<Choice, true>
+        classNamePrefix="quote-select"
         isMulti
         options={options}
         getOptionLabel={(o) => o.text}

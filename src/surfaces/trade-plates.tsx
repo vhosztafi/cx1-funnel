@@ -38,11 +38,11 @@ export function TradePlatesSurface() {
   const q = definition.questions;
   return (
     <div className="container container-body-md no-border-radius">
+      <h3>{definition.heading}</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((data) => submitTradePlates(data, raw, ports))}
       >
-        <h3>{definition.heading}</h3>
         <Controller
           name="tradePlateCovered"
           control={methods.control}

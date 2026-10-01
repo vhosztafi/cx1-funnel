@@ -37,6 +37,7 @@ export function BusinessSurface() {
   };
   return (
     <div className="container container-body-md">
+      <h3>{definition.heading}</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((data) =>
@@ -48,7 +49,6 @@ export function BusinessSurface() {
           ),
         )}
       >
-        <h3>{definition.heading}</h3>
         <Dialog
           maxWidth={false}
           open={assurance}

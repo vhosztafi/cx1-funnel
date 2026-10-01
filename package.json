@@ -5,6 +5,9 @@
   "type": "module",
   "packageManager": "pnpm@11.19.0",
   "scripts": {
+    "build:worker": "node scripts/build-worker.mjs",
+    "preview:worker": "node node_modules/wrangler/bin/wrangler.js dev",
+    "deploy": "pnpm build:worker && node node_modules/wrangler/bin/wrangler.js deploy",
     "dev": "node node_modules/next/dist/bin/next dev --webpack --hostname 127.0.0.1",
     "build": "node node_modules/next/dist/bin/next build --webpack",
     "start": "node node_modules/next/dist/bin/next start --hostname 127.0.0.1",
@@ -54,6 +57,7 @@
     "prettier": "3.9.6",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
-    "vitest": "5.0.0"
+    "vitest": "5.0.0",
+    "wrangler": "4.130.0"
   }
 }

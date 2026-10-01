@@ -7,10 +7,11 @@ import {
   type ComponentType,
 } from 'react';
 import type { FormSession } from '@/domain/session';
+import type { StoragePort } from '@/domain/session';
 import type { CleanInputs } from '@/domain/clean';
 import type { Options, RuntimeLimits } from '@/domain/options';
 import type { PopulationPorts } from '@/domain/entry';
-import type { Step } from '@/domain/types';
+import type { RawForm, Step } from '@/domain/types';
 import type { DriverErrorInputs } from '@/domain/driver-rules';
 import type { TerminalBranch, prepareTerminal } from '@/domain/terminal';
 import type { AddressPorts } from '@/components/address-control';
@@ -52,8 +53,11 @@ export interface HostInputs {
   lookupCardFormatter?: LookupCardFormatter;
   terminalBranch?: TerminalBranch;
   terminalPort?: { prepared?: ReturnType<typeof prepareTerminal> };
+  submitDemoQuote?: (raw: RawForm, options: Options, startTime: unknown) => Promise<string>;
 }
 export interface Runtime {
+  /** Development-only auth/option cache; never persisted as real credentials. */
+  previewStorage?: StoragePort;
   form: FormSession;
   options: Options;
   host: HostInputs;

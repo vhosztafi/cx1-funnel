@@ -109,7 +109,7 @@ test('ROOT through MTS-01–14: all numbered surfaces prepare a local argument w
       // SHR-MT-R07 retains the header's negative mobile margins; do not impose
       // a new viewport-overflow rule on that documented layout exception.
       for (const body of await page.locator('.container-body-md').all())
-        expect((await body.boundingBox())!.width).toBeLessThanOrEqual(Math.min(width, 568));
+        expect((await body.boundingBox())!.width).toBeLessThanOrEqual(Math.min(width, 960));
     }
   };
   await page.goto('/');

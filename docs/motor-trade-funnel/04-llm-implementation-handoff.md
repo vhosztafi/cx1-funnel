@@ -6,6 +6,12 @@ Document 04 is the index, classification layer, and completion proof for the Mot
 
 [Start with scope and evidence authority](./01-scope-and-source-inventory.md#evidence-authority-and-status).
 
+## Supplementary external resources
+
+At the user's request, the handover package includes a [UAT Motor Trade options snapshot and source record](./external-resources/README.md), retrieved on 2026-09-10. The [bundled JSON](./external-resources/motortrade-roadrisks-options-2026-09-10.json) preserves the feed's option IDs, labels, ordering and metadata. Its source record provides the original URL, UTC retrieval time, SHA-256 checksum and collection inventory.
+
+This is a later, user-supplied UAT data supplement. The original repository-only evidence scope, historical audit results and canonical clarification dispositions below remain unchanged. The snapshot does not establish historical production values or change the owning behavioral contracts.
+
 ## Scope and terminal boundary
 
 Use [Document 01 for the complete inclusion and exclusion boundary](./01-scope-and-source-inventory.md#in-scope), including the neighboring root context and its [terminal pre-quotation boundary](./01-scope-and-source-inventory.md#terminal-pre-quotation-boundary). The executable terminal requirement is recorded with the other mandatory invariants below.

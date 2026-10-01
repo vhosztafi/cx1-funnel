@@ -32,6 +32,7 @@ export function PremisesSurface() {
   const q = definition.rowQuestions;
   return (
     <div className="container container-body-md">
+      <h3>{definition.heading}</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((data) => {
@@ -39,7 +40,6 @@ export function PremisesSurface() {
           journey.next(2);
         })}
       >
-        <h3>{definition.heading}</h3>
         <Controller
           name="tradingFromId"
           control={methods.control}

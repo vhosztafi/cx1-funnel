@@ -224,8 +224,8 @@ export function VehicleDetails({ specified = false }: { specified?: boolean }) {
   }
   return (
     <div className="container container-body-md">
+      <h3>{specified ? 'Specified Vehicle' : 'Vehicles'}</h3>
       <form noValidate onSubmit={methods.handleSubmit(submit)}>
-        <h3>{specified ? 'Specified Vehicle' : 'Vehicles'}</h3>
         {specified && (
           <Controller
             name="addSpecifiedVehicle"

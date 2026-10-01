@@ -4,6 +4,18 @@ Date: 2026-09-09. Scope: confirmed front-end contracts through the local pre-quo
 
 ## Evidence and limits
 
+Design follow-up, 2026-09-10: user-authorized [Aviva-inspired presentation](DESIGN.md) now supplies the shared blue theme, brand band, serif page titles, grey form panels and responsive controls. Questions, steps and rule logic remain unchanged. All 33 browser scenarios passed, including the complete journey, mobile/desktop captures, date anchoring and an accent-token substitution check. Of 433 unit/component tests, the only initial failure expected an absent host logo to render a broken image; the test now supplies its own logo fixture and passed on rerun. Lint, typecheck, canonical inventory and the isolated production build passed. The approved visual dimensions supersede the prior layout assertions; they do not amend the historical canonical documents.
+
+UAT feed follow-up: the user explicitly authorized reading `https://clegggiffordcoverxwebapi-uat.magiclick.net/funnel/motortrade-roadrisks/options` and replacing all synthetic dropdown options. The development consumer now reads that feed directly, preserving its 52 observed collections and original row IDs, labels, order and metadata. Mock authentication remains separate. Browser verification exercises the actual feed, reload and a forced HTTP failure followed by Retry. The feed is current UAT data, not proof of historical production values; canonical documents remain unchanged. This authorized GET is the sole transport exception in the scope audit; quotation transport remains excluded.
+
+UAT verification: 433 unit/component tests passed, along with lint, typecheck, canonical inventory and isolated production build. The full browser run passed 31 scenarios; its remaining failure was an ambiguous test alert selector matching Next's route announcer. After narrowing the selector, all three feed/preview scenarios passed on rerun, covering all 32 browser scenarios. No `Mock:` strings remain in application source.
+
+Follow-up, 2026-09-09: CTL-MT-13/14 custom date fields now provide both the picker root and trigger refs, anchoring the calendar to the input group. The browser regression checks opening and reopening at 1280px and 375px. Verification passed: 430 unit/component tests, 29 browser tests, lint, typecheck and canonical inventory check. Browser tests reused the existing port-3000 development server through `PLAYWRIGHT_BASE_URL`; the production build was not repeated while that server was running.
+
+Fresh-session investigation: without host inputs, `EDGE-GUARD-AUTH` activates loading but has no dashboard URL to navigate to, and `SHR-MT-R01` invokes an intentionally unresolved option consumer. Both can leave overlays mounted; missing animation assets make them appear blank. Seeded browser tests do not demonstrate a usable unconfigured session.
+
+User-authorized follow-up: standalone development now supplies mock authentication and local option responses, with a visible Mock preview banner. Authentication and option caching use a separate in-memory StoragePort; production credentials/cache are not seeded. Explicit host inputs or existing authentication preserve host-controlled behavior, and production builds never activate the mock. Mock address/vehicle lookup failures terminate and permit manual entry. Synthetic values and limits remain development fixtures and resolve no canonical clarification. Fresh entry, active controls, option selection, reload, absence of persisted mock data, and preservation of the real auth gate have dedicated browser coverage. All 431 unit/component and 31 browser tests, lint, typecheck, formatting of changed code and canonical inventory checks passed.
+
 The traceability matrix maps 677 canonical owners to implementation and automated test files, including the explicitly excluded referral route. All 256 question owners are indexed in typed, versioned, JSON-compatible runtime definitions. Declarative schema tests reject malformed definitions, and 174 complete standalone question literals are compared directly with canonical copy. Dynamic templates, predicates and projection behavior have separate tests. Inventory checks establish completeness of indexing, not behavior; the behavioral evidence is in the linked domain, component and browser suites.
 
 | Area | Verified behavior |
@@ -19,6 +31,8 @@ The traceability matrix maps 677 canonical owners to implementation and automate
 The root-to-terminal browser test uses a synthetic any-driver path and visits all fourteen numbered steps. Separate browser and domain tests cover the named-driver, ordinary-vehicle and specified-vehicle subflows. It does not bypass or invent an outcome for the ordinary vehicle-value callback whose return behavior is subject to CLR-008.
 
 ## Automated gates
+
+Mock-preview follow-up production check: `CX1_BUILD_DIR=.next/production-check` production build passed alongside the active development server. The emitted browser JavaScript contains neither the mock identity marker nor the synthetic fixture labels checked. Next's temporary TypeScript include-path edits were reverted after verification.
 
 All final gates passed on 2026-09-09. Commands use the pinned local tools; package scripts provide their portable entry points.
 

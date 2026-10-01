@@ -111,6 +111,7 @@ export function ExtrasSurface() {
   };
   return (
     <div className="container container-body-md">
+      <h3>Extras</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((data) => {
@@ -118,7 +119,6 @@ export function ExtrasSurface() {
           journey.next(11);
         })}
       >
-        <h3>Extras</h3>
         <DetailCollapser
           text={label(1)}
           added="demonstrationCover"

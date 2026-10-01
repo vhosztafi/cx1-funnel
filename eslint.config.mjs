@@ -6,6 +6,8 @@ export default defineConfig([
   ...nextTs,
   globalIgnores([
     '.next/**',
+    'out/**',
+    '.wrangler/**',
     'node_modules/**',
     '.pnpm-store/**',
     'next-env.d.ts',

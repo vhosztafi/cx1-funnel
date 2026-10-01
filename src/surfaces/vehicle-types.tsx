@@ -35,6 +35,7 @@ export function VehicleTypesSurface() {
   };
   return (
     <div className="container container-body-md">
+      <h3>Vehicles to be Driven</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((data) => {
@@ -42,7 +43,6 @@ export function VehicleTypesSurface() {
           journey.next(10);
         })}
       >
-        <h3>Vehicles to be Driven</h3>
         {definition.categories.map((category) => {
           const percent = (
             <Controller

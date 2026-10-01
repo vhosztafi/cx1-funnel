@@ -39,6 +39,7 @@ export function SummarySurface() {
   const journey = useJourney();
   const raw = journey.snapshot.formData;
   const [errors, setErrors] = useState<string[]>([]);
+  const [submittedUrl, setSubmittedUrl] = useState('');
   const prepared = useRef<ReturnType<typeof prepareTerminal>>(undefined);
   const redirecting = useRef(false);
   const backoffice = sessionStorage.getItem('isBackoffice');
@@ -64,17 +65,19 @@ export function SummarySurface() {
             lineHeight: '19.5px',
           }}
         >
-          <strong>Please contact the system administrator regarding the following errors;</strong>
+          <strong>{journey.host.submitDemoQuote ? 'The quote could not be saved:' : 'Please contact the system administrator regarding the following errors;'}</strong>
           <hr />
           {errors.map((message, index) => (
             <p key={index}>{message}</p>
           ))}
         </div>
       )}
+      {submittedUrl && <div className="alert alert-success" role="status">Quote draft saved in the back office. <a href={submittedUrl} target="_blank" rel="noopener noreferrer">Open saved quote</a>.</div>}
       <form
         noValidate
         onSubmit={(event) =>
-          void methods.handleSubmit((values) => {
+          void methods.handleSubmit(async (values) => {
+            if (submittedUrl) return;
             prepared.current = prepareTerminal(
               raw,
               values.proposerPolicyStartTime,
@@ -89,6 +92,17 @@ export function SummarySurface() {
               },
             );
             if (journey.host.terminalPort) journey.host.terminalPort.prepared = prepared.current;
+            if (journey.host.submitDemoQuote) {
+              try {
+                setSubmittedUrl(await journey.host.submitDemoQuote(raw, journey.options, values.proposerPolicyStartTime));
+              } catch (error) {
+                setErrors([error instanceof Error ? error.message : 'The demo quote could not be saved.']);
+              } finally {
+                journey.setLoading(false);
+              }
+            } else {
+              journey.setLoading(false);
+            }
           })(event)
         }
       >

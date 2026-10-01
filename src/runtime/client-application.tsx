@@ -1,4 +1,5 @@
 'use client';
+import { DemoToolbar } from '@/development/demo-toolbar';
 import { useEffect, useState, useCallback, type ReactNode } from 'react';
 import {
   BrowserRouter,
@@ -10,6 +11,7 @@ import {
   useParams,
 } from 'react-router-dom';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import { BrandHeader } from '@/components/brand-header';
 import { DebugPanel } from '@/components/debug';
 import { CleanSurface } from './clean';
 import { Home } from '@/components/home';
@@ -57,6 +59,7 @@ const pending = <T,>(): Promise<T> => new Promise(() => {});
 export function ClientApplication() {
   const [form, setForm] = useState<Runtime['form']>();
   const [host, setHost] = useState<HostInputs>({});
+  const [previewStorage, setPreviewStorage] = useState<Runtime['previewStorage']>();
   const [options, setOptions] = useState<Options>({});
   const [loading, setLoading] = useState(false);
   const mergeOptions = useCallback(
@@ -64,8 +67,31 @@ export function ClientApplication() {
     [],
   );
   useEffect(() => {
-    setForm(createSession(window.sessionStorage));
-    setHost(window.__CX1_HOST_INPUTS__ ?? {});
+    let active = true;
+    async function initialize() {
+      let inputs = window.__CX1_HOST_INPUTS__ ?? {};
+      let mockStorage: Runtime['previewStorage'];
+      if (
+        (process.env.NODE_ENV === 'development' || process.env.NEXT_PUBLIC_CX1_DEMO === 'on') &&
+        process.env.NEXT_PUBLIC_CX1_MOCKS !== 'off' &&
+        window.__CX1_HOST_INPUTS__ === undefined &&
+        !sessionStorage.getItem('authBroker') &&
+        !sessionStorage.getItem('authBO')
+      ) {
+        const { createMockHost } = await import('@/development/mock-host');
+        const mock = createMockHost();
+        inputs = mock.host;
+        mockStorage = mock.previewStorage;
+      }
+      if (!active) return;
+      setHost(inputs);
+      setPreviewStorage(mockStorage);
+      setForm(createSession(window.sessionStorage));
+    }
+    void initialize();
+    return () => {
+      active = false;
+    };
   }, []);
   if (!form) return null;
   return (
@@ -73,6 +99,7 @@ export function ClientApplication() {
       value={{
         form,
         host,
+        previewStorage,
         options,
         loading,
         setLoading,
@@ -95,6 +122,13 @@ export function ClientApplication() {
       }}
     >
       <BrowserRouter useTransitions={false}>
+        {previewStorage && (
+          <aside className="preview-notice" aria-label="Mock preview">
+            <strong>Mock preview</strong> — Mock authentication, bundled options and fictional
+            addresses. Use manual vehicle entry. No quotation will be sent.
+          </aside>
+        )}
+        <DemoToolbar />
         <DebugPanel />
         <OptionContainer merge={mergeOptions}>
           <ApplicationRoutes />
@@ -111,22 +145,39 @@ function OptionContainer({
   merge: (data: Options) => void;
 }) {
   const { pathname } = useLocation();
-  const { host } = useRuntime();
+  const { host, previewStorage } = useRuntime();
   const [fetched, setFetched] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [optionError, setOptionError] = useState(false);
+  const [retry, setRetry] = useState(0);
   useEffect(() => {
+    setOptionError(false);
     void hydrateOptions(pathname, fetched, {
-      storage: sessionStorage,
+      storage: previewStorage ?? sessionStorage,
       merge,
       setLoading,
       setFetching: () => {},
       markFetched: () => setFetched(true),
       delay: (ms) => new Promise((resolve) => setTimeout(resolve, ms)),
       consume: host.consumeOptions ?? pending,
-    }).catch(() => {});
-  }, [pathname, fetched, host.consumeOptions, merge]);
+    }).catch(() => {
+      if (previewStorage) setOptionError(true);
+    });
+  }, [pathname, fetched, host.consumeOptions, merge, previewStorage, retry]);
   return (
     <div className="position-relative">
+      {previewStorage && optionError && (
+        <div role="alert" className="alert alert-danger">
+          Could not load UAT options.{' '}
+          <button
+            type="button"
+            className="btn btn-outline-danger"
+            onClick={() => setRetry((value) => value + 1)}
+          >
+            Retry loading options
+          </button>
+        </div>
+      )}
       {children}
       {loading && (
         <div className="lookup-overlay">
@@ -210,13 +261,9 @@ function Container() {
   const backoffice = readBackoffice();
   return (
     <>
-      <header className="container-fluid">
-        <div className="d-flex align-items-center mt-3">
-          <div className="logo">
-            <img src={host.logo} alt="CG logo" />
-          </div>
-        </div>
-        <div>
+      <header className="journey-header">
+        <BrandHeader logo={host.logo} />
+        <div className="journey-toolbar">
           {backoffice ? host.backofficeRibbon : host.brokerRibbon}
           <a
             href={backoffice ? host.backofficeDashboard : host.brokerDashboard}
@@ -225,7 +272,9 @@ function Container() {
             Return to Dashboard
           </a>
         </div>
-        <ProgressBar now={derived.percent} className="mx-n3 mx-sm-0" />
+        <div className="journey-progress">
+          <ProgressBar now={derived.percent} />
+        </div>
       </header>
       <Outlet />
       {loading && (
@@ -240,13 +289,13 @@ function Controller() {
   const { step } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
-  const { form, host, setLoading, surfaces } = useRuntime();
+  const { form, host, setLoading, surfaces, previewStorage } = useRuntime();
   const snapshot = useFormSnapshot();
   const family = familyForPath(location.pathname);
   useEffect(() => {
     if (
       !authPresenceGuard(
-        sessionStorage,
+        previewStorage ?? sessionStorage,
         () => setLoading(true),
         () => {
           if (host.brokerDashboard) window.location.assign(host.brokerDashboard);
@@ -259,12 +308,21 @@ function Controller() {
       setStep: form.setStep,
       navigate: (href, state) => navigate(href, { state }),
     });
-  }, [step, snapshot.stepAsEnum, family, navigate, form, host.brokerDashboard, setLoading]);
+  }, [
+    step,
+    snapshot.stepAsEnum,
+    family,
+    navigate,
+    form,
+    host.brokerDashboard,
+    setLoading,
+    previewStorage,
+  ]);
   const numeric = steps.find((s) => stepKey(s) === step);
   const Surface = numeric ? surfaces[numeric] : undefined;
   return (
     <>
-      <div className="container container-body-md">
+      <div className="container container-body-md journey-counter">
         {progress(snapshot.step, snapshot.formData).counter}
       </div>
       {Surface && <Surface />}

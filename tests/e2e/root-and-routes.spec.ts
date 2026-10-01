@@ -31,17 +31,15 @@ test('ROOT-001–007 links preserve order, SPA entry and raw form data', async (
     await page.evaluate(() => JSON.parse(sessionStorage.getItem('motorTradeFormStore')!).state),
   ).toEqual(syntheticState);
 });
-test('ROOT-003 and SHR-MT-R06 root body has 440px maximum at both widths', async ({ page }) => {
+test('ROOT-003 user-authorized theme keeps product entry within the viewport', async ({ page }) => {
   for (const width of [375, 1000]) {
     await page.setViewportSize({ width, height: 850 });
     await page.goto('/');
     await expect(page.getByRole('heading', { name: 'Products' })).toBeVisible();
     const box = await page.locator('.container-body-sm').boundingBox();
-    expect(box!.width).toBeLessThanOrEqual(440);
+    expect(box!.width).toBeLessThanOrEqual(640);
     expect(box!.width).toBeLessThanOrEqual(width);
-    expect(await page.getByAltText('CG logo').evaluate((e) => getComputedStyle(e).maxWidth)).toBe(
-      '60px',
-    );
+    await expect(page.locator('.brand-wordmark')).toHaveText('CX1');
   }
 });
 test('EDGE-GUARD-PERSISTED drops broker prefix without rewriting answers', async ({ page }) => {

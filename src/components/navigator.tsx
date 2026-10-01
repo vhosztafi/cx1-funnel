@@ -14,7 +14,7 @@ export function Navigator({
   loading?: boolean;
 }) {
   return (
-    <div className="text-center d-flex flex-column my-5">
+    <div className="text-center d-flex flex-column my-5 quote-navigation">
       <Button type="submit" disabled={loading}>
         {text}
       </Button>

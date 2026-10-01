@@ -52,13 +52,13 @@ export function DriverPlan() {
   };
   return (
     <div className="container container-body-md">
+      <h3>{definition.heading}</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((data) =>
           submitDriverPlan(data, raw, driverPorts(journey, true)),
         )}
       >
-        <h3>{definition.heading}</h3>
         {render(0)}
         {anyDriverFields(plan) && (
           <>

@@ -39,7 +39,18 @@ it('TERM-008 and AUD-MT-10/11 keep production code local and the canonical inven
           : ts.isPropertyAccessExpression(expression)
             ? expression.name.text
             : '';
-        if (['fetch', 'XMLHttpRequest', 'WebSocket', 'EventSource', 'sendBeacon'].includes(name))
+        // User authorized this one same-origin bundled options consumer; downstream
+        // quotation transport and every other transport remain excluded.
+        const authorizedOptionsRead =
+          file.replaceAll('\\', '/') === 'src/development/uat-options.ts' &&
+          name === 'fetch' &&
+          ts.isCallExpression(node) &&
+          ts.isIdentifier(node.arguments[0]) &&
+          node.arguments[0].text === 'OPTIONS_URL';
+        if (
+          ['fetch', 'XMLHttpRequest', 'WebSocket', 'EventSource', 'sendBeacon'].includes(name) &&
+          !authorizedOptionsRead
+        )
           violations.push(`${file}: transport ${name}`);
       }
       ts.forEachChild(node, inspect);

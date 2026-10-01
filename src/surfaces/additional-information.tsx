@@ -22,6 +22,7 @@ export function AdditionalInformationSurface() {
   });
   return (
     <div className="container container-body-md">
+      <h3>{definition.heading}</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((data) => {
@@ -29,7 +30,6 @@ export function AdditionalInformationSurface() {
           journey.next(13);
         })}
       >
-        <h3>{definition.heading}</h3>
         {definition.questions.map((q, index) =>
           (index === 1 && !predicates.jockey) || (index === 2 && !predicates.shunter) ? null : (
             <Controller

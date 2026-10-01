@@ -4,6 +4,7 @@ import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { usePickerContext } from '@mui/x-date-pickers/hooks';
+import { useForkRef } from '@mui/material/utils';
 import { IMaskInput, IMask } from 'react-imask';
 import { dayjs, manualDate, pickedDate } from '@/domain/dates';
 import type { DateValue } from '@/domain/types';
@@ -24,7 +25,9 @@ const maskBlocks = {
 };
 function MaskedDateField() {
   const props = useContext(InputContext)!;
-  const { rootRef, setOpen } = usePickerContext();
+  const { rootRef, triggerRef, setOpen } = usePickerContext();
+  // CTL-MT-13/14: the custom field also supplies MUI's popup anchor.
+  const fieldRef = useForkRef(rootRef, triggerRef);
   const [display, setDisplay] = useState(() =>
     props.field.value ? dayjs(props.field.value as DateValue).format('DD/MM/YYYY') : '',
   );
@@ -32,7 +35,7 @@ function MaskedDateField() {
     setDisplay(props.field.value ? dayjs(props.field.value as DateValue).format('DD/MM/YYYY') : '');
   }, [props.field.value]);
   return (
-    <div ref={rootRef} className="input-group">
+    <div ref={fieldRef} className="input-group">
       <IMaskInput
         mask="d{/}m{/}Y"
         blocks={maskBlocks}

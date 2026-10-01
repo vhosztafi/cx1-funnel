@@ -148,6 +148,7 @@ export function ProposerSurface() {
   );
   return (
     <div className="container container-body-md">
+      <h3>{definition.heading}</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((values) => {
@@ -155,7 +156,6 @@ export function ProposerSurface() {
           journey.next(1);
         })}
       >
-        <h3>{definition.heading}</h3>
         <label className="fw-bold">{definition.consentExplanation}</label>
         {journey.rtl && (
           <>

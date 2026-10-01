@@ -1,17 +1,12 @@
 'use client';
 import { Link } from 'react-router-dom';
+import { BrandHeader } from './brand-header';
 export function Home({ logo }: { logo?: string }) {
   // ROOT-001–007 / ROOT-013–015. No form reads or writes on either link.
   return (
     <>
-      <div className="container-fluid">
-        <div className="d-flex align-items-center mt-3">
-          <div className="logo">
-            <img src={logo} alt="CG logo" />
-          </div>
-        </div>
-      </div>
-      <div className="container container-body-sm">
+      <BrandHeader logo={logo} />
+      <div className="container container-body-sm product-entry">
         <h3>Products</h3>
         <ul>
           <li>

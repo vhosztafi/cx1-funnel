@@ -204,265 +204,309 @@
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-02": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-03": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-04": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-05": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-06": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-07": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-08": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-09": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-10": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-11": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-12": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-13": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
       "tests/domain/control-values.test.ts",
-      "tests/components/date-control.test.tsx"
+      "tests/components/date-control.test.tsx",
+      "tests/e2e/quote-theme.spec.ts",
+      "tests/e2e/proposer.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-14": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
       "tests/domain/control-values.test.ts",
-      "tests/components/date-control.test.tsx"
+      "tests/components/date-control.test.tsx",
+      "tests/e2e/quote-theme.spec.ts",
+      "tests/e2e/proposer.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-15": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-16": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-17": {
     "implementation": [
-      "src/components/address-control.tsx"
+      "src/components/address-control.tsx",
+      "src/app/quote-theme.css"
     ],
     "tests": [
-      "tests/components/address.test.tsx"
+      "tests/components/address.test.tsx",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-18": {
     "implementation": [
-      "src/components/address-control.tsx"
+      "src/components/address-control.tsx",
+      "src/app/quote-theme.css"
     ],
     "tests": [
-      "tests/components/address.test.tsx"
+      "tests/components/address.test.tsx",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-19": {
     "implementation": [
-      "src/components/address-control.tsx"
+      "src/components/address-control.tsx",
+      "src/app/quote-theme.css"
     ],
     "tests": [
-      "tests/components/address.test.tsx"
+      "tests/components/address.test.tsx",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-20": {
     "implementation": [
-      "src/components/vehicle-registration.tsx"
+      "src/components/vehicle-registration.tsx",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/vehicle-registration.test.tsx",
-      "tests/e2e/vehicles.spec.ts"
+      "tests/e2e/vehicles.spec.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "CTL-MT-21": {
     "implementation": [
       "src/components/controls.tsx",
       "src/components/date-control.tsx",
-      "src/domain/control-values.ts"
+      "src/domain/control-values.ts",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/controls.test.tsx",
-      "tests/domain/control-values.test.ts"
+      "tests/domain/control-values.test.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "EDGE-01": {
     "implementation": [
@@ -1390,10 +1434,13 @@
   "EDGE-GUARD-AUTH": {
     "implementation": [
       "src/domain/entry.ts",
-      "src/runtime/client-application.tsx"
+      "src/runtime/client-application.tsx",
+      "src/development/mock-host.ts"
     ],
     "tests": [
-      "tests/domain/entry.test.ts"
+      "tests/domain/entry.test.ts",
+      "tests/domain/mock-host.test.ts",
+      "tests/e2e/mock-preview.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
     "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
@@ -11006,10 +11053,14 @@
   "SHR-MT-R01": {
     "implementation": [
       "src/domain/option-cache.ts",
-      "src/runtime/client-application.tsx"
+      "src/runtime/client-application.tsx",
+      "src/development/uat-options.ts"
     ],
     "tests": [
-      "tests/domain/entry.test.ts"
+      "tests/domain/entry.test.ts",
+      "tests/domain/uat-options.test.ts",
+      "tests/domain/mock-host.test.ts",
+      "tests/e2e/mock-preview.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
     "notes": "CLR-001; Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
@@ -11065,29 +11116,33 @@
     "implementation": [
       "src/app/globals.scss",
       "src/components/navigator.tsx",
-      "src/components/controls.tsx"
+      "src/components/controls.tsx",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/home.test.tsx",
       "tests/components/controls.test.tsx",
-      "tests/e2e/root-and-routes.spec.ts"
+      "tests/e2e/root-and-routes.spec.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "SHR-MT-R07": {
     "implementation": [
       "src/app/globals.scss",
       "src/components/navigator.tsx",
-      "src/components/controls.tsx"
+      "src/components/controls.tsx",
+      "src/app/quote-theme.css"
     ],
     "tests": [
       "tests/components/home.test.tsx",
       "tests/components/controls.test.tsx",
-      "tests/e2e/root-and-routes.spec.ts"
+      "tests/e2e/root-and-routes.spec.ts",
+      "tests/e2e/quote-theme.spec.ts"
     ],
     "status": "Confirmed remainder implemented / tested",
-    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md."
+    "notes": "Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. User-authorized visual override: docs/implementation/DESIGN.md; behavioral contract retained."
   },
   "SHR-MT-R08": {
     "implementation": [

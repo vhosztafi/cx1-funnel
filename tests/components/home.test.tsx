@@ -10,7 +10,7 @@ describe('root and shared navigation', () => {
     }
     const { container } = render(
       <MemoryRouter>
-        <Home />
+        <Home logo="/synthetic-logo.svg" />
         <Location />
       </MemoryRouter>,
     );

@@ -7,3 +7,6 @@ playwright-report/
 *.tsbuildinfo
 .env*
 .pnpm-store/
+.wrangler/
+.dev.vars*
+.idea/

@@ -123,6 +123,7 @@ export function CoverSurface() {
   }
   return (
     <div className="container container-body-md">
+      <h3>{definition.heading}</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((values) => {
@@ -130,7 +131,6 @@ export function CoverSurface() {
           journey.next(5);
         })}
       >
-        <h3>{definition.heading}</h3>
         {field(0)}
         {limits && (
           <>

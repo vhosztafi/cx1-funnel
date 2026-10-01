@@ -19,6 +19,7 @@ export function DeclarationSurface() {
   const values = useWatch({ control: methods.control });
   return (
     <div className="container container-body-md">
+      <h3>Declaration</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((data) => {
@@ -26,7 +27,6 @@ export function DeclarationSurface() {
           journey.next(12);
         })}
       >
-        <h3>Declaration</h3>
         {definition.pairs.map((pair) => (
           <div className="d-flex flex-column" key={pair.path}>
             <Controller

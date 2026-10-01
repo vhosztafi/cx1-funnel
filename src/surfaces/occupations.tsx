@@ -25,6 +25,7 @@ export function OccupationsSurface() {
   const error = methods.formState.errors.occupations;
   return (
     <div className="container container-body-md">
+      <h3>{definition.heading}</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((data) => {
@@ -32,7 +33,6 @@ export function OccupationsSurface() {
           journey.next(4);
         })}
       >
-        <h3>{definition.heading}</h3>
         {fields.map((item, index) => {
           const title = looseOption(options, rows[index]?.occupationId)?.text;
           return (
