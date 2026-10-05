@@ -1,5 +1,7 @@
 'use client';
 import { DemoToolbar } from '@/development/demo-toolbar';
+import { connectLocalBackoffice, currentLocalBackoffice } from '@/integration/local-backoffice';
+import { LocalDraftControls, LocalDraftBoundary } from '@/integration/local-draft-controls';
 import { useEffect, useState, useCallback, type ReactNode } from 'react';
 import {
   BrowserRouter,
@@ -62,6 +64,7 @@ export function ClientApplication() {
   const [previewStorage, setPreviewStorage] = useState<Runtime['previewStorage']>();
   const [options, setOptions] = useState<Options>({});
   const [loading, setLoading] = useState(false);
+  const [initializationError, setInitializationError] = useState('');
   const mergeOptions = useCallback(
     (data: Options) => setOptions((previous) => ({ ...previous, ...data })),
     [],
@@ -69,6 +72,12 @@ export function ClientApplication() {
   useEffect(() => {
     let active = true;
     async function initialize() {
+      const local = await connectLocalBackoffice();
+      if (local) {
+        if (!active) return;
+        const session = createSession(local.storage); local.bind(session);
+        setHost(local.host); setForm(session); return;
+      }
       let inputs = window.__CX1_HOST_INPUTS__ ?? {};
       let mockStorage: Runtime['previewStorage'];
       if (
@@ -88,12 +97,12 @@ export function ClientApplication() {
       setPreviewStorage(mockStorage);
       setForm(createSession(window.sessionStorage));
     }
-    void initialize();
+    void initialize().catch(error => { if(active) setInitializationError(error instanceof Error ? error.message : 'The saved draft could not be opened.'); });
     return () => {
       active = false;
     };
   }, []);
-  if (!form) return null;
+  if (!form) return initializationError ? <div className="alert alert-danger" role="alert">{initializationError} <button type="button" onClick={() => window.location.reload()}>Retry connection</button></div> : <p role="status">Opening Motor Trade capture…</p>;
   return (
     <RuntimeContext.Provider
       value={{
@@ -128,10 +137,11 @@ export function ClientApplication() {
             addresses. Use manual vehicle entry. No quotation will be sent.
           </aside>
         )}
+        <LocalDraftControls />
         <DemoToolbar />
         <DebugPanel />
         <OptionContainer merge={mergeOptions}>
-          <ApplicationRoutes />
+          <LocalDraftBoundary><ApplicationRoutes /></LocalDraftBoundary>
         </OptionContainer>
       </BrowserRouter>
     </RuntimeContext.Provider>
@@ -189,9 +199,10 @@ function OptionContainer({
 }
 export function ApplicationRoutes() {
   const { host } = useRuntime();
+  const savedQuoteEntry=typeof window!=='undefined' ? ({'http://127.0.0.1:3177':'http://127.0.0.1:3193/quotes/new','https://cx1-dev.gyongyos.co.uk':'https://cx1-admin-dev.gyongyos.co.uk/quotes/new'} as Record<string,string>)[window.location.origin] : undefined;
   return (
     <Routes>
-      <Route path="/" element={<Home logo={host.logo} />} />
+      <Route path="/" element={<Home logo={host.logo} savedQuoteEntry={savedQuoteEntry} />} />
       {families.flatMap((family) => [
         ...[
           '/broker/clean/buy',
@@ -267,7 +278,7 @@ function Container() {
           {backoffice ? host.backofficeRibbon : host.brokerRibbon}
           <a
             href={backoffice ? host.backofficeDashboard : host.brokerDashboard}
-            onClick={() => returnToDashboard(sessionStorage)}
+            onClick={(event) => { const connected = currentLocalBackoffice(); if(connected) { event.preventDefault(); connected.returnToRecord(); } else returnToDashboard(sessionStorage); }}
           >
             Return to Dashboard
           </a>
@@ -295,7 +306,7 @@ function Controller() {
   useEffect(() => {
     if (
       !authPresenceGuard(
-        previewStorage ?? sessionStorage,
+        host.contextStorage ?? previewStorage ?? sessionStorage,
         () => setLoading(true),
         () => {
           if (host.brokerDashboard) window.location.assign(host.brokerDashboard);
@@ -315,6 +326,7 @@ function Controller() {
     navigate,
     form,
     host.brokerDashboard,
+    host.contextStorage,
     setLoading,
     previewStorage,
   ]);

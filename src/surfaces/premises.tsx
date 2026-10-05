@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { Controller, useForm, useFieldArray, useWatch, type Resolver } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { LogicMultiSelect, FormTextBoxNumber, RadioList, yesNo } from '@/components/controls';
@@ -24,6 +25,7 @@ export function PremisesSurface() {
       premisesSchema(journey.host.postcodePattern),
     ) as unknown as Resolver<PremisesForm>,
   });
+  useLocalFormDraft(methods, 'premises');
   const { fields, append, remove } = useFieldArray({
     control: methods.control,
     name: 'tradingPremises',

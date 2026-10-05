@@ -2,6 +2,8 @@
 
 Generated from canonical owners and coverage.json. Pending means no verified implementation claim. Inventory tests prove indexing only; behavioral tests must be linked separately.
 
+Approved integration extension (2026-10-05): [BACKOFFICE-INTEGRATION.md](BACKOFFICE-INTEGRATION.md) owns saved-record entry, all fourteen current-form draft hooks, MTS-06C saved driver checks and MTS-14 host submission. This is additional user-authorized behavior, not evidence that unresolved canonical provider/configuration facts have been recovered. Ordinary unhosted source behavior retains its canonical boundary.
+
 | Stable ID | Canonical link | Implementation files | Test files | Status | Notes/CLR |
 |---|---|---|---|---|---|
 | AUD-MT-01 | [source L3448](../../docs/motor-trade-funnel/03-questions-and-business-rules.md#aud-mt-01--mts-06-option-consumer-backlinks) | src/contracts/registry.ts, src/domain/driver-rules.ts, src/domain/driver-workflow.ts, src/domain/driver-schema.ts, src/surfaces/driver-plan.tsx, src/surfaces/driver-details.tsx, src/surfaces/driver-list.tsx | tests/domain/definitions.test.ts, tests/domain/scope.test.ts, tests/domain/driver-schema.test.ts, tests/domain/driver-workflow.test.ts, tests/e2e/drivers.spec.ts | Confirmed remainder implemented / tested | CLR-001; Confirmed contracts linked to code and behavioral suites; limitations and unresolved inputs are recorded in VERIFICATION.md and clarification-log.md. |

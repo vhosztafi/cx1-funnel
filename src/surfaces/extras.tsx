@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { useEffect } from 'react';
 import {
   useForm,
@@ -53,6 +54,7 @@ export function ExtrasSurface() {
     defaultValues: extrasDefaults(raw),
     resolver: yupResolver(extrasSchema(raw, journey.options)) as unknown as Resolver<ExtrasValues>,
   });
+  useLocalFormDraft(methods, 'extras');
   const defaults = methods.formState.defaultValues as ExtrasValues;
   const values = useWatch({ control: methods.control });
   const annual = useFieldArray({

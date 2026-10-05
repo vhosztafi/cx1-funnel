@@ -33,10 +33,6 @@ export function createMockHost(): { host: HostInputs; previewStorage: StoragePor
       tradePlateAddLabel: 'Add trade plate',
       terminalBranch: { kind: 'ordinary' },
       terminalPort: {},
-      ...(typeof window !== 'undefined' && window.location.origin === 'https://cx1-dev.gyongyos.co.uk'
-        ? { submitDemoQuote: async (...args: Parameters<NonNullable<HostInputs['submitDemoQuote']>>) =>
-            (await import('@/integration/demo-handoff')).submitDemoQuote(...args) }
-        : {}),
     },
   };
 }

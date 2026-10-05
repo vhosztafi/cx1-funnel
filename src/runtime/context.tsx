@@ -18,6 +18,7 @@ import type { AddressPorts } from '@/components/address-control';
 import type { VehicleRegistrationProps } from '@/components/vehicle-registration';
 import type { LookupCardFormatter } from '@/domain/vehicle-card';
 export interface HostInputs {
+  contextStorage?: StoragePort;
   mode?: string;
   clean?: CleanInputs;
   debug?: {

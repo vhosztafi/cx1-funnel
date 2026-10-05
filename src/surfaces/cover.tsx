@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { optionRows } from '@/domain/options';
 import { useRef, useState } from 'react';
 import type { SelectInstance } from 'react-select';
@@ -39,6 +40,7 @@ export function CoverSurface() {
       Record<string, unknown>
     >,
   });
+  useLocalFormDraft(methods, 'cover');
   const values = useWatch({ control: methods.control });
   const limits = coverHasLimits(values.coverLevelID);
   const introductory = introRenewal(values, options);

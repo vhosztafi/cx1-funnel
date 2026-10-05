@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { Controller, useForm, useFieldArray, useWatch, type Resolver } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { AutoComplete, TextFieldPercentage, FormError } from '@/components/controls';
@@ -20,6 +21,7 @@ export function OccupationsSurface() {
     defaultValues: occupationsDefaults(journey.snapshot.formData),
     resolver: yupResolver(occupationsSchema(options)) as unknown as Resolver<OccupationsForm>,
   });
+  useLocalFormDraft(methods, 'occupations');
   const { fields, replace } = useFieldArray({ control: methods.control, name: 'occupations' });
   const rows = useWatch({ control: methods.control, name: 'occupations' });
   const error = methods.formState.errors.occupations;

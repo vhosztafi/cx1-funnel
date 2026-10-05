@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { useEffect, useState } from 'react';
 import {
   useForm,
@@ -86,6 +87,7 @@ export function DriverDetails() {
       }),
     ) as unknown as Resolver<Values>,
   });
+  useLocalFormDraft(methods, 'driver-details:' + JSON.stringify(journey.routeState ?? {}));
   const values = useWatch({ control: methods.control });
   const d = youngAndExperienceOptions(values as RawDriver, raw, journey.options);
   const h0 = useHistory(methods.control, 0),

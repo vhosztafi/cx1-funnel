@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { Controller, useForm, useFieldArray, useWatch, type Resolver } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { RadioList, yesNo, FormTextBoxNumber, FormTextBox, FormError } from '@/components/controls';
@@ -22,6 +23,7 @@ export function TradePlatesSurface() {
     defaultValues: tradePlatesDefaults(raw),
     resolver: yupResolver(tradePlatesSchema()) as unknown as Resolver<TradePlatesForm>,
   });
+  useLocalFormDraft(methods, 'trade-plates');
   const { fields, append, remove } = useFieldArray({
     control: methods.control,
     name: 'tradePlateNumbers',

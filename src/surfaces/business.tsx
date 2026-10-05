@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { useState } from 'react';
 import { Controller, useForm, useWatch, type Resolver } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -29,6 +30,7 @@ export function BusinessSurface() {
       businessSchema(journey.snapshot.formData.proposerPolicyStartDate),
     ) as unknown as Resolver<Record<string, unknown>>,
   });
+  useLocalFormDraft(methods, 'business');
   const values = useWatch({ control: methods.control });
   const ports = {
     save: journey.form.setData,

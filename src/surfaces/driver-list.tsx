@@ -97,6 +97,9 @@ export function DriverList() {
         setErrors(result.data.errorMessages);
         window.scrollTo(0, 0);
       }
+    } catch(error) {
+      if(journey.host.contextStorage)setErrors([error instanceof Error?error.message:'The saved driver check could not be confirmed.']);
+      else throw error;
     } finally {
       setLoading(false);
     }

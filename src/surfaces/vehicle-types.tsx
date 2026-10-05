@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { useForm, Controller, type Resolver } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import {
@@ -30,6 +31,7 @@ export function VehicleTypesSurface() {
       Record<string, unknown>
     >,
   });
+  useLocalFormDraft(methods, 'vehicle-types');
   const percentageChanged = () => {
     if (methods.formState.errors.totalPercentage) void methods.trigger('totalPercentage');
   };

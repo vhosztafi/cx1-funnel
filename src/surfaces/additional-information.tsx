@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { Controller, useForm, type Resolver } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { RadioList, yesNo, FormTextBox } from '@/components/controls';
@@ -20,6 +21,7 @@ export function AdditionalInformationSurface() {
       Record<string, unknown>
     >,
   });
+  useLocalFormDraft(methods, 'additional-information');
   return (
     <div className="container container-body-md">
       <h3>{definition.heading}</h3>

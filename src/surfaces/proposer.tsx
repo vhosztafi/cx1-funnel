@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { optionRows } from '@/domain/options';
 import { useMemo, useState } from 'react';
 import { useForm, useWatch, Controller, type Resolver } from 'react-hook-form';
@@ -48,6 +49,7 @@ export function ProposerSurface() {
     defaultValues: defaults,
     resolver: yupResolver(proposerSchema(context)) as unknown as Resolver<Record<string, unknown>>,
   });
+  useLocalFormDraft(methods, 'proposer');
   const values = useWatch({ control: methods.control });
   const errors = methods.formState.errors;
   const layout = proposerLayout(values.proposerCompanyTypeId);

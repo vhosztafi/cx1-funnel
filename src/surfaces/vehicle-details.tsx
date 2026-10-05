@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { lookupCardValue, selectedVehicleCategory } from '@/domain/vehicle-card';
 import { currencyFormat } from '@/domain/currency';
 import { useState } from 'react';
@@ -88,6 +89,7 @@ export function VehicleDetails({ specified = false }: { specified?: boolean }) {
       ? (yupResolver(schema as AnyObjectSchema) as unknown as Resolver<Values>)
       : undefined,
   });
+  useLocalFormDraft(methods, 'vehicle-details:' + JSON.stringify(journey.routeState ?? {}));
   const values = useWatch({ control: methods.control });
   const modsName = specified ? 'modifications' : 'vehicleModifications';
   const modsKey = specified ? 'modificationID' : 'modificationId';

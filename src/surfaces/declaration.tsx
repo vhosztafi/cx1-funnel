@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { Controller, useForm, useWatch, type Resolver } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import Collapse from 'react-bootstrap/Collapse';
@@ -16,6 +17,7 @@ export function DeclarationSurface() {
     defaultValues: declarationDefaults(journey.snapshot.formData),
     resolver: yupResolver(declarationSchema()) as unknown as Resolver<Record<string, unknown>>,
   });
+  useLocalFormDraft(methods, 'declaration');
   const values = useWatch({ control: methods.control });
   return (
     <div className="container container-body-md">

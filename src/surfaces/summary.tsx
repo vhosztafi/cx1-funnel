@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { useState, useRef, type ReactNode } from 'react';
 import { Controller, useForm, type Resolver } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -51,6 +52,7 @@ export function SummarySurface() {
       proposerPolicyStartTime?: string | null;
     }>,
   });
+  useLocalFormDraft(methods, 'summary');
   return (
     <div className="container container-body-md">
       <h3>Summary</h3>

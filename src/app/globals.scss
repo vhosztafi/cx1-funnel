@@ -92,3 +92,15 @@ $enable-negative-margins: true;
   border-color: transparent;
   color: #333333;
 }
+/* Saved-record controls surround the inherited Motor Trade capture surfaces. */
+.local-draft-controls {
+  padding: 16px 24px;
+  background: #f2f6fc;
+  border-bottom: 1px solid #ccd7e6;
+  color: #193453;
+  font-size: 14px;
+  div { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  p { margin: 8px 0 0; }
+  [role='alert'] { color: #a32727; }
+}
+.capture-write-boundary { padding: 0; margin: 0; border: 0; min-width: 0; }

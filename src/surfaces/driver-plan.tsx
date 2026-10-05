@@ -1,4 +1,5 @@
 'use client';
+import { useLocalFormDraft } from '@/integration/local-draft-controls';
 import { useForm, useWatch, Controller, type Resolver } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { AutoComplete, FormTextBoxNumber } from '@/components/controls';
@@ -20,6 +21,7 @@ export function DriverPlan() {
     defaultValues: driverPlanDefaults(raw),
     resolver: yupResolver(driverPlanSchema()) as unknown as Resolver<Record<string, unknown>>,
   });
+  useLocalFormDraft(methods, 'driver-plan');
   const plan = useWatch({ control: methods.control, name: 'driverPlanId' });
   const render = (index: number) => {
     const q = definition.questions[index] as {
