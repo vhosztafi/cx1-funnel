@@ -23,7 +23,7 @@ export function LocalDraftControls() {
   const state = useSyncExternalStore(host?.subscribe ?? (() => () => {}), host?.status ?? (() => empty), () => empty);
   if (!host) return null;
   return <aside className="local-draft-controls" aria-label="Saved back-office draft"><strong>{host.context.reference}</strong> · {host.context.clientName} · {host.context.agencyName}
-    <div><button type="button" className="btn btn-primary" disabled={state.busy || state.pending} onClick={() => void host.capture(form).catch(() => {})}>Save draft</button>{state.pending && <button type="button" className="btn btn-outline-primary" disabled={state.busy} onClick={host.retry}>Retry same save</button>}<button type="button" className="btn btn-outline-secondary" disabled={state.busy || state.pending} onClick={host.returnToRecord}>Return to quote</button></div>
+    <div><button type="button" className="btn btn-primary" disabled={state.busy || state.pending} onClick={() => void host.capture(form).catch(() => {})}>Save draft</button>{state.pending && <button type="button" className="btn btn-outline-primary" disabled={state.busy} onClick={host.retry}>Retry same save</button>}<button type="button" className="btn btn-outline-secondary" disabled={state.busy || state.pending} onClick={host.returnToRecord}>{host.context.captureKind==='mta'?'Return to MTA':'Return to quote'}</button></div>
     {state.message && <p role="status">{state.message}</p>}{state.error && <p role="alert">{state.error}</p>}
   </aside>;
 }

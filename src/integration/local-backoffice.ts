@@ -4,7 +4,7 @@ import type { RawForm } from '@/domain/types';
 import { consumeUatOptions } from '@/development/uat-options';
 
 export interface LocalDraft { version: 1; formData: RawForm; step: number; pendingForms?: Record<string, Record<string, unknown>>; routeState?: Record<string, unknown> }
-interface Context { quoteId: string; revisionId: string; reference: string; clientName: string; agencyName: string; productCode: string;captureLimits:{driverLimit:number;pageSize:number} }
+interface Context { quoteId: string; revisionId: string; reference: string; clientName: string; agencyName: string; productCode: string;captureKind?:'mta';captureLimits:{driverLimit:number;pageSize:number} }
 export interface LocalBackoffice {
   context: Context; initial: LocalDraft; storage: StoragePort; host: HostInputs;
   register: (scope: string, read: () => Record<string, unknown>, restore: (values: Record<string, unknown>) => void) => () => void;
@@ -60,7 +60,12 @@ export async function connectLocalBackoffice(): Promise<LocalBackoffice | undefi
   function capture(session: FormSession, complete = false): Promise<string> {
     if (status.busy || status.pending) return Promise.reject(new Error('Confirm the pending save before editing again.'));
     const snapshot = session.getSnapshot(); const pendingForms = Object.fromEntries([...forms].map(([scope, read]) => [scope, read()]));
-    const root = Object.entries(pendingForms).filter(([scope]) => !['driver-details', 'vehicle-details'].some(nested => scope.startsWith(nested))).map(([, values]) => values);
+    const root = Object.entries(pendingForms).filter(([scope]) => !['driver-details', 'vehicle-details'].some(nested => scope.startsWith(nested))).map(([scope, values]) => {
+      // The source proposer submit omits these hidden declarations for staff.
+      // Retain current raw answers, without treating an invisible form default
+      // as a new policyholder declaration during an MTA save.
+      const current={...values};if(scope==='proposer')for(const key of ['consentTo','marketingConsent','marketingMethod'])delete current[key];return current;
+    });
     const state: LocalDraft = { version: 1, step: snapshot.step, formData: Object.assign({}, snapshot.formData, ...root), pendingForms, routeState: window.history.state?.usr };
     storage.setItem('unsaved', JSON.stringify({revisionId:opened.context.revisionId,draft:state})); publish({ busy: true, message: 'Saving draft…', error: '', pending: false });
     return new Promise((resolve, reject) => { resolveSave = resolve; rejectSave = reject; send({ type: 'cx1:funnel-save', state, complete }); });
@@ -79,12 +84,13 @@ export async function connectLocalBackoffice(): Promise<LocalBackoffice | undefi
     // no authentication credentials and cannot authorize a back-office request.
     contextStorage: { getItem: key => key === 'authBO' ? 'local parent context' : storage.getItem(key), setItem: storage.setItem, removeItem: storage.removeItem, clear: storage.clear },
     brokerDashboard: approvedParent, backofficeDashboard: approvedParent, tradePlateAddLabel: 'Add trade plate', terminalBranch: { kind: 'backoffice-new', argumentFields: { quoteId: opened.context.quoteId } }, terminalPort: {},
-    submitDemoQuote: async (raw, _options, time) => { if (!form) throw new Error('Capture is not ready.'); form.setData({ ...raw, proposerPolicyStartTime: time as string }); return capture(form, true); },
+    submitDemoQuote: async (raw, _options, time) => { if (!form) throw new Error('Capture is not ready.'); form.setData(opened.context.captureKind==='mta'?raw:{ ...raw, proposerPolicyStartTime: time as string }); return capture(form, true); },
   };
   connection = { context: opened.context, initial: opened.state, storage, host, register: (scope, read,restore) => { forms.set(scope, read);writers.set(scope,restore); return () => { forms.delete(scope);writers.delete(scope); }; }, changed, capture, retry: () => { if (status.pending) { publish({ ...status, busy: true, error: '', message: 'Confirming saved draft…' }); send({ type: 'cx1:funnel-retry' }); } }, returnToRecord: () => { if (!status.busy && !status.pending && form) void capture(form,true).catch(()=>{}); }, subscribe: listener => { listeners.add(listener); return () => { listeners.delete(listener); }; }, status: () => status, bind: value => { form = value;value.subscribe(changed); } };
   window.addEventListener('message', event => {
     if (event.origin !== approvedParent || event.source !== window.parent || event.data?.nonce !== nonce) return;
-    if (event.data.type === 'cx1:funnel-saved' && event.data.url === `${approvedParent}/quotes/${opened.context.quoteId}`) {
+    const recordPath=opened.context.captureKind==='mta'?'drafts':'quotes';
+    if (event.data.type === 'cx1:funnel-saved' && event.data.url === `${approvedParent}/${recordPath}/${opened.context.quoteId}`) {
       if(typeof event.data.revisionId==='string')opened.context.revisionId=event.data.revisionId;
       if(Array.isArray(event.data.readiness?.issues))savedIssues=event.data.readiness.issues;
       const saved=event.data.state as LocalDraft | undefined;

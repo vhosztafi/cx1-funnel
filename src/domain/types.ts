@@ -35,6 +35,7 @@ export interface RawForm {
   proposerPolicyStartDate?: DateValue;
   proposerPolicyStartTime?: string | null;
   minPolicyStartDate?: DateValue;
+  maxPolicyStartDate?: DateValue;
   isMta?: boolean;
   isShortTerm?: boolean | null;
   coverLevelID?: NullableId;

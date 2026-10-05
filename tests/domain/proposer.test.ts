@@ -127,6 +127,10 @@ describe('MTS-01 proposer contracts', () => {
     });
     expect(dayjs(mta.schemaMin).format('YYYY-MM-DD')).toBe('2026-09-14');
     expect(mta.minimumMessage).toBe('Date cannot be earlier than 15/09/2026');
+    const hostedMta=policyDateBounds({...context,backoffice:true,raw:{isMta:true,minPolicyStartDate:'2026-09-15',maxPolicyStartDate:'2027-09-15'}});
+    expect(dayjs(hostedMta.controlMax).format('YYYY-MM-DD')).toBe('2027-09-15');
+    const ordinaryWithBounds=policyDateBounds({...context,raw:{maxPolicyStartDate:'2027-09-15'}});
+    expect(ordinaryWithBounds.controlMax).toEqual(ordinary.controlMax);
   });
   it('Q13/Q14 / R04 exact independent phone tests retain strings', async () => {
     const schema = proposerSchema(context);

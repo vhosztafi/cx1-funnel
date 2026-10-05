@@ -12,6 +12,7 @@ export interface ProposerContext {
 }
 export function policyDateBounds({ raw, backoffice, now }: ProposerContext) {
   const minimum = raw.isMta && raw.minPolicyStartDate ? dayjs(raw.minPolicyStartDate) : undefined;
+  const maximum = raw.isMta && backoffice && raw.maxPolicyStartDate ? dayjs(raw.maxPolicyStartDate) : undefined;
   return {
     controlMin: (minimum ?? (backoffice ? dayjs('2025-03-01') : dayjs(now))).toDate(),
     schemaMin: (minimum
@@ -20,8 +21,8 @@ export function policyDateBounds({ raw, backoffice, now }: ProposerContext) {
         ? dayjs('2025-03-01')
         : dayjs(now).subtract(1, 'day')
     ).toDate(),
-    controlMax: dayjs(now).startOf('day').add(30, 'day').toDate(),
-    schemaMax: dayjs(now).add(30, 'day').toDate(),
+    controlMax: (maximum ?? dayjs(now).startOf('day').add(30, 'day')).toDate(),
+    schemaMax: (maximum?.endOf('day') ?? dayjs(now).add(30, 'day')).toDate(),
     minimumMessage: minimum
       ? `Date cannot be earlier than ${minimum.format('DD/MM/YYYY')}`
       : backoffice

@@ -150,7 +150,7 @@ export function ProposerSurface() {
   );
   return (
     <div className="container container-body-md">
-      <h3>{definition.heading}</h3>
+      <h3>{raw.isMta ? 'Motor Trade policy adjustment' : definition.heading}</h3>
       <form
         noValidate
         onSubmit={methods.handleSubmit((values) => {
